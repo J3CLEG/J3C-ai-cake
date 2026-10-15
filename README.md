@@ -11,7 +11,8 @@ Education only, not investment advice. Personal use.
 | Cake | Tap any layer or plate item. Follow-the-dollar split, current bottleneck. |
 | Layers | Full brief per layer: money model, chokepoints, players, bull and bear, US vs China, exit rules. |
 | Capital & Deals | Capex guidance, actual capex from SEC filings, deals, contested numbers, plate players, data centers. |
-| Watchlist | 85 public names tagged by layer, with multi-layer mixes. |
+| Watchlist | 85 public names tagged by layer, with multi-layer mixes. Tap any ticker anywhere for its company page. |
+| Company pages | How the company makes money, revenue by business segment, SEC financials (fiscal year and last 12 months), AI exposure, customers, what to watch, risks, sources, and a three-question knowledge check. |
 | My Portfolio | Enter positions; see exposure by layer, concentration flags, and the exit rules that apply to you. |
 | Cycle | Build-out → Digestion → Overbuild → Bust dial, signals, historical analogs. |
 | Train | Quiz with confidence scoring and spaced review, sort drill, scenario lab, prediction log, progress. |
@@ -27,10 +28,13 @@ index.html, app.js          the site (no build step, no dependencies)
 data/cake.json              framework, facts with source tiers, deals, cycle, scenarios, questions
 data/watchlist.json         tickers by layer
 data/holdings.json          EXAMPLE positions only
+data/companies.json         company profiles and segment revenue from annual reports
+data/fundamentals.json      SEC financials per company (Tier 1)
 data/live.json              Tier 1 numbers from the weekly pull (SEC EDGAR, FRED)
 data/snapshots/             one dated copy per weekly pull
 briefings/                  weekly one-page briefings
 scripts/fetch_tier1.py      weekly SEC and FRED pull with sanity checks
+scripts/fetch_fundamentals.py  weekly SEC financials for every company
 scripts/validate.py         data checks run before every commit
 AGENT.md                    standing rules for the weekly Claude run
 ```

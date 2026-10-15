@@ -161,6 +161,18 @@ ul.ticks { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
 .status { font-family: var(--f-mono); font-size: .72rem; padding: 2px 8px; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; }
 .status.build { color: var(--good); } .status.watch { color: var(--infrastructure); } .status.warn { color: var(--warn); } .status.bad { color: var(--bad); } .status.pending { color: var(--muted); }
 
+/* Company page */
+a.tk { color: var(--ink); text-decoration: none; }
+a.tk:hover { border-color: var(--ink); background: var(--surface); }
+a.rowlink { color: var(--ink); text-decoration: none; }
+a.rowlink:hover { text-decoration: underline; }
+.segs { gap: 14px; }
+.seg { display: grid; gap: 4px; }
+.seg-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.seg-track { height: 10px; background: var(--sunk); border-radius: 3px; overflow: hidden; }
+.seg-track div { height: 100%; background: var(--c, var(--infrastructure)); border-radius: 3px; }
+.meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
 /* Bull / bear */
 .case { border-left: 4px solid var(--c); padding-left: 12px; display: grid; gap: 4px; }
 

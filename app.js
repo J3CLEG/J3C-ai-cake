@@ -6,11 +6,12 @@
 
   const LAYER_ORDER = ["applications", "models", "infrastructure", "chips", "energy"];
   const ALL_LAYERS = ["energy", "chips", "infrastructure", "models", "applications", "capital"];
-  const LNAME = { energy: "Energy", chips: "Chips", infrastructure: "Infrastructure", models: "Models", applications: "Applications", capital: "Capital (plate)", plate: "Plate", demand: "Demand" };
+  const LNAME = { company: "Companies", energy: "Energy", chips: "Chips", infrastructure: "Infrastructure", models: "Models", applications: "Applications", capital: "Capital (plate)", plate: "Plate", demand: "Demand" };
   const STORE_KEY = "j3c-ai-cake-v1";
 
   let D = null, W = null, H = null;          // cake, watchlist, example holdings
   let LIVE = null;                            // data/live.json from the weekly Tier 1 pull (optional)
+  let CO = {}, FUND = {};                     // researched company profiles; SEC financials
   let WL = {};                                // ticker -> watchlist item
   let state = { mode: "simple", sel: "energy", layerSel: "energy", wlFilter: "all", wlQuery: "", train: "quiz" };
   let store = loadStore();
@@ -18,7 +19,7 @@
   // ---------- utilities ----------
   const $ = (s, r) => (r || document).querySelector(s);
   const esc = (v) => String(v == null ? "" : v).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const cvar = (layer) => `var(--${layer === "plate" ? "capital" : layer})`;
+  const cvar = (layer) => `var(--${layer === "plate" ? "capital" : layer === "company" ? "focus" : layer})`;
   const fmtUSD = (n) => "$" + Math.round(n).toLocaleString("en-US");
   const pct = (n) => (n * 100).toFixed(0) + "%";
 
@@ -45,9 +46,10 @@
     return `<div>${facts.map((f) => `<div class="fact"><p>${esc(f.text)}</p><div class="meta">${tierBadge(f.source, f.tier)}${f.as_of ? `<span class="mono">as of ${esc(f.as_of)}</span>` : ""}</div></div>`).join("")}</div>`;
   }
   function tickerChips(list) {
-    return `<div class="chips">${list.map((t) => { const w = WL[t]; return `<span class="tk" title="${esc(w ? w.name + " — " + w.role : t)}">${esc(t)}</span>`; }).join("")}</div>`;
+    return `<div class="chips">${list.map((t) => tkLink(t)).join("")}</div>`;
   }
   const layerById = (id) => D.layers.find((l) => l.id === id);
+  function tkLink(t) { const w = WL[t]; return `<a class="tk tklink" href="#c-${esc(t)}" title="${esc(w ? w.name + " — " + w.role : t)}">${esc(t)}</a>`; }
 
   // ---------- boot ----------
   async function boot() {
@@ -56,6 +58,8 @@
       D = c; W = w; H = h;
       W.items.forEach((i) => { WL[i.t] = i; });
       try { const r = await fetch("data/live.json", { cache: "no-store" }); if (r.ok) LIVE = await r.json(); } catch (e) { LIVE = null; }
+      try { const r = await fetch("data/companies.json", { cache: "no-store" }); if (r.ok) CO = (await r.json()).items || {}; } catch (e) { CO = {}; }
+      try { const r = await fetch("data/fundamentals.json", { cache: "no-store" }); if (r.ok) FUND = (await r.json()).items || {}; } catch (e) { FUND = {}; }
     } catch (e) {
       $("#main").innerHTML = `<div class="panel"><h3>Data did not load</h3><p>The page could not read its data files (${esc(e.message)}). If you opened index.html straight from your computer, serve the folder instead (for example <span class="mono">python3 -m http.server</span>) or use the hosted site.</p></div>`;
       return;
@@ -78,13 +82,15 @@
     if (!silent) route();
   }
 
-  const VIEWS = { cake: viewCake, layers: viewLayers, capital: viewCapital, watchlist: viewWatchlist, portfolio: viewPortfolio, cycle: viewCycle, train: viewTrain };
+  const VIEWS = { company: viewCompany, cake: viewCake, layers: viewLayers, capital: viewCapital, watchlist: viewWatchlist, portfolio: viewPortfolio, cycle: viewCycle, train: viewTrain };
   function route() {
     let h = (location.hash || "#cake").slice(1);
     if (ALL_LAYERS.includes(h) && h !== "capital") { state.layerSel = h; h = "layers"; }
+    if (h.startsWith("c-") && WL[h.slice(2)]) { state.company = h.slice(2); h = "company"; }
     if (!VIEWS[h]) h = "cake";
-    document.querySelectorAll("#tabs a").forEach((a) => a.setAttribute("aria-current", a.getAttribute("href") === "#" + h ? "page" : "false"));
+    document.querySelectorAll("#tabs a").forEach((a) => a.setAttribute("aria-current", a.getAttribute("href") === "#" + (h === "company" ? "watchlist" : h) ? "page" : "false"));
     $("#main").innerHTML = `<div class="view">${VIEWS[h]()}</div>`;
+    window.scrollTo(0, 0);
     const hook = HOOKS[h]; if (hook) hook();
   }
   const HOOKS = {};
@@ -261,6 +267,131 @@
       <p class="small muted">Rebuilt from year-to-date cash flow statements. Oracle's fiscal quarters end a month earlier and sit in the nearest calendar quarter. Columns appear once at least two companies have filed. Capex running far above depreciation means today's spending will hit earnings for years; a high ratio is the depreciation wave to come.</p></div>`;
   }
 
+  // ---------- COMPANY ----------
+  const CUR = { USD: "$", EUR: "€", JPY: "¥", CNY: "CN¥", KRW: "₩", TWD: "NT$", CAD: "C$", GBP: "£" };
+  function fmtB(v, cur) {
+    if (v == null || isNaN(v)) return "—";
+    const sym = CUR[cur] || (cur ? cur + " " : "");
+    const a = Math.abs(v), sign = v < 0 ? "−" : "";
+    if (a >= 1000) return sign + sym + (a / 1000).toFixed(1) + "T";
+    if (a === 0) return sym + "0";
+    return sign + sym + (a >= 10 ? a.toFixed(1) : a >= 0.1 ? a.toFixed(2) : a.toFixed(3)) + "B";
+  }
+  const segPos = (c) => (c.segments || []).filter((x) => (x.revenue_b || 0) > 0);
+  function sourcesList(list) {
+    return `<ul class="clean">${(list || []).map((x) => `<li>${/^https?:/.test(x.url || "") ? `<a class="tier t${x.tier || 3}" href="${esc(x.url)}" target="_blank" rel="noopener">T${x.tier || 3} · ${esc(x.title)}</a>` : `<span class="tier t${x.tier || 3}">T${x.tier || 3} · ${esc(x.title)}</span>`}</li>`).join("")}</ul>`;
+  }
+  function secTable(f) {
+    if (!f || !f.revenue) return `<p class="muted small">This company does not file with the SEC. Figures above come from its own annual report.</p>`;
+    const cur = f.revenue.currency;
+    const rows = [["Revenue", "revenue"], ["Operating income", "operating_income"], ["Net income", "net_income"], ["Operating cash flow", "operating_cash_flow"], ["Capex", "capex"], ["R&D", "rnd"]];
+    const val = (k, per) => (f[k] && f[k][per] ? f[k][per].value / 1e9 : null);
+    const hasTTM = !!f.revenue.ttm;
+    const fyEnd = f.revenue.fy.end, ttmEnd = hasTTM ? f.revenue.ttm.end : null;
+    const per = (k) => (f[k] && f[k].fy && f[k].fy.end === fyEnd ? "fy" : null);
+    const cell = (k, p) => { const v = p === "fy" ? (per(k) ? val(k, "fy") : null) : (f[k] && f[k].ttm && f[k].ttm.end === ttmEnd ? val(k, "ttm") : null); return v; };
+    const pctOf = (v, r) => (v != null && r ? ` <span class="muted small">${Math.round((v / r) * 100)}%</span>` : "");
+    const fcf = (p) => { const o = cell("operating_cash_flow", p), c = cell("capex", p); return o != null && c != null ? o - c : null; };
+    const line = (label, k, p, showPct) => { const v = cell(k, p); return `<td class="num">${fmtB(v, cur)}${showPct ? pctOf(v, cell("revenue", p)) : ""}</td>`; };
+    return `<div class="tablebox"><table><thead><tr><th>SEC filings</th><th style="text-align:right">Fiscal year to ${esc(fyEnd)}</th>${hasTTM ? `<th style="text-align:right">Last 12 months to ${esc(ttmEnd)}</th>` : ""}</tr></thead><tbody>
+      ${rows.map(([lab, k]) => `<tr><td>${lab}${k === "operating_income" || k === "rnd" ? ` <span class="muted small">(% of revenue)</span>` : ""}</td>${line(lab, k, "fy", k === "operating_income" || k === "rnd")}${hasTTM ? line(lab, k, "ttm", k === "operating_income" || k === "rnd") : ""}</tr>`).join("")}
+      <tr><td><b>Free cash flow</b> <span class="muted small">(cash flow − capex)</span></td><td class="num"><b>${fmtB(fcf("fy"), cur)}</b></td>${hasTTM ? `<td class="num"><b>${fmtB(fcf("ttm"), cur)}</b></td>` : ""}</tr>
+    </tbody></table></div>
+    <div class="meta small" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><a class="tier t1" href="${esc(f.filings)}" target="_blank" rel="noopener">T1 · SEC EDGAR filings</a>${f.stale ? `<span class="status warn">stale</span>` : ""}<span class="muted">Last 12 months adds the four latest quarters. A dash means the company does not report that line in a standard way.</span></div>`;
+  }
+  function viewCompany() {
+    const t = state.company, w = WL[t], c = CO[t], f = FUND[t];
+    const mix = w.mix || { [w.layer]: 1 };
+    const peers = W.items.filter((i) => i.layer === w.layer);
+    const idx = peers.findIndex((i) => i.t === t), next = peers[(idx + 1) % peers.length];
+    const head = `
+      <section class="section">
+        <a href="#watchlist" class="small">← Watchlist</a>
+        <span class="eyebrow">${esc(t)} · ${esc(w.region)}${c ? " · " + esc(c.fiscal_period) : ""}</span>
+        <h2>${esc(c ? c.name : w.name)}</h2>
+        <div class="chips">${Object.keys(mix).sort((a, b) => mix[b] - mix[a]).map((k) => `<a class="pill" style="--c:${cvar(k)};text-decoration:none" href="#${k === "capital" ? "capital" : k}">${esc(LNAME[k])}${Object.keys(mix).length > 1 ? " " + Math.round(mix[k] * 100) + "%" : ""}</a>`).join("")}${w.speculative ? `<span class="status warn">speculative</span>` : ""}</div>
+        <p class="lede">${esc(w.role)}</p>
+      </section>`;
+    if (!c) return head + `<div class="panel"><p>No profile yet. The weekly agent adds one from the company's next annual report.</p></div>`;
+    const pos = segPos(c).slice().sort((a, b) => b.revenue_b - a.revenue_b);
+    const posSum = pos.reduce((s2, x) => s2 + x.revenue_b, 0);
+    const recon = (c.segments || []).filter((x) => (x.revenue_b || 0) < 0);
+    const nulls = (c.segments || []).filter((x) => !x.revenue_b);
+    const top = pos[0];
+    return head + `
+      <div class="stats">
+        <div class="stat"><span class="v num">${fmtB(c.revenue_total_b, c.currency)}</span><span class="k">Revenue, ${esc(c.fiscal_period)}</span></div>
+        <div class="stat"><span class="v" style="font-size:1.5rem">${esc(c.revenue_model)}</span><span class="k">Revenue model</span></div>
+        ${top && posSum ? `<div class="stat"><span class="v num">${Math.round((top.revenue_b / posSum) * 100)}%</span><span class="k">from ${esc(top.name)}</span></div>` : ""}
+      </div>
+      <div class="panel"><span class="eyebrow">How it makes money</span><p>${esc(c.how_it_makes_money)}</p></div>
+      <section class="section">
+        <h3>Revenue by business</h3>
+        <p class="small muted">${esc(c.segment_basis)} · billions of ${esc(c.currency)}</p>
+        <div class="panel segs" style="--c:${cvar(w.layer)}">${pos.map((x) => `<div class="seg"><div class="seg-top"><b>${esc(x.name)}</b><span class="num">${fmtB(x.revenue_b, c.currency)} <span class="muted small">${Math.round((x.revenue_b / posSum) * 100)}%</span></span></div><div class="seg-track"><div style="width:${Math.max(1, (x.revenue_b / pos[0].revenue_b) * 100)}%"></div></div><p class="small muted">${esc(x.what)}</p></div>`).join("")}
+          ${recon.length ? `<p class="small muted">${recon.map((x) => `${esc(x.name)}: ${fmtB(x.revenue_b, c.currency)}`).join(" · ")}. This line reconciles segment sales (which can include sales between the company's own units) to reported revenue. Percentages are shares of segment sales.</p>` : ""}
+          ${nulls.length ? `<p class="small muted">No revenue reported for: ${nulls.map((x) => esc(x.name)).join(", ")}. ${nulls.map((x) => esc(x.what)).join(" ")}</p>` : ""}
+        </div>
+      </section>
+      <section class="section">
+        <h3>Financials from SEC filings</h3>
+        ${secTable(f)}
+      </section>
+      <div class="grid2">
+        <div class="panel" style="--c:${cvar(w.layer)}"><span class="eyebrow">AI exposure</span><p>${esc(c.ai_exposure)}</p></div>
+        <div class="panel"><span class="eyebrow">Customers</span><p>${esc(c.customers)}</p></div>
+        <div class="panel"><span class="eyebrow">Watch next earnings</span><ul class="ticks">${(c.watch || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+        <div class="panel"><span class="eyebrow">Risks</span><ul class="ticks">${(c.risks || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+      </div>
+      <div class="panel" id="co-check"></div>
+      <div class="grid2">
+        <div class="panel"><span class="eyebrow">Sources</span>${sourcesList(c.sources)}</div>
+        ${c.notes ? `<div class="panel"><span class="eyebrow">Data notes</span><p class="small">${esc(c.notes)}</p></div>` : ""}
+      </div>
+      <p><a href="#c-${esc(next.t)}">Next in ${esc(LNAME[w.layer])}: ${esc(next.name)} →</a></p>`;
+  }
+  HOOKS.company = function () { const el = $("#co-check"); if (el) renderCoCheck(el, state.company); };
+
+  // Company knowledge check: questions generated from the company's own data
+  function coQuestions(t) {
+    const c = CO[t], w = WL[t]; const qs = [];
+    const shuffle = (a) => a.map((x) => [Math.random(), x]).sort((a2, b) => a2[0] - b[0]).map((x) => x[1]);
+    const pos = c ? segPos(c).slice().sort((a, b) => b.revenue_b - a.revenue_b) : [];
+    if (pos.length >= 2) {
+      const opts = shuffle(pos.slice(0, 4).map((x) => x.name));
+      qs.push({ id: `co-${t}-seg`, q: `Which business brings in the most revenue at ${c.name}?`, options: opts, a: opts.indexOf(pos[0].name), why: `${pos[0].name}: ${fmtB(pos[0].revenue_b, c.currency)} in ${c.fiscal_period}. ${pos[0].what}` });
+      const sum = pos.reduce((s2, x) => s2 + x.revenue_b, 0), share = pos[0].revenue_b / sum;
+      const buckets = ["Under 25%", "25% to 50%", "50% to 75%", "Over 75%"];
+      qs.push({ id: `co-${t}-share`, q: `Roughly what share of ${c.name}'s segment sales comes from ${pos[0].name}?`, options: buckets, a: Math.min(3, Math.floor(share * 4)), why: `About ${Math.round(share * 100)}%. ${share > 0.75 ? "One business carries the company, so its fortunes ride on that market." : share > 0.5 ? "One business dominates, but others add some balance." : "Revenue is spread out, which cushions any single market."}` });
+    }
+    const others = shuffle(ALL_LAYERS.filter((l) => l !== w.layer)).slice(0, 3);
+    const lopts = shuffle([w.layer, ...others]);
+    qs.push({ id: `co-${t}-layer`, q: `Where does ${c ? c.name : w.name} mainly sit on the cake?`, options: lopts.map((l) => LNAME[l]), a: lopts.indexOf(w.layer), why: `${LNAME[w.layer]}. ${w.role}.${w.mix ? " It also spans " + Object.keys(w.mix).filter((k) => k !== w.layer).map((k) => LNAME[k]).join(", ") + "." : ""}` });
+    return qs;
+  }
+  function renderCoCheck(el, t, onNext) {
+    const qs = coQuestions(t); let i = 0, right = 0;
+    const draw = () => {
+      const name = CO[t] ? CO[t].name : WL[t].name;
+      if (i >= qs.length) {
+        el.innerHTML = `<span class="eyebrow">Check yourself · ${esc(name)}</span><p><b>${right} of ${qs.length} right.</b> ${right === qs.length ? "You know how this company makes money." : "Reread the revenue breakdown above, then try again."}</p><div class="chips"><button type="button" class="btn ghost" id="cc-again">Try again</button>${onNext ? `<button type="button" class="btn" id="cc-next">Another company</button>` : ""}</div>`;
+        $("#cc-again", el).addEventListener("click", () => renderCoCheck(el, t, onNext));
+        if (onNext) $("#cc-next", el).addEventListener("click", onNext);
+        return;
+      }
+      const q = qs[i];
+      el.innerHTML = `<span class="eyebrow">Check yourself · ${esc(name)} · ${i + 1} of ${qs.length}</span><p class="q">${esc(q.q)}</p><div class="opts">${q.options.map((o, k) => `<button type="button" class="opt" data-co="${k}">${String.fromCharCode(65 + k)}. ${esc(o)}</button>`).join("")}</div><div class="cc-why"></div>`;
+      el.querySelectorAll("[data-co]").forEach((b) => b.addEventListener("click", () => {
+        const k = Number(b.dataset.co), ok = k === q.a; if (ok) right++;
+        store.attempts.push({ id: q.id, layer: "company", ok, conf: 0.7, at: Date.now() }); save();
+        el.querySelectorAll("[data-co]").forEach((x) => { const kk = Number(x.dataset.co); x.disabled = true; if (kk === q.a) x.classList.add("right"); else if (kk === k) x.classList.add("wrong"); });
+        $(".cc-why", el).innerHTML = `<div class="why"><b style="color:${ok ? "var(--good)" : "var(--bad)"}">${ok ? "Correct." : "Not quite."}</b> ${esc(q.why)}</div><div style="margin-top:10px"><button type="button" class="btn" id="cc-n">${i + 1 < qs.length ? "Next question" : "See result"}</button></div>`;
+        $("#cc-n", el).addEventListener("click", () => { i++; draw(); });
+      }));
+    };
+    draw();
+  }
+
   // ---------- WATCHLIST ----------
   function viewWatchlist() {
     return `
@@ -281,7 +412,7 @@
     const rows = W.items.filter((i) => (state.wlFilter === "all" || i.layer === state.wlFilter || (i.mix && i.mix[state.wlFilter])) && (!q || (i.t + " " + i.name + " " + i.role).toLowerCase().includes(q)));
     $("#wl-body").innerHTML = rows.map((i) => {
       const also = i.mix ? Object.keys(i.mix).filter((k) => k !== i.layer).map((k) => `<span class="pill" style="--c:${cvar(k)}">${esc(LNAME[k])}</span>`).join(" ") : "";
-      return `<tr><td><span class="tk">${esc(i.t)}</span></td><td>${esc(i.name)}${i.speculative ? ` <span class="status warn">speculative</span>` : ""}</td><td><span class="pill" style="--c:${cvar(i.layer)}">${esc(LNAME[i.layer])}</span></td><td class="small">${esc(i.role)}</td><td>${also}</td><td class="mono small">${esc(i.region)}</td></tr>`;
+      return `<tr><td>${tkLink(i.t)}</td><td><a class="rowlink" href="#c-${esc(i.t)}">${esc(i.name)}</a>${i.speculative ? ` <span class="status warn">speculative</span>` : ""}</td><td><span class="pill" style="--c:${cvar(i.layer)}">${esc(LNAME[i.layer])}</span></td><td class="small">${esc(i.role)}</td><td>${also}</td><td class="mono small">${esc(i.region)}</td></tr>`;
     }).join("") || `<tr><td colspan="6" class="muted">No matches. Try another word or clear the filter.</td></tr>`;
   }
   HOOKS.watchlist = function () {
@@ -354,6 +485,7 @@
       <div class="legend">${layers.map((x) => `<div class="li" style="--c:${cvar(x.l)}"><span class="sw"></span><span>${esc(LNAME[x.l])}</span><span class="num" style="text-align:right">${pct(x.s)}</span></div>`).join("")}</div>
       <div class="flag ${bnS >= 0.1 ? "ok" : ""}">Current bottleneck is ${esc(LNAME[bn])}; you hold ${pct(bnS)} there.</div>
       ${flags.map((f) => `<div class="flag">${esc(f)}</div>`).join("")}
+      <span class="eyebrow">Your companies</span><div class="chips">${ex.rows.sort((a, b) => b.v - a.v).map((r) => tkLink(r.t)).join("")}</div>
       ${ex.unmapped.length ? `<div class="flag">Not on the watchlist, so not mapped: ${ex.unmapped.map((u) => esc(u.t)).join(", ")}.</div>` : ""}
       ${exposedRules.length ? `<span class="eyebrow">Exit rules for layers you hold (15%+)</span>${exposedRules.map((l) => `<div><b style="color:${cvar(l.id)}">${esc(l.name)}</b><ul class="ticks small">${l.exit_rules.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></div>`).join("")}` : ""}`;
   }
@@ -401,7 +533,7 @@
   }
 
   // ---------- TRAIN ----------
-  const TRAIN_TABS = [["quiz", "Quiz"], ["drill", "Sort drill"], ["scenario", "Scenario lab"], ["predict", "Predictions"], ["progress", "Progress"]];
+  const TRAIN_TABS = [["quiz", "Quiz"], ["company", "Company check"], ["drill", "Sort drill"], ["scenario", "Scenario lab"], ["predict", "Predictions"], ["progress", "Progress"]];
   function viewTrain() {
     return `
       <section class="section">
@@ -416,7 +548,7 @@
     document.querySelectorAll("[data-tt]").forEach((b) => b.addEventListener("click", () => { state.train = b.dataset.tt; document.querySelectorAll("[data-tt]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.tt === state.train))); renderTrain(); }));
     renderTrain();
   };
-  function renderTrain() { ({ quiz: trainQuiz, drill: trainDrill, scenario: trainScenario, predict: trainPredict, progress: trainProgress })[state.train](); }
+  function renderTrain() { ({ company: trainCompany, quiz: trainQuiz, drill: trainDrill, scenario: trainScenario, predict: trainPredict, progress: trainProgress })[state.train](); }
 
   // Quiz with confidence and spaced review
   const DAY = 86400000;
@@ -464,6 +596,15 @@
     const overconf = !ok && quiz.conf === 0.9;
     $("#q-why").innerHTML = `<div class="why"><b style="color:${ok ? "var(--good)" : "var(--bad)"}">${ok ? "Correct." : "Not quite."}</b> ${esc(q.why)}${overconf ? `<p class="small" style="margin-top:6px"><b>Calibration note:</b> you were 90% sure. Overconfidence is the costlier mistake.</p>` : ""}${!ok ? `<p class="small muted" style="margin-top:6px">Back for review tomorrow.</p>` : ""}</div><div style="margin-top:10px"><button type="button" class="btn" id="q-next">Next question</button></div>`;
     $("#q-next").addEventListener("click", () => { quiz.answered = "next"; trainQuiz(); });
+  }
+
+  // Company check: random company, holdings first if any are saved
+  function trainCompany() {
+    const mine = (store.holdings || []).map((p) => p.t).filter((t) => WL[t] && CO[t]);
+    const pool = mine.length && Math.random() < 0.5 ? mine : Object.keys(CO).filter((t) => WL[t]);
+    const t = pool[Math.floor(Math.random() * pool.length)];
+    $("#train-body").innerHTML = `<div class="panel"><p class="small muted">Three questions built from the company's own revenue breakdown. <a href="#c-${esc(t)}">Study ${esc(CO[t].name)} first →</a></p></div><div class="panel" id="tc"></div>`;
+    renderCoCheck($("#tc"), t, trainCompany);
   }
 
   // Sort drill
@@ -543,7 +684,7 @@
   // Progress
   function trainProgress() {
     const A = store.attempts;
-    const groups = [...ALL_LAYERS, "plate"].map((l) => { const a = A.filter((x) => x.layer === l); const ok = a.filter((x) => x.ok).length; const total = D.questions.filter((q) => q.layer === l).length; const seen = new Set(a.map((x) => x.id)).size; return { l, n: a.length, acc: a.length ? ok / a.length : null, seen, total }; });
+    const groups = [...ALL_LAYERS, "plate", "company"].map((l) => { const a = A.filter((x) => x.layer === l); const ok = a.filter((x) => x.ok).length; const total = D.questions.filter((q) => q.layer === l).length; const seen = new Set(a.map((x) => x.id)).size; return { l, n: a.length, acc: a.length ? ok / a.length : null, seen, total }; });
     const buckets = [0.5, 0.7, 0.9].map((c) => { const a = A.filter((x) => x.conf === c); return { c, n: a.length, acc: a.length ? a.filter((x) => x.ok).length / a.length : null }; });
     const weakest = groups.filter((g) => g.acc != null).sort((a, b) => a.acc - b.acc)[0];
     const mastered = groups.filter((g) => g.total && g.seen === g.total && g.acc >= 0.8).length;
@@ -557,7 +698,7 @@
         <div class="stat"><span class="v">${weakest ? esc(LNAME[weakest.l]) : "—"}</span><span class="k">Weakest area so far</span></div>
       </div>
       <div class="panel"><span class="eyebrow">Accuracy by area</span>
-        <div class="heat">${groups.map((g) => `<div class="cell" style="--c:${cvar(g.l)};--h:${g.acc == null ? 0 : Math.round(g.acc * 100)}%"><b>${esc(LNAME[g.l])}</b><span class="num">${g.acc == null ? "not started" : pct(g.acc) + " right"}</span><span class="small muted">${g.seen}/${g.total} questions seen</span></div>`).join("")}</div>
+        <div class="heat">${groups.map((g) => `<div class="cell" style="--c:${cvar(g.l)};--h:${g.acc == null ? 0 : Math.round(g.acc * 100)}%"><b>${esc(LNAME[g.l])}</b><span class="num">${g.acc == null ? "not started" : pct(g.acc) + " right"}</span><span class="small muted">${g.l === "company" ? g.n + " company questions answered" : g.seen + "/" + g.total + " questions seen"}</span></div>`).join("")}</div>
       </div>
       <div class="grid2">
         <div class="panel"><span class="eyebrow">Calibration</span>

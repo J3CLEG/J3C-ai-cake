@@ -6,7 +6,7 @@ Jay reviews every change as a pull request. Nothing goes straight to `main`.
 
 ## 1. Get set up
 1. Clone `J3CLEG/j3c-ai-cake` and work on a new branch `weekly/YYYY-MM-DD`.
-2. Read `data/cake.json`, `data/watchlist.json`, `data/live.json`, `data/checks.json`, and the most recent file in `briefings/`.
+2. Read `data/cake.json`, `data/watchlist.json`, `data/companies.json`, `data/live.json`, `data/checks.json`, and the most recent file in `briefings/`. Run `python3 scripts/fetch_fundamentals.py` to refresh SEC financials.
 3. If an open pull request from the GitHub Action exists (`data/weekly-*`), read its FLAG and ERROR lines.
 
 ## 2. Research the past 7 days
@@ -40,6 +40,8 @@ Earnings seasons (mid-January to February, mid-April to May, mid-July to August,
   - `cycle.bottleneck`: change only when the evidence clearly shifts.
   - `questions`: add 3 to 5 new questions drawn from this week's verified news. Use the next free id (`q31`, `q32`…), a layer, a level (Recall, Explain, Apply, Analyze, Predict), 4 options, the answer index, and a `why` that teaches.
   - `meta.last_verified`: today's date.
+- `companies.json`: when a company files a new annual report (10-K, 20-F, 40-F, or annual results abroad), refresh its profile from that document: fiscal period, total and segment revenue, how it makes money, customers, AI exposure, watch items, risks, sources (tier 1), and notes. Segments must sum to the total; use an "Eliminations / corporate" line if needed. Never fill numbers from memory. Every new watchlist ticker needs a profile in the same pull request.
+- `fundamentals.json` is produced by `scripts/fetch_fundamentals.py` (SEC, Tier 1). Do not hand-edit it. If its revenue differs from a profile's total by more than 5% for the same fiscal year, find out why and say so in the profile's notes.
 - `watchlist.json`: add, rename, or remove tickers for IPOs, acquisitions, and delistings. Set `as_of`.
 - Run `python3 scripts/validate.py`. Fix every problem before committing.
 - Never add personal holdings or account details to the repo.

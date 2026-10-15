@@ -66,6 +66,23 @@ if cake and wl:
         if r["guide_low"] > r["guide_high"]:
             problems.append(f"{r['company']} guidance low > high")
 
+co = load("companies.json")
+if co and wl:
+    for i in wl["items"]:
+        c = co["items"].get(i["t"])
+        if not c:
+            problems.append(f"{i['t']} has no company profile")
+            continue
+        for k in ("name", "fiscal_period", "currency", "segments", "how_it_makes_money", "sources"):
+            if not c.get(k):
+                problems.append(f"{i['t']} profile missing {k}")
+        segs = [s.get("revenue_b") for s in c.get("segments", []) if s.get("revenue_b") is not None]
+        tot = c.get("revenue_total_b")
+        if tot and segs and abs(sum(segs) - tot) > max(0.1, 0.03 * abs(tot)):
+            problems.append(f"{i['t']} segments sum {sum(segs):.2f} vs total {tot}")
+        if not any(str(s.get("url", "")).startswith("http") for s in c.get("sources", [])):
+            problems.append(f"{i['t']} profile has no source link")
+
 if problems:
     print("\n".join("PROBLEM: " + p for p in problems))
     sys.exit(1)

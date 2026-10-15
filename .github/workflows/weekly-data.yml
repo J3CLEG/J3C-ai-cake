@@ -24,7 +24,9 @@ jobs:
         env:
           # SEC asks for a contact in the User-Agent. Set a repo secret SEC_USER_AGENT like "J3C AI Cake you@example.com".
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
-        run: python3 scripts/fetch_tier1.py | tee run.log
+        run: |
+          python3 scripts/fetch_tier1.py | tee run.log
+          python3 scripts/fetch_fundamentals.py | tail -3 | tee -a run.log
 
       - name: Open a pull request for review
         env:
