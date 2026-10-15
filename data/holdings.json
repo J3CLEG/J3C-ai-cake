@@ -1,0 +1,14 @@
+{
+  "example": true,
+  "note": "EXAMPLE positions so the portfolio map has something to show. Replace with your own tickers and dollar values, either here or in the site's Portfolio tab (saved in your browser only).",
+  "positions": [
+    {"t": "NVDA", "value": 40000},
+    {"t": "MSFT", "value": 35000},
+    {"t": "GOOGL", "value": 25000},
+    {"t": "CEG", "value": 15000},
+    {"t": "VRT", "value": 10000},
+    {"t": "OWL", "value": 8000},
+    {"t": "EQIX", "value": 7000},
+    {"t": "PLTR", "value": 5000}
+  ]
+}

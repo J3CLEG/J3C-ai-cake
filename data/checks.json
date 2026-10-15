@@ -1,0 +1,14 @@
+{
+ "run": "2026-10-15",
+ "ok": [
+  "AMZN: latest capex 2026-06-30 = $54.2B (10-Q filed 2026-07-31)",
+  "MSFT: latest capex 2026-06-30 = $35.8B (10-K filed 2026-07-29)",
+  "GOOGL: latest capex 2026-06-30 = $44.9B (10-Q filed 2026-07-23)",
+  "META: latest capex 2026-06-30 = $30.1B (10-Q filed 2026-07-30)",
+  "ORCL: latest capex 2026-08-31 = $28.5B (10-Q filed 2026-09-11)",
+  "BAMLH0A0HYM2: 3.25 on 2026-10-14",
+  "DGS10: 5.19 on 2026-10-14"
+ ],
+ "flags": [],
+ "errors": []
+}

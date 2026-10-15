@@ -1,0 +1,50 @@
+name: Weekly Tier 1 data
+
+# Sundays 21:15 UTC (about 5:15 pm Eastern), ahead of the Claude weekly briefing.
+on:
+  schedule:
+    - cron: "15 21 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull SEC and FRED data with sanity checks
+        env:
+          # SEC asks for a contact in the User-Agent. Set a repo secret SEC_USER_AGENT like "J3C AI Cake you@example.com".
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python3 scripts/fetch_tier1.py | tee run.log
+
+      - name: Open a pull request for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data; then echo "No data changes"; exit 0; fi
+          BR="data/weekly-$(date -u +%F)"
+          git config user.name "j3c-ai-cake-bot"
+          git config user.email "j3c-ai-cake-bot@users.noreply.github.com"
+          git switch -c "$BR"
+          git add data
+          git commit -m "Weekly Tier 1 data $(date -u +%F)"
+          git push -u origin "$BR"
+          {
+            echo "Automated weekly pull from SEC EDGAR and FRED (Tier 1)."
+            echo
+            echo '```'
+            cat run.log
+            echo '```'
+            echo
+            echo "Merge if there are no FLAG or ERROR lines you disagree with. Flags mean a number moved more than the trust rules allow; check the filing first."
+          } > body.md
+          gh pr create --title "Weekly Tier 1 data $(date -u +%F)" --body-file body.md --base main --head "$BR"
