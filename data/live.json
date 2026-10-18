@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T23:04:34+00:00",
+ "generated": "2026-10-18T22:53:15+00:00",
  "tier": 1,
  "edgar": {
   "AMZN": {
@@ -535,14 +535,14 @@
  },
  "fred": {
   "BAMLH0A0HYM2": {
-   "date": "2026-10-14",
-   "value": 3.25,
+   "date": "2026-10-15",
+   "value": 3.23,
    "label": "US high-yield option-adjusted spread (%)",
    "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
   },
   "DGS10": {
-   "date": "2026-10-14",
-   "value": 5.19,
+   "date": "2026-10-15",
+   "value": 5.1,
    "label": "10-year Treasury yield (%)",
    "source": "https://fred.stlouisfed.org/series/DGS10"
   }
