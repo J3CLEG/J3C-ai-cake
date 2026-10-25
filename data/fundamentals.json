@@ -1112,8 +1112,8 @@
      "filed": "2026-02-13"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 17959000000
+     "end": "2026-09-30",
+     "value": 18344000000
     }
    },
    "operating_income": {
@@ -1126,8 +1126,8 @@
      "filed": "2026-02-13"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 5217000000
+     "end": "2026-09-30",
+     "value": 5314000000
     }
    },
    "net_income": {
@@ -1140,8 +1140,8 @@
      "filed": "2026-02-13"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 3467000000
+     "end": "2026-09-30",
+     "value": 3603000000
     }
    },
    "operating_cash_flow": {
@@ -1154,8 +1154,8 @@
      "filed": "2026-02-13"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 6557000000
+     "end": "2026-09-30",
+     "value": 6733000000
     }
    },
    "capex": {
@@ -1168,8 +1168,8 @@
      "filed": "2026-02-13"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 3399000000
+     "end": "2026-09-30",
+     "value": 3651000000
     }
    },
    "fcf_fy": 2891000000
@@ -2501,7 +2501,10 @@
      "form": "10-K",
      "filed": "2026-08-07"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-09-27",
+     "value": 26127935000
+    }
    },
    "operating_income": {
     "tag": "us-gaap:OperatingIncomeLoss",
@@ -2512,7 +2515,10 @@
      "form": "10-K",
      "filed": "2026-08-07"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-09-27",
+     "value": 9654434000
+    }
    },
    "net_income": {
     "tag": "us-gaap:NetIncomeLoss",
@@ -2523,7 +2529,10 @@
      "form": "10-K",
      "filed": "2026-08-07"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-09-27",
+     "value": 8449874000
+    }
    },
    "operating_cash_flow": {
     "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
@@ -2534,7 +2543,10 @@
      "form": "10-K",
      "filed": "2026-08-07"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-09-27",
+     "value": 7576345000
+    }
    },
    "capex": {
     "tag": "us-gaap:PaymentsToAcquireProductiveAssets",
@@ -2545,7 +2557,10 @@
      "form": "10-K",
      "filed": "2026-08-07"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-09-27",
+     "value": 1038981000
+    }
    },
    "rnd": {
     "tag": "us-gaap:ResearchAndDevelopmentExpense",
@@ -2556,7 +2571,10 @@
      "form": "10-K",
      "filed": "2026-08-07"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-09-27",
+     "value": 2465825000
+    }
    },
    "fcf_fy": 4891252000
   },
@@ -3149,7 +3167,7 @@
   },
   "MSFT": {
    "cik": "0000789019",
-   "entity": "MICROSOFT CORPORATION",
+   "entity": "Microsoft Corporation",
    "stale": false,
    "filings": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=10-K&dateb=&owner=include&count=40",
    "revenue": {
@@ -3326,8 +3344,8 @@
      "filed": "2026-01-29"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 228247000000
+     "end": "2026-09-30",
+     "value": 241606000000
     }
    },
    "operating_income": {
@@ -3340,8 +3358,8 @@
      "filed": "2026-01-29"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 86927000000
+     "end": "2026-09-30",
+     "value": 79380000000
     }
    },
    "net_income": {
@@ -3354,8 +3372,8 @@
      "filed": "2026-01-29"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 68098000000
+     "end": "2026-09-30",
+     "value": 75249000000
     }
    },
    "operating_cash_flow": {
@@ -3368,8 +3386,8 @@
      "filed": "2026-01-29"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 130301000000
+     "end": "2026-09-30",
+     "value": 133087000000
     }
    },
    "capex": {
@@ -3382,8 +3400,8 @@
      "filed": "2026-01-29"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 89325000000
+     "end": "2026-09-30",
+     "value": 104438000000
     }
    },
    "rnd": {
@@ -3396,8 +3414,8 @@
      "filed": "2026-01-29"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 71634000000
+     "end": "2026-09-30",
+     "value": 76544000000
     }
    },
    "fcf_fy": 46109000000
@@ -4089,8 +4107,8 @@
      "filed": "2026-02-19"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 3957669000
+     "end": "2026-09-30",
+     "value": 5273002000
     }
    },
    "operating_income": {
@@ -4103,8 +4121,8 @@
      "filed": "2026-02-19"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 743811000
+     "end": "2026-09-30",
+     "value": 989507000
     }
    },
    "net_income": {
@@ -4117,8 +4135,8 @@
      "filed": "2026-02-19"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 1434401000
+     "end": "2026-09-30",
+     "value": 1631830000
     }
    },
    "operating_cash_flow": {
@@ -4131,8 +4149,8 @@
      "filed": "2026-02-19"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 2550065000
+     "end": "2026-09-30",
+     "value": 3006920000
     }
    },
    "capex": {
@@ -4145,8 +4163,8 @@
      "filed": "2026-02-19"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 390259000
+     "end": "2026-09-30",
+     "value": 565527000
     }
    },
    "fcf_fy": 1031453000
@@ -5931,5 +5949,5 @@
   "9984.T",
   "ALV.DE"
  ],
- "generated": "2026-10-18T22:55:19+00:00"
+ "generated": "2026-10-25T22:55:38+00:00"
 }

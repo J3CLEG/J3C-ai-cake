@@ -2,7 +2,7 @@
   "meta": {
     "title": "J3C AI Cake",
     "seeded": "2026-10-15",
-    "last_verified": "2026-10-18",
+    "last_verified": "2026-10-25",
     "framework_origin": "Jensen Huang (NVIDIA): CSIS Dec 2025, Davos Jan 2026, NVIDIA blog 'AI Is a 5-Layer Cake' Mar 10, 2026",
     "disclaimer": "Personal learning tool. Education only, not investment advice. Figures carry a source tier; check the source before acting on any number.",
     "tiers": {
@@ -46,7 +46,14 @@
     "tc_openai": {"title": "TechCrunch: OpenAI reportedly in talks to raise $30B at $1.4T valuation", "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/", "tier": 3},
     "reuters_idc": {"title": "Reuters via Yahoo: Nvidia AI chip share in China falls as Huawei catches up (IDC)", "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-ai-chip-share-china-061558719.html", "tier": 2},
     "fred_hy": {"title": "FRED: ICE BofA US High Yield OAS (BAMLH0A0HYM2)", "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2", "tier": 1},
-    "fred_dgs10": {"title": "FRED: 10-year Treasury yield (DGS10)", "url": "https://fred.stlouisfed.org/series/DGS10", "tier": 1}
+    "fred_dgs10": {"title": "FRED: 10-year Treasury yield (DGS10)", "url": "https://fred.stlouisfed.org/series/DGS10", "tier": 1},
+    "meta_3q26": {"title": "Meta Reports Third Quarter 2026 Results", "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx", "tier": 1},
+    "benzinga_crwv": {"title": "Benzinga: CoreWeave debt stress mounts, bond yield hits record (Oct 22)", "url": "https://www.benzinga.com/markets/bonds/26/10/62541064/coreweave-debt-stress-mounts-bond-yield-hits-record-as-stock-suffers-44-billion-wipeout", "tier": 3},
+    "tc_openai_125": {"title": "TechCrunch: OpenAI working on new $30B raise at $1.25T valuation (CNBC report)", "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/", "tier": 3},
+    "qz_anthropic_s1": {"title": "Quartz: Anthropic first-half net loss $80.7B, draft IPO filing shows (WSJ review)", "url": "https://qz.com/anthropic-net-loss-first-half-ipo-prospectus-102126", "tier": 3},
+    "dealroom_anthropic_s1": {"title": "Dealroom: Anthropic draft S-1 reveals $16.3B revenue, $80.7B loss, up to $750B compute (WSJ review)", "url": "https://dealroom.co/news/164610-anthropics-draft-s-1-reveals-16-3b-revenue-80-7b-loss-and-up-to-750b-com/", "tier": 3},
+    "kcex_ft_dcbonds": {"title": "KCEX blog summarizing FT (Oct 19): AI data center bonds trade below par", "url": "https://blog.kcex.com/markets/ai-data-center-bond-selloff-october-19-2026-credit-risk/", "tier": 3},
+    "techzine_nvhbm": {"title": "Techzine: Nvidia standardizes HBM base-die production at TSMC (Seoul Economic Daily, UBS)", "url": "https://www.techzine.eu/news/infrastructure/145117/nvidia-standardizes-hbm-production-at-tsmc/", "tier": 3}
   },
 
   "demand": {
@@ -171,12 +178,13 @@
       {"company": "Amazon", "ticker": "AMZN", "guide_low": 220, "guide_high": 220, "note": "About $220B cash capex in 2026 (Jassy, Q2 call, Jul 30); up from ~$200B", "source": "amzn_2q26_call", "tier": 1},
       {"company": "Microsoft", "ticker": "MSFT", "guide_low": 190, "guide_high": 190, "note": "About $190B calendar 2026 (not re-verified). On the FY26 Q4 call Microsoft said only that FY27 capex will grow year over year; Q1 FY27 over $50B", "source": "ft_tally", "tier": 2},
       {"company": "Alphabet", "ticker": "GOOGL", "guide_low": 195, "guide_high": 205, "note": "Raised from $180-190B to $195-205B by the CFO on the Q2 call (Jul 22); T1 transcript not yet retrieved", "source": "hl_googl_2q26", "tier": 2},
-      {"company": "Meta", "ticker": "META", "guide_low": 130, "guide_high": 145, "note": "Narrowed from $125-145B in the Q2 release (incl. finance-lease principal)", "source": "meta_2q26", "tier": 1}
+      {"company": "Meta", "ticker": "META", "guide_low": 135, "guide_high": 145, "note": "Raised low end to $135-145B in the Q3 release (Oct 21), from $130-145B; incl. finance-lease principal. 2027 budget not yet set, 'continue investing aggressively'", "source": "meta_3q26", "tier": 1}
     ],
     "context": [
       {"text": "Evercore and Bank of America model big-four capex above $1T in 2027.", "source": "ft_tally", "tier": 2},
       {"text": "Meta had about $12B of free cash flow in Q1 2026 against up to $145B of planned capex.", "source": "om_capex", "tier": 3},
       {"text": "Meta's Q2 2026 free cash flow was $0.78B against $31.1B of capex including finance leases.", "source": "meta_2q26", "tier": 1},
+      {"text": "Meta's Q3 2026 free cash flow was negative $2.12B: $32.79B of operating cash flow against $34.91B of capex including finance leases.", "source": "meta_3q26", "tier": 1},
       {"text": "Microsoft's FY26 Q4 capex was $41B including $5.6B of finance leases.", "source": "msft_4q26_call", "tier": 1}
     ],
     "edgar_tags": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"],
@@ -191,8 +199,9 @@
       {"text": "Meta and Blue Owl closed $27B for the Hyperion campus in Louisiana; Blue Owl funds own 80%. The largest private credit deal on record.", "source": "gdch_hyperion", "tier": 3, "as_of": "2025-10"},
       {"text": "Blackstone's data center portfolio passed $150B owned or under construction; data centers are 27% of BREIT fair value.", "source": "luminix", "tier": 3, "as_of": "2026-06"},
       {"text": "SoftBank completed its acquisition of DigitalBridge on September 30, 2026, for about $3.1B.", "source": "softbank_dbrg", "tier": 1, "as_of": "2026-09-30"},
-      {"text": "CoreWeave's $2.75B of 9.75% unsecured notes traded near 81 cents, yielding over 15%; its five-year CDS rose to about 881bp from about 547bp at end-June. S&P rates it in the B category.", "source": "dj_crwv", "tier": 2, "as_of": "2026-10-14"},
-      {"text": "CCC-rated junk spreads widened to 12.67 points from 9.04 in early May, while the broad high-yield index stayed near 3.2 points: stress is concentrated in the weakest borrowers.", "source": "dj_crwv", "tier": 2, "as_of": "2026-10-13"}
+      {"text": "CoreWeave's $2.75B of 9.75% unsecured 2031 notes have yielded over 15% since mid-October (Dow Jones; Benzinga reports a record 15.76% on Oct 22); its five-year CDS rose to about 881bp by Oct 12 from about 547bp at end-June. S&P rates it in the B category.", "source": "dj_crwv", "tier": 2, "as_of": "2026-10-22"},
+      {"text": "CCC-rated junk spreads widened to 12.67 points from 9.04 in early May, while the broad high-yield index stayed near 3.2 points: stress is concentrated in the weakest borrowers.", "source": "dj_crwv", "tier": 2, "as_of": "2026-10-13"},
+      {"text": "Meta posted negative free cash flow of $2.12B in Q3 2026 while narrowing 2026 capex guidance up to $135-145B. Revenue rose 26% to $64.6B.", "source": "meta_3q26", "tier": 1, "as_of": "2026-09-30"}
     ],
     "deals": [
       {"name": "Aligned Data Centers", "value_b": 40, "type": "M&A", "buyers": "BlackRock/GIP, MGX, Microsoft, NVIDIA, xAI, Temasek, KIA", "layer": "infrastructure", "buyer_type": "Consortium", "date": "2025-10", "source": "sp_dc_2025", "tier": 2},
@@ -205,10 +214,12 @@
       {"topic": "H1 2026 data center M&A volume", "values": ["$85.2B", "$87B", "$127.3B", "$185B YTD July"], "why": "Four articles from one research site, weeks apart, give incompatible totals and one misdates the Aligned deal. Held out of all charts until S&P 451 or Synergy publishes.", "source": "datacentres_mixed", "tier": 3},
       {"topic": "AI XPV financing (~$35B)", "values": ["~$35B, Apollo and Blackstone, secured on Broadcom-designed chips leased to Anthropic"], "why": "Single research source. Needs a second independent Tier 2 confirmation.", "source": "luminix", "tier": 3},
       {"topic": "Cerebras IPO raise", "values": ["$4.8B", "$5.5B", "$7.1B"], "why": "Reports differ, likely base deal vs greenshoe vs rumor. Check the final prospectus (424B4) on EDGAR.", "source": "aiweekly_cbrs", "tier": 3},
-      {"topic": "CoreWeave five-year CDS", "values": ["~881bp (Dow Jones Market Data, Oct 12)", ">1,000bp (Reuters via Roic.ai, Oct 14-15)"], "why": "Different days in a fast-moving market; both may be right. Direction is not in doubt, the level is.", "source": "roic_cds", "tier": 3},
-      {"topic": "Anthropic IPO", "values": ["~$2T target valuation", "November listing (Reuters)", "$1.35T last private mark (Nasdaq Private Market)"], "why": "Press reports only; no public S-1 yet. Wait for the filing before using any number.", "source": "yahoo_anthropic", "tier": 3},
-      {"topic": "OpenAI new round", "values": ["$30B at ~$1.4T (talks)"], "why": "Reported talks, not a closed round. Single original report.", "source": "tc_openai", "tier": 3},
-      {"topic": "Oracle five-year CDS", "values": ["Record 288bp (Oct 14-15)"], "why": "Single source; no named data provider.", "source": "roic_cds", "tier": 3}
+      {"topic": "CoreWeave five-year CDS", "values": ["~881bp (Dow Jones Market Data, Oct 12)", ">1,000bp (Reuters via Roic.ai, Oct 14-15)", "1,115bp (Benzinga, Oct 22; no data provider named)"], "why": "Rising every week and quoted by outlets that do not name a provider. Direction is not in doubt; the exact level is.", "source": "benzinga_crwv", "tier": 3},
+      {"topic": "Anthropic IPO", "values": ["$1.5T-$2T sought (CNBC)", "Public S-1 'as soon as Oct 23', marketing week of Nov 9, mid-November debut (Reuters, via Invezz)", "$965B Series H post-money (May)", "$1.35T secondary mark (Nasdaq Private Market)", "Draft S-1 per WSJ: H1 2026 revenue $16.3B, net loss $80.7B (~$72B non-cash, from convertible instruments), compute commitments up to $750B"], "why": "No public S-1 on EDGAR as of this run. Every outlet with draft-prospectus numbers traces back to one WSJ review, so it counts as one source. Wait for the public filing.", "source": "qz_anthropic_s1", "tier": 3},
+      {"topic": "OpenAI new round", "values": ["$30B at ~$1.4T (Bloomberg, Sep 29)", "Up to $30B at $1.25T pre-money, led by Coatue and UAE investors (CNBC, Oct 22)"], "why": "Talks, not a closed round. A lower ask is not a down round: it is still above the $852B March post-money mark.", "source": "tc_openai_125", "tier": 3},
+      {"topic": "Oracle five-year CDS", "values": ["Record 288bp (Oct 14-15)"], "why": "Single source; no named data provider.", "source": "roic_cds", "tier": 3},
+      {"topic": "AI data center project bonds", "values": ["Trading below par (FT, Oct 19)"], "why": "Known only through a summary of the FT piece; no bond names, prices or yields given. Needs the original or a second outlet.", "source": "kcex_ft_dcbonds", "tier": 3},
+      {"topic": "HBM supply gap 2027", "values": ["Demand +91% to ~61.5B Gb vs ~54.6B Gb supply (UBS, via Techzine)"], "why": "Single broker estimate relayed second-hand. Fits SK hynix and ASML commentary, but not independently confirmed.", "source": "techzine_nvhbm", "tier": 3}
     ],
     "groups": [
       {"id": "re", "name": "Data center real estate", "tickers": ["EQIX", "DLR", "IRM", "AMT"], "private": ["QTS (Blackstone)", "CyrusOne (KKR, GIP)", "Vantage and Switch (DigitalBridge, now SoftBank)", "Aligned (BlackRock/GIP, MGX consortium)", "Stack (Blue Owl)"]},
@@ -230,17 +241,17 @@
   "cycle": {
     "stages": ["Build-out", "Digestion", "Overbuild", "Bust"],
     "current_stage": 0,
-    "position": 0.85,
+    "position": 0.88,
     "bottleneck": {"layer": "energy", "history": [{"period": "2023 to 2024", "layer": "chips"}, {"period": "2025 to 2026", "layer": "energy"}], "why": "Chips were the shortage in 2023 and 2024. Now buildings with GPUs on order wait on grid connections, turbines, and transformers."},
-    "assessment": "Late build-out. Big-tech capex guides were raised again after Q2 and TSMC and ASML say demand runs ahead of supply into 2028. But Meta's free cash flow is nearly gone, and in October credit markets began pricing the weakest AI borrowers as distressed (CoreWeave unsecured yields above 15%). Stress is concentrated, not systemic, so far.",
+    "assessment": "Late build-out. Capex guides are still rising (Meta raised its 2026 floor to $135B in Q3) and chip and memory suppliers say demand runs ahead of supply into 2028. But Meta's free cash flow turned negative in Q3, and credit markets keep pricing the weakest AI borrowers as distressed (CoreWeave 2031 notes at record yields above 15%). Stress is concentrated, not systemic, so far: the broad high-yield index is at 3.40%.",
     "signals": [
-      {"name": "Capex guidance revisions", "status": "build", "value": "Raised after Q2: Amazon to ~$220B, Alphabet to $195-205B; Meta narrowed up to $130-145B; no cuts", "source": "meta_2q26", "tier": 1},
+      {"name": "Capex guidance revisions", "status": "build", "value": "Still rising: Meta raised its 2026 floor to $135-145B in Q3 (Oct 21); Amazon ~$220B, Alphabet $195-205B; no cuts. Alphabet, Microsoft, Amazon report Oct 28-29", "source": "meta_3q26", "tier": 1},
       {"name": "AI revenue vs capex", "status": "watch", "value": "MSFT AI run-rate ~$37B vs ~$190B capex", "source": "yahoo_capex", "tier": 2},
-      {"name": "Hyperscaler free cash flow", "status": "warn", "value": "Meta Q2 FCF $0.8B vs $31.1B capex", "source": "meta_2q26", "tier": 1},
+      {"name": "Hyperscaler free cash flow", "status": "bad", "value": "Meta Q3 FCF -$2.1B ($32.8B operating cash flow vs $34.9B capex): Meta now spends more than its operations generate", "source": "meta_3q26", "tier": 1},
       {"name": "Data center debt issuance", "status": "warn", "value": "~$182B in 2025, nearly double 2024", "source": "sp_dc_2025", "tier": 2},
-      {"name": "Neocloud leverage", "status": "bad", "value": "CoreWeave 9.75% notes ~81c, yield >15%; CDS ~881bp vs ~547bp in June", "source": "dj_crwv", "tier": 2},
-      {"name": "High-yield credit spreads", "status": "watch", "value": "3.23% on 2026-10-15 (FRED): broad market calm, but CCC spreads 12.67% and AI-specific HY widening", "source": "fred_hy", "tier": 1},
-      {"name": "10-year Treasury yield", "status": "watch", "value": "5.10% on 2026-10-15 (FRED); Fed hiked in September", "source": "fred_dgs10", "tier": 1}
+      {"name": "Neocloud leverage", "status": "bad", "value": "CoreWeave 2031 notes at a record ~15.8% yield (Oct 22); CDS reported above 1,000bp; stock ~70% below its high", "source": "benzinga_crwv", "tier": 3},
+      {"name": "High-yield credit spreads", "status": "watch", "value": "3.40% on 2026-10-22 (FRED), up from 3.23% a week earlier: broad market still calm, AI-linked credit under pressure", "source": "fred_hy", "tier": 1},
+      {"name": "10-year Treasury yield", "status": "watch", "value": "4.96% on 2026-10-22 (FRED), down from 5.10% a week earlier", "source": "fred_dgs10", "tier": 1}
     ],
     "analogs": [
       {"name": "Railroads, 1840s Britain", "lesson": "Real, transformative network; investors still lost heavily when capacity outran traffic."},
@@ -308,6 +319,11 @@
     {"id": "q32", "layer": "chips", "level": "Explain", "q": "ASML said in October 2026 that its planned supply for 2027 and 2028 will not fully meet customer demand. Why does that matter for the AI cake?", "options": ["It means chip demand is falling", "Lithography tools could become a second bottleneck alongside power, capping how fast new chip capacity arrives", "It lowers TSMC's prices", "It only affects memory"], "a": 1, "why": "Every leading-edge wafer needs EUV tools. If ASML cannot ship enough, fab capacity, and so GPU supply, grows more slowly than demand."},
     {"id": "q33", "layer": "infrastructure", "level": "Apply", "q": "Meta guided 2026 capex to $130-145B and reported Q2 free cash flow of about $0.8B. If capex keeps rising, what is the most likely funding source?", "options": ["Cutting the dividend to zero alone", "More debt, leases, and off-balance-sheet partners like the Blue Owl Hyperion JV", "Selling Instagram", "Government grants"], "a": 1, "why": "When operating cash no longer covers capex, the gap is filled with borrowing and partner capital. That shifts risk from shareholders to lenders."},
     {"id": "q34", "layer": "energy", "level": "Recall", "q": "Google's October 2026 deal with Constellation adds new nuclear power mainly by which method?", "options": ["Building new large reactors", "Uprating existing reactors to produce more power", "Restarting a closed plant", "Small modular reactors"], "a": 1, "why": "Uprates at 11 existing units (890 MW under a 20-year PPA) are faster and cheaper than new builds, which is why they come first."},
-    {"id": "q35", "layer": "plate", "level": "Predict", "q": "If CoreWeave needs to refinance unsecured debt while its bonds yield over 15%, which outcome is most consistent with the cycle model?", "options": ["Cheaper borrowing", "Growth funded by secured, contract-backed or customer-prepaid debt instead, with slower expansion if that is not enough", "No effect at all", "Hyperscalers stop buying GPUs immediately"], "a": 1, "why": "High unsecured costs push neoclouds toward asset-backed and prepaid financing. If those channels tighten too, capacity growth slows, an early overbuild-to-digestion signal."}
+    {"id": "q35", "layer": "plate", "level": "Predict", "q": "If CoreWeave needs to refinance unsecured debt while its bonds yield over 15%, which outcome is most consistent with the cycle model?", "options": ["Cheaper borrowing", "Growth funded by secured, contract-backed or customer-prepaid debt instead, with slower expansion if that is not enough", "No effect at all", "Hyperscalers stop buying GPUs immediately"], "a": 1, "why": "High unsecured costs push neoclouds toward asset-backed and prepaid financing. If those channels tighten too, capacity growth slows, an early overbuild-to-digestion signal."},
+    {"id": "q36", "layer": "infrastructure", "level": "Recall", "q": "In Q3 2026, Meta's free cash flow was about:", "options": ["+$20B", "+$0.8B", "-$2.1B", "-$20B"], "a": 2, "why": "Operating cash flow was $32.8B and capex including finance leases was $34.9B (Meta's Q3 release, Tier 1). Spending now exceeds what the core business generates, so the gap is funded by cash, debt, leases and partners."},
+    {"id": "q37", "layer": "plate", "level": "Explain", "q": "Meta raised the low end of its 2026 capex guide in the same quarter its free cash flow turned negative. What does that combination tell you about the cycle?", "options": ["Demand has collapsed", "Spending conviction is still rising even as internal funding runs out, so external financing matters more each quarter", "Meta is cutting capex", "Nothing; cash flow and capex are unrelated"], "a": 1, "why": "Late build-out shows rising capex alongside thinning cash cover. The cycle then depends on how cheaply the gap can be financed, which is why credit markets are the signal to watch."},
+    {"id": "q38", "layer": "models", "level": "Analyze", "q": "OpenAI reportedly cut its funding ask from $1.4T to $1.25T, still above its $852B March mark. How should you classify this?", "options": ["A down round, so an exit rule trips", "A lower ask in talks, not a down round; worth watching but no exit rule trips", "Proof the AI boom is over", "Irrelevant to the cake"], "a": 1, "why": "A down round prices below the last closed round. A trimmed asking price, still well above the last mark, signals investor price discipline, especially with Anthropic's IPO about to set a public comparison."},
+    {"id": "q39", "layer": "models", "level": "Explain", "q": "Reports on Anthropic's draft prospectus show an $80.7B first-half net loss, about $72B of it non-cash. Why does the non-cash split matter?", "options": ["It doesn't; a loss is a loss", "Most of the loss came from revaluing convertible instruments, not from running the business, so cash burn and compute commitments are the better gauges", "Non-cash losses mean the company is profitable", "It means the IPO is cancelled"], "a": 1, "why": "Fair-value charges on convertibles swing with the company's own valuation. The figures to watch are revenue growth, cash burn and the up to $750B of compute commitments, which are real future cash. These are still single-source (WSJ) until the public S-1."},
+    {"id": "q40", "layer": "chips", "level": "Apply", "q": "Nvidia reportedly wants all three HBM suppliers to build their NVHBM base die on TSMC 3nm. Which bottleneck does that tighten?", "options": ["Grid power", "TSMC's leading-edge logic capacity, since memory now competes with GPUs for the same nodes", "Data center real estate", "Model pricing"], "a": 1, "why": "Moving the HBM base die onto TSMC 3nm adds memory demand to TSMC's most advanced lines. TSMC is adding 3nm lines for 2027 and 2028, so this is a chip-layer squeeze to watch next to ASML's supply warning. Reported, not confirmed by the companies."}
   ]
 }

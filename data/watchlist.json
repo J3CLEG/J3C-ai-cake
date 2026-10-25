@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18",
+  "as_of": "2026-10-25",
   "note": "Primary layer plus a mix for names that span layers. Mix weights sum to 1 and drive the portfolio map. The weekly agent checks for renames, delistings, and new listings.",
   "layers": ["energy", "chips", "infrastructure", "models", "applications", "capital"],
   "items": [
