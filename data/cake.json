@@ -2,7 +2,7 @@
   "meta": {
     "title": "J3C AI Cake",
     "seeded": "2026-10-15",
-    "last_verified": "2026-11-01",
+    "last_verified": "2026-11-08",
     "framework_origin": "Jensen Huang (NVIDIA): CSIS Dec 2025, Davos Jan 2026, NVIDIA blog 'AI Is a 5-Layer Cake' Mar 10, 2026",
     "disclaimer": "Personal learning tool. Education only, not investment advice. Figures carry a source tier; check the source before acting on any number.",
     "tiers": {
@@ -11,335 +11,2014 @@
       "3": "Other: newsletters, aggregators, single-source reports. Shown as provisional"
     }
   },
-
   "sources": {
-    "nvidia_blog": {"title": "NVIDIA Blog: AI Is a 5-Layer Cake", "url": "https://blogs.nvidia.com/blog/ai-5-layer-cake", "tier": 1},
-    "ft_tally": {"title": "FT capex tally via AI Weekly", "url": "https://aiweekly.co/alerts/amazon-microsoft-alphabet-meta-plan-725b-ai-capex-in-2026", "tier": 2},
-    "yahoo_capex": {"title": "Yahoo Finance: Hyperscalers hit $700B", "url": "https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html", "tier": 2},
-    "tnw_q1": {"title": "The Next Web: Big Tech Q1 2026 earnings", "url": "https://thenextweb.com/news/alphabet-amazon-meta-q1-2026-earnings-ai-cloud", "tier": 3},
-    "om_capex": {"title": "Om Malik: What I learned about hyperscalers' AI spend", "url": "https://om.co/2026/04/30/what-i-learned-about-hyperscalers-ai-spend/", "tier": 3},
-    "sp_dc_2025": {"title": "S&P Global: Record data center investments and M&A in 2025", "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/12/record-breaking-data-center-investments-m-a-in-2025-amid-ai-demand-96002955", "tier": 2},
-    "dck_synergy": {"title": "Data Center Knowledge: M&A outlook (Synergy, S&P)", "url": "https://www.datacenterknowledge.com/investing/data-center-m-a-outlook-robust-in-2026-despite-power-ai-risks", "tier": 2},
-    "gdch_hyperion": {"title": "Global Data Center Hub: Meta + Blue Owl $27B", "url": "https://www.globaldatacenterhub.com/p/meta-blue-owls-27b-bet-is-this-the", "tier": 3},
-    "bloomberg_pc": {"title": "Bloomberg Opinion: AI data centers give private credit its mojo back", "url": "https://www.bloomberg.com/opinion/articles/2025-10-02/ai-data-centers-give-private-credit-its-mojo-back", "tier": 2},
-    "luminix": {"title": "Luminix: Who is financing the AI buildout", "url": "https://www.useluminix.com/reports/industry-analysis/who-is-financing-the-ai-buildout/source/3", "tier": 3},
-    "softbank_dbrg": {"title": "SoftBank: Completion of acquisition of DigitalBridge", "url": "https://group.softbank/en/news/press/20260930", "tier": 1},
-    "fool_ipos": {"title": "Motley Fool: AI stocks born from recent IPOs", "url": "https://www.fool.com/investing/2026/06/03/ai-stocks-born-recent-ipos-bigger-than-hype/", "tier": 3},
-    "aiweekly_cbrs": {"title": "AI Weekly: Cerebras IPO", "url": "https://aiweekly.co/alerts/cerebras-raises-48b-in-2026s-largest-ai-ipo", "tier": 3},
-    "datacentres_mixed": {"title": "Datacentres.com research notes (Jun to Sep 2026)", "url": "https://www.datacentres.com/news/data-centre-m-a-hits-87b-in-h1-2026-as-hyperscalers-reshape-portfolio-architectu-slot1-2026-08-04", "tier": 3},
-    "bt_csis": {"title": "Business Today: Huang at CSIS", "url": "https://www.businesstoday.in/bt-tv/video/jensen-huang-breaks-down-ai-the-5-layer-cake-explained-504938-2025-12-04", "tier": 2},
-    "tsmc_3q26": {"title": "TSMC: Third quarter 2026 results and Q4 guidance (Oct 15, 2026)", "url": "https://pr.tsmc.com/english/news/3346", "tier": 1},
-    "asml_3q26": {"title": "ASML Q3 2026 results, Form 6-K (Oct 14, 2026)", "url": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026065813/pressreleasefinancialresul.htm", "tier": 1},
-    "meta_2q26": {"title": "Meta Reports Second Quarter 2026 Results", "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/", "tier": 1},
-    "amzn_2q26_call": {"title": "Amazon Q2 2026 earnings call transcript (via Webull)", "url": "https://www.webull.com/news/15364638750483456", "tier": 1},
-    "msft_4q26_call": {"title": "Microsoft FY26 Q4 earnings call transcript (via Motley Fool)", "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/microsoft-msft-q4-2026-earnings-call-transcript/", "tier": 1},
-    "hl_googl_2q26": {"title": "Hargreaves Lansdown: Alphabet Q2 results, capex guide raised", "url": "https://www.hl.co.uk/shares/share-research/alphabet-q2-results-strong-cloud-capex-guide-raised", "tier": 2},
-    "wmedia_googl": {"title": "W.Media: Alphabet 2026 capex guidance to $205B", "url": "https://w.media/ai-infrastructure-demand-pushes-alphabets-2026-capex-guidance-to-us-205-billion/", "tier": 3},
-    "dj_crwv": {"title": "Dow Jones (via Tiger): CoreWeave sparks worry about broader credit-market stress as its bonds tumble", "url": "https://www.itiger.com/news/2675032245", "tier": 2},
-    "thestreet_nbis": {"title": "TheStreet: Nebius breaks below $200 as CoreWeave's debt scare spreads (cites CNBC, Reuters, SEC filings)", "url": "https://www.thestreet.com/investing/nebius-nbis-stock-selloff-coreweave-bond-scare", "tier": 3},
-    "coincentral_gs": {"title": "CoinCentral: CoreWeave and Nebius sink as AI debt spreads widen, Goldman says", "url": "https://coincentral.com/coreweave-and-nebius-stocks-sink-as-ai-debt-spreads-widen-goldman-sachs-says", "tier": 3},
-    "roic_cds": {"title": "Roic.ai: AI debt fears surge as tech default insurance hits record highs", "url": "https://www.roic.ai/news/ai-debt-fears-surge-as-tech-default-insurance-hits-record-highs-10-15-2026", "tier": 3},
-    "cdive_ceg": {"title": "Construction Dive: Constellation, Google strike 890 MW nuclear deal", "url": "https://www.constructiondive.com/news/constellation-google-nuclear-deal-data-center-energy/832351/", "tier": 3},
-    "zacks_ceg": {"title": "Yahoo Finance: Nuclear ETFs in spotlight as Google and Constellation sign 3.6 GW deal", "url": "https://finance.yahoo.com/energy/articles/nuclear-etfs-spotlight-google-constellation-144800330.html", "tier": 3},
-    "wiwatch_orcl": {"title": "Wisconsin Watch: We Energies deal to power Oracle data center with Point Beach nuclear", "url": "https://wisconsinwatch.org/2026/10/wisconsin-we-energies-deal-oracle-data-center-nuclear-energy-power-point-beach-plant/", "tier": 3},
-    "yahoo_anthropic": {"title": "Yahoo Finance (Stocktwits): Anthropic to share Q3 financials as it weighs IPO (cites CNBC, Reuters)", "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-ai-lab-reportedly-080251755.html", "tier": 3},
-    "tc_openai": {"title": "TechCrunch: OpenAI reportedly in talks to raise $30B at $1.4T valuation", "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/", "tier": 3},
-    "reuters_idc": {"title": "Reuters via Yahoo: Nvidia AI chip share in China falls as Huawei catches up (IDC)", "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-ai-chip-share-china-061558719.html", "tier": 2},
-    "fred_hy": {"title": "FRED: ICE BofA US High Yield OAS (BAMLH0A0HYM2)", "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2", "tier": 1},
-    "fred_dgs10": {"title": "FRED: 10-year Treasury yield (DGS10)", "url": "https://fred.stlouisfed.org/series/DGS10", "tier": 1},
-    "meta_3q26": {"title": "Meta Reports Third Quarter 2026 Results", "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx", "tier": 1},
-    "benzinga_crwv": {"title": "Benzinga: CoreWeave debt stress mounts, bond yield hits record (Oct 22)", "url": "https://www.benzinga.com/markets/bonds/26/10/62541064/coreweave-debt-stress-mounts-bond-yield-hits-record-as-stock-suffers-44-billion-wipeout", "tier": 3},
-    "tc_openai_125": {"title": "TechCrunch: OpenAI working on new $30B raise at $1.25T valuation (CNBC report)", "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/", "tier": 3},
-    "qz_anthropic_s1": {"title": "Quartz: Anthropic first-half net loss $80.7B, draft IPO filing shows (WSJ review)", "url": "https://qz.com/anthropic-net-loss-first-half-ipo-prospectus-102126", "tier": 3},
-    "dealroom_anthropic_s1": {"title": "Dealroom: Anthropic draft S-1 reveals $16.3B revenue, $80.7B loss, up to $750B compute (WSJ review)", "url": "https://dealroom.co/news/164610-anthropics-draft-s-1-reveals-16-3b-revenue-80-7b-loss-and-up-to-750b-com/", "tier": 3},
-    "kcex_ft_dcbonds": {"title": "KCEX blog summarizing FT (Oct 19): AI data center bonds trade below par", "url": "https://blog.kcex.com/markets/ai-data-center-bond-selloff-october-19-2026-credit-risk/", "tier": 3},
-    "techzine_nvhbm": {"title": "Techzine: Nvidia standardizes HBM base-die production at TSMC (Seoul Economic Daily, UBS)", "url": "https://www.techzine.eu/news/infrastructure/145117/nvidia-standardizes-hbm-production-at-tsmc/", "tier": 3},
-    "aiw_googl_3q26": {"title": "AI Weekly: Alphabet posts $127.6B Q3, Cloud up 103%, 2027 capex to top $300B (Oct 28)", "url": "https://aiweekly.co/alerts/alphabet-posts-1276b-q3-with-google-cloud-up-103-to-307b-as-2027-capex-set-to", "tier": 3},
-    "aiw_msft_1q27": {"title": "AI Weekly: Microsoft Q1 revenue $92.3B, Azure up 48%, capex $39.4B (Oct 28)", "url": "https://aiweekly.co/alerts/microsoft-q1-revenue-hits-923b-azure-up-48-as-capex-jumps-to-394b-with-175b", "tier": 3},
-    "aim_msft_1q27": {"title": "Analytics India: Microsoft's Azure revenue grows 48% in September quarter (Oct 29)", "url": "https://analyticsindiamag.com/ai-news/microsofts-azure-revenue-grows-48-in-september-quarter", "tier": 3},
-    "w247_msft_1q27": {"title": "24/7 Wall St: Microsoft Q1 FY27 earnings (Oct 28)", "url": "https://247wallst.com/cards/microsoft-q1-2027-earnings-msft-01m6223bcjxyqzvby9cw8yzzqb", "tier": 3},
-    "aiw_amzn_3q26": {"title": "AI Weekly: Amazon's AWS growth hits 39% in Q3 as capex guide jolts stock (Oct 29)", "url": "https://aiweekly.co/alerts/amazons-aws-growth-hits-39-in-q3-as-capex-guide-jolts-stock", "tier": 3},
-    "cr_amzn_3q26": {"title": "Constellation Research: AWS Q3 revenue growth surges 39%, capex stings Amazon's cash flow (Oct 29)", "url": "https://www.constellationr.com/insights/news/aws-q3-revenue-growth-surges-39-capex-stings-amazons-cash-flow", "tier": 3},
-    "edgar_live_3q26": {"title": "SEC EDGAR XBRL company facts: Q3 2026 10-Qs for Amazon (Oct 30), Alphabet (Oct 29), Microsoft (Oct 28)", "url": "https://www.sec.gov/edgar/search/", "tier": 1},
-    "iposcoop_ant": {"title": "IPO Scoop: Anthropic (ANT proposed) files its S-1 (Oct 26)", "url": "https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/", "tier": 3},
-    "gupta_ant_s1": {"title": "Deepak Gupta: Anthropic's S-1, the lines worth reading twice (Oct 31)", "url": "https://guptadeepak.com/anthropic-s1-ipo-filing/", "tier": 3},
-    "fwm_crwv": {"title": "FourWeekMBA: CoreWeave debt yields 15% as credit desks wait for midterms (Oct 21, citing CNBC)", "url": "https://fourweekmba.com/ai-coreweave-debt-yields-15-as-credit-desks-wait-for-midterms/", "tier": 3},
-    "tikr_crwv": {"title": "TIKR: CoreWeave sinks 23% in a week on bond distress (Oct 23)", "url": "https://www.tikr.com/blog/coreweave-sinks-23-in-a-week-on-bond-distress-its-ceo-says-the-market-acts-irrationally", "tier": 3}
+    "nvidia_blog": {
+      "title": "NVIDIA Blog: AI Is a 5-Layer Cake",
+      "url": "https://blogs.nvidia.com/blog/ai-5-layer-cake",
+      "tier": 1
+    },
+    "ft_tally": {
+      "title": "FT capex tally via AI Weekly",
+      "url": "https://aiweekly.co/alerts/amazon-microsoft-alphabet-meta-plan-725b-ai-capex-in-2026",
+      "tier": 2
+    },
+    "yahoo_capex": {
+      "title": "Yahoo Finance: Hyperscalers hit $700B",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html",
+      "tier": 2
+    },
+    "tnw_q1": {
+      "title": "The Next Web: Big Tech Q1 2026 earnings",
+      "url": "https://thenextweb.com/news/alphabet-amazon-meta-q1-2026-earnings-ai-cloud",
+      "tier": 3
+    },
+    "om_capex": {
+      "title": "Om Malik: What I learned about hyperscalers' AI spend",
+      "url": "https://om.co/2026/04/30/what-i-learned-about-hyperscalers-ai-spend/",
+      "tier": 3
+    },
+    "sp_dc_2025": {
+      "title": "S&P Global: Record data center investments and M&A in 2025",
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/12/record-breaking-data-center-investments-m-a-in-2025-amid-ai-demand-96002955",
+      "tier": 2
+    },
+    "dck_synergy": {
+      "title": "Data Center Knowledge: M&A outlook (Synergy, S&P)",
+      "url": "https://www.datacenterknowledge.com/investing/data-center-m-a-outlook-robust-in-2026-despite-power-ai-risks",
+      "tier": 2
+    },
+    "gdch_hyperion": {
+      "title": "Global Data Center Hub: Meta + Blue Owl $27B",
+      "url": "https://www.globaldatacenterhub.com/p/meta-blue-owls-27b-bet-is-this-the",
+      "tier": 3
+    },
+    "bloomberg_pc": {
+      "title": "Bloomberg Opinion: AI data centers give private credit its mojo back",
+      "url": "https://www.bloomberg.com/opinion/articles/2025-10-02/ai-data-centers-give-private-credit-its-mojo-back",
+      "tier": 2
+    },
+    "luminix": {
+      "title": "Luminix: Who is financing the AI buildout",
+      "url": "https://www.useluminix.com/reports/industry-analysis/who-is-financing-the-ai-buildout/source/3",
+      "tier": 3
+    },
+    "softbank_dbrg": {
+      "title": "SoftBank: Completion of acquisition of DigitalBridge",
+      "url": "https://group.softbank/en/news/press/20260930",
+      "tier": 1
+    },
+    "fool_ipos": {
+      "title": "Motley Fool: AI stocks born from recent IPOs",
+      "url": "https://www.fool.com/investing/2026/06/03/ai-stocks-born-recent-ipos-bigger-than-hype/",
+      "tier": 3
+    },
+    "aiweekly_cbrs": {
+      "title": "AI Weekly: Cerebras IPO",
+      "url": "https://aiweekly.co/alerts/cerebras-raises-48b-in-2026s-largest-ai-ipo",
+      "tier": 3
+    },
+    "datacentres_mixed": {
+      "title": "Datacentres.com research notes (Jun to Sep 2026)",
+      "url": "https://www.datacentres.com/news/data-centre-m-a-hits-87b-in-h1-2026-as-hyperscalers-reshape-portfolio-architectu-slot1-2026-08-04",
+      "tier": 3
+    },
+    "bt_csis": {
+      "title": "Business Today: Huang at CSIS",
+      "url": "https://www.businesstoday.in/bt-tv/video/jensen-huang-breaks-down-ai-the-5-layer-cake-explained-504938-2025-12-04",
+      "tier": 2
+    },
+    "tsmc_3q26": {
+      "title": "TSMC: Third quarter 2026 results and Q4 guidance (Oct 15, 2026)",
+      "url": "https://pr.tsmc.com/english/news/3346",
+      "tier": 1
+    },
+    "asml_3q26": {
+      "title": "ASML Q3 2026 results, Form 6-K (Oct 14, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026065813/pressreleasefinancialresul.htm",
+      "tier": 1
+    },
+    "meta_2q26": {
+      "title": "Meta Reports Second Quarter 2026 Results",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+      "tier": 1
+    },
+    "amzn_2q26_call": {
+      "title": "Amazon Q2 2026 earnings call transcript (via Webull)",
+      "url": "https://www.webull.com/news/15364638750483456",
+      "tier": 1
+    },
+    "msft_4q26_call": {
+      "title": "Microsoft FY26 Q4 earnings call transcript (via Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/microsoft-msft-q4-2026-earnings-call-transcript/",
+      "tier": 1
+    },
+    "hl_googl_2q26": {
+      "title": "Hargreaves Lansdown: Alphabet Q2 results, capex guide raised",
+      "url": "https://www.hl.co.uk/shares/share-research/alphabet-q2-results-strong-cloud-capex-guide-raised",
+      "tier": 2
+    },
+    "wmedia_googl": {
+      "title": "W.Media: Alphabet 2026 capex guidance to $205B",
+      "url": "https://w.media/ai-infrastructure-demand-pushes-alphabets-2026-capex-guidance-to-us-205-billion/",
+      "tier": 3
+    },
+    "dj_crwv": {
+      "title": "Dow Jones (via Tiger): CoreWeave sparks worry about broader credit-market stress as its bonds tumble",
+      "url": "https://www.itiger.com/news/2675032245",
+      "tier": 2
+    },
+    "thestreet_nbis": {
+      "title": "TheStreet: Nebius breaks below $200 as CoreWeave's debt scare spreads (cites CNBC, Reuters, SEC filings)",
+      "url": "https://www.thestreet.com/investing/nebius-nbis-stock-selloff-coreweave-bond-scare",
+      "tier": 3
+    },
+    "coincentral_gs": {
+      "title": "CoinCentral: CoreWeave and Nebius sink as AI debt spreads widen, Goldman says",
+      "url": "https://coincentral.com/coreweave-and-nebius-stocks-sink-as-ai-debt-spreads-widen-goldman-sachs-says",
+      "tier": 3
+    },
+    "roic_cds": {
+      "title": "Roic.ai: AI debt fears surge as tech default insurance hits record highs",
+      "url": "https://www.roic.ai/news/ai-debt-fears-surge-as-tech-default-insurance-hits-record-highs-10-15-2026",
+      "tier": 3
+    },
+    "cdive_ceg": {
+      "title": "Construction Dive: Constellation, Google strike 890 MW nuclear deal",
+      "url": "https://www.constructiondive.com/news/constellation-google-nuclear-deal-data-center-energy/832351/",
+      "tier": 3
+    },
+    "zacks_ceg": {
+      "title": "Yahoo Finance: Nuclear ETFs in spotlight as Google and Constellation sign 3.6 GW deal",
+      "url": "https://finance.yahoo.com/energy/articles/nuclear-etfs-spotlight-google-constellation-144800330.html",
+      "tier": 3
+    },
+    "wiwatch_orcl": {
+      "title": "Wisconsin Watch: We Energies deal to power Oracle data center with Point Beach nuclear",
+      "url": "https://wisconsinwatch.org/2026/10/wisconsin-we-energies-deal-oracle-data-center-nuclear-energy-power-point-beach-plant/",
+      "tier": 3
+    },
+    "yahoo_anthropic": {
+      "title": "Yahoo Finance (Stocktwits): Anthropic to share Q3 financials as it weighs IPO (cites CNBC, Reuters)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-ai-lab-reportedly-080251755.html",
+      "tier": 3
+    },
+    "tc_openai": {
+      "title": "TechCrunch: OpenAI reportedly in talks to raise $30B at $1.4T valuation",
+      "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+      "tier": 3
+    },
+    "reuters_idc": {
+      "title": "Reuters via Yahoo: Nvidia AI chip share in China falls as Huawei catches up (IDC)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-ai-chip-share-china-061558719.html",
+      "tier": 2
+    },
+    "fred_hy": {
+      "title": "FRED: ICE BofA US High Yield OAS (BAMLH0A0HYM2)",
+      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "tier": 1
+    },
+    "fred_dgs10": {
+      "title": "FRED: 10-year Treasury yield (DGS10)",
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "tier": 1
+    },
+    "meta_3q26": {
+      "title": "Meta Reports Third Quarter 2026 Results",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "tier": 1
+    },
+    "benzinga_crwv": {
+      "title": "Benzinga: CoreWeave debt stress mounts, bond yield hits record (Oct 22)",
+      "url": "https://www.benzinga.com/markets/bonds/26/10/62541064/coreweave-debt-stress-mounts-bond-yield-hits-record-as-stock-suffers-44-billion-wipeout",
+      "tier": 3
+    },
+    "tc_openai_125": {
+      "title": "TechCrunch: OpenAI working on new $30B raise at $1.25T valuation (CNBC report)",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "tier": 3
+    },
+    "qz_anthropic_s1": {
+      "title": "Quartz: Anthropic first-half net loss $80.7B, draft IPO filing shows (WSJ review)",
+      "url": "https://qz.com/anthropic-net-loss-first-half-ipo-prospectus-102126",
+      "tier": 3
+    },
+    "dealroom_anthropic_s1": {
+      "title": "Dealroom: Anthropic draft S-1 reveals $16.3B revenue, $80.7B loss, up to $750B compute (WSJ review)",
+      "url": "https://dealroom.co/news/164610-anthropics-draft-s-1-reveals-16-3b-revenue-80-7b-loss-and-up-to-750b-com/",
+      "tier": 3
+    },
+    "kcex_ft_dcbonds": {
+      "title": "KCEX blog summarizing FT (Oct 19): AI data center bonds trade below par",
+      "url": "https://blog.kcex.com/markets/ai-data-center-bond-selloff-october-19-2026-credit-risk/",
+      "tier": 3
+    },
+    "techzine_nvhbm": {
+      "title": "Techzine: Nvidia standardizes HBM base-die production at TSMC (Seoul Economic Daily, UBS)",
+      "url": "https://www.techzine.eu/news/infrastructure/145117/nvidia-standardizes-hbm-production-at-tsmc/",
+      "tier": 3
+    },
+    "aiw_googl_3q26": {
+      "title": "AI Weekly: Alphabet posts $127.6B Q3, Cloud up 103%, 2027 capex to top $300B (Oct 28)",
+      "url": "https://aiweekly.co/alerts/alphabet-posts-1276b-q3-with-google-cloud-up-103-to-307b-as-2027-capex-set-to",
+      "tier": 3
+    },
+    "aiw_msft_1q27": {
+      "title": "AI Weekly: Microsoft Q1 revenue $92.3B, Azure up 48%, capex $39.4B (Oct 28)",
+      "url": "https://aiweekly.co/alerts/microsoft-q1-revenue-hits-923b-azure-up-48-as-capex-jumps-to-394b-with-175b",
+      "tier": 3
+    },
+    "aim_msft_1q27": {
+      "title": "Analytics India: Microsoft's Azure revenue grows 48% in September quarter (Oct 29)",
+      "url": "https://analyticsindiamag.com/ai-news/microsofts-azure-revenue-grows-48-in-september-quarter",
+      "tier": 3
+    },
+    "w247_msft_1q27": {
+      "title": "24/7 Wall St: Microsoft Q1 FY27 earnings (Oct 28)",
+      "url": "https://247wallst.com/cards/microsoft-q1-2027-earnings-msft-01m6223bcjxyqzvby9cw8yzzqb",
+      "tier": 3
+    },
+    "aiw_amzn_3q26": {
+      "title": "AI Weekly: Amazon's AWS growth hits 39% in Q3 as capex guide jolts stock (Oct 29)",
+      "url": "https://aiweekly.co/alerts/amazons-aws-growth-hits-39-in-q3-as-capex-guide-jolts-stock",
+      "tier": 3
+    },
+    "cr_amzn_3q26": {
+      "title": "Constellation Research: AWS Q3 revenue growth surges 39%, capex stings Amazon's cash flow (Oct 29)",
+      "url": "https://www.constellationr.com/insights/news/aws-q3-revenue-growth-surges-39-capex-stings-amazons-cash-flow",
+      "tier": 3
+    },
+    "edgar_live_3q26": {
+      "title": "SEC EDGAR XBRL company facts: Q3 2026 10-Qs for Amazon (Oct 30), Alphabet (Oct 29), Microsoft (Oct 28)",
+      "url": "https://www.sec.gov/edgar/search/",
+      "tier": 1
+    },
+    "iposcoop_ant": {
+      "title": "IPO Scoop: Anthropic (ANT proposed) files its S-1 (Oct 26)",
+      "url": "https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/",
+      "tier": 3
+    },
+    "gupta_ant_s1": {
+      "title": "Deepak Gupta: Anthropic's S-1, the lines worth reading twice (Oct 31)",
+      "url": "https://guptadeepak.com/anthropic-s1-ipo-filing/",
+      "tier": 3
+    },
+    "fwm_crwv": {
+      "title": "FourWeekMBA: CoreWeave debt yields 15% as credit desks wait for midterms (Oct 21, citing CNBC)",
+      "url": "https://fourweekmba.com/ai-coreweave-debt-yields-15-as-credit-desks-wait-for-midterms/",
+      "tier": 3
+    },
+    "tikr_crwv": {
+      "title": "TIKR: CoreWeave sinks 23% in a week on bond distress (Oct 23)",
+      "url": "https://www.tikr.com/blog/coreweave-sinks-23-in-a-week-on-bond-distress-its-ceo-says-the-market-acts-irrationally",
+      "tier": 3
+    },
+    "reuters_rout_nov6": {
+      "title": "Reuters via The Star: AI rout sets off market alarm signals (Nov 6)",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/11/07/ai-rout-sets-off-market-alarm-signals-as-traders-brace-for-what039s-next",
+      "tier": 2
+    },
+    "ap_rout_nov5": {
+      "title": "AP via Valley News Live: brutal sell-off for AI stocks (Nov 5)",
+      "url": "https://www.valleynewslive.com/2026/11/05/brutal-sell-off-ai-stocks-sends-wall-street-reeling-sp-500-sees-worst-day-since-2025-liberation-day-tariffs/",
+      "tier": 3
+    },
+    "cr_amd_3q26": {
+      "title": "Constellation Research: AMD Q3 data center revenue nearly doubles (Nov 3)",
+      "url": "https://www.constellationr.com/insights/news/amd-q3-shines-data-center-revenue-nearly-doubles",
+      "tier": 3
+    },
+    "pulse2_amd_3q26": {
+      "title": "Pulse 2.0: AMD Q3 2026 results",
+      "url": "https://pulse2.com/amd-q3-2026/",
+      "tier": 3
+    },
+    "crwv_q3_date": {
+      "title": "CoreWeave: date of Q3 2026 results and call (Oct 27)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Date-of-Third-Quarter-2026-Financial-Results-and-Conference-Call/default.aspx",
+      "tier": 1
+    },
+    "fool_obdc_3q26": {
+      "title": "Motley Fool: OBDC Q3 2026 call transcript (Nov 5)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/blue-owl-capital-obdc-q3-2026-earnings-call-transcript/",
+      "tier": 3
+    },
+    "finimize_obdc": {
+      "title": "Finimize: OBDC trades a quarter below NAV (Nov 6)",
+      "url": "https://finimize.com/content/obdc-asset-snapshot",
+      "tier": 3
+    },
+    "lds_ant_reuters": {
+      "title": "Let's Data Science citing Reuters: investors doubt November Anthropic roadshow (Nov 6)",
+      "url": "https://letsdatascience.com/news/investors-doubt-anthropic-can-hold-november-ipo-roadshow-reu-a69a034f",
+      "tier": 3
+    },
+    "kucoin_ant": {
+      "title": "KuCoin blog: Anthropic IPO valuation pushback (Nov 6; no original source named)",
+      "url": "https://www.kucoin.com/blog/anthropic-ipo-valuation-pushback-market-selloff",
+      "tier": 3
+    },
+    "fool_capex_aug": {
+      "title": "Motley Fool via Webull: AI spending week table (Aug 3)",
+      "url": "https://www.webull.com/news/15339040379773952",
+      "tier": 3
+    }
   },
-
   "demand": {
     "name": "Demand",
     "tag": "The people at the table",
     "simple": "Someone has to eat the cake. Demand is the consumers and companies who pay for AI. If they stop paying, every layer below feels it.",
     "analyst": "Track paid usage, not pilots. The test is whether AI revenue grows faster than AI capex. Watch enterprise renewal rates, seat expansion, token volumes, and consumer subscription churn.",
-    "metrics": ["AI revenue run-rates disclosed by hyperscalers", "Cloud backlog (remaining performance obligations)", "Enterprise renewal and expansion rates", "Consumer AI subscription counts"],
+    "metrics": [
+      "AI revenue run-rates disclosed by hyperscalers",
+      "Cloud backlog (remaining performance obligations)",
+      "Enterprise renewal and expansion rates",
+      "Consumer AI subscription counts"
+    ],
     "facts": [
-      {"text": "Microsoft said its AI business passed a $37B annual revenue run-rate, up 123% year over year.", "source": "yahoo_capex", "tier": 2, "as_of": "2026-04"},
-      {"text": "Google Cloud backlog nearly doubled in a quarter to over $460B.", "source": "yahoo_capex", "tier": 2, "as_of": "2026-04"},
-      {"text": "Amazon said its backlog stood at $496B, growing triple digits year over year; AWS revenue was $42.2B, up 36.7%.", "source": "amzn_2q26_call", "tier": 1, "as_of": "2026-07"},
-      {"text": "Google Cloud backlog reached $514B at the end of June 2026, up more than $50B in a quarter.", "source": "hl_googl_2q26", "tier": 2, "as_of": "2026-07"},
-      {"text": "TSMC Q3 2026 revenue was $46.7B, up 41% in dollars, at a 66.4% gross margin; it guided Q4 to $52.3-54.3B.", "source": "tsmc_3q26", "tier": 1, "as_of": "2026-10-15"},
-      {"text": "ASML booked record Q3 sales of EUR 11.7B and said planned supply for 2027 and 2028 will not fully meet customer demand.", "source": "asml_3q26", "tier": 1, "as_of": "2026-10-14"}
+      {
+        "text": "Microsoft said its AI business passed a $37B annual revenue run-rate, up 123% year over year.",
+        "source": "yahoo_capex",
+        "tier": 2,
+        "as_of": "2026-04"
+      },
+      {
+        "text": "Google Cloud backlog nearly doubled in a quarter to over $460B.",
+        "source": "yahoo_capex",
+        "tier": 2,
+        "as_of": "2026-04"
+      },
+      {
+        "text": "Amazon said its backlog stood at $496B, growing triple digits year over year; AWS revenue was $42.2B, up 36.7%.",
+        "source": "amzn_2q26_call",
+        "tier": 1,
+        "as_of": "2026-07"
+      },
+      {
+        "text": "Google Cloud backlog reached $514B at the end of June 2026, up more than $50B in a quarter.",
+        "source": "hl_googl_2q26",
+        "tier": 2,
+        "as_of": "2026-07"
+      },
+      {
+        "text": "TSMC Q3 2026 revenue was $46.7B, up 41% in dollars, at a 66.4% gross margin; it guided Q4 to $52.3-54.3B.",
+        "source": "tsmc_3q26",
+        "tier": 1,
+        "as_of": "2026-10-15"
+      },
+      {
+        "text": "ASML booked record Q3 sales of EUR 11.7B and said planned supply for 2027 and 2028 will not fully meet customer demand.",
+        "source": "asml_3q26",
+        "tier": 1,
+        "as_of": "2026-10-14"
+      }
     ]
   },
-
   "layers": [
     {
-      "id": "energy", "n": 1, "name": "Energy", "metaphor": "The oven",
+      "id": "energy",
+      "n": 1,
+      "name": "Energy",
+      "metaphor": "The oven",
       "simple": "AI runs on electricity, and lots of it. No power, no AI. Energy is now the slowest and hardest layer to grow.",
       "analyst": "Huang calls energy the binding constraint on how much intelligence the system can produce. Interconnection queues, transformer lead times, and gas turbine backlogs set the pace of data center delivery more than chip supply does.",
       "money": "Utilities earn a regulated return on what they build (rate base). Independent power producers sell power on long contracts (PPAs) to tech companies, often 10 to 20 years. Equipment makers sell turbines, transformers, and switchgear with multi-year backlogs.",
-      "chokepoints": ["Grid interconnection queues (years long)", "Large power transformers and gas turbines", "Permitting for transmission lines", "Nuclear fuel and licensing"],
-      "metrics": ["Gigawatts contracted to data centers", "Interconnection wait times", "Gas turbine and transformer backlogs", "Utility capex plans and rate cases"],
-      "players_public": ["CEG", "VST", "NRG", "TLN", "NEE", "DUK", "SO", "D", "AEP", "ETR", "GEV", "ETN", "ENR.DE", "PWR", "WMB", "KMI", "EQT", "CCJ", "OKLO", "SMR", "FCX", "SCCO"],
-      "players_private": ["Regional co-ops and municipal utilities", "Private power developers (Intersect Power, others)", "Private nuclear startups"],
+      "chokepoints": [
+        "Grid interconnection queues (years long)",
+        "Large power transformers and gas turbines",
+        "Permitting for transmission lines",
+        "Nuclear fuel and licensing"
+      ],
+      "metrics": [
+        "Gigawatts contracted to data centers",
+        "Interconnection wait times",
+        "Gas turbine and transformer backlogs",
+        "Utility capex plans and rate cases"
+      ],
+      "players_public": [
+        "CEG",
+        "VST",
+        "NRG",
+        "TLN",
+        "NEE",
+        "DUK",
+        "SO",
+        "D",
+        "AEP",
+        "ETR",
+        "GEV",
+        "ETN",
+        "ENR.DE",
+        "PWR",
+        "WMB",
+        "KMI",
+        "EQT",
+        "CCJ",
+        "OKLO",
+        "SMR",
+        "FCX",
+        "SCCO"
+      ],
+      "players_private": [
+        "Regional co-ops and municipal utilities",
+        "Private power developers (Intersect Power, others)",
+        "Private nuclear startups"
+      ],
       "us_china": "China has roughly twice the US electricity generation capacity and builds grid faster. Huang flagged this energy gap at CSIS as the main US vulnerability.",
       "bull": "Power is the scarcest input, so whoever owns firm power has pricing leverage for a decade.",
       "bear": "Regulated utilities cannot capture scarcity pricing. If demand forecasts prove inflated, utilities and ratepayers are left with stranded assets.",
-      "exit_rules": ["Data center PPA signings fall two quarters in a row", "A major utility cuts its load-growth forecast", "Hyperscalers start cancelling or deferring interconnection requests"]
-    },
-    {
-      "id": "chips", "n": 2, "name": "Chips", "metaphor": "The brain cells",
-      "simple": "Chips do the math. A few companies design them, one company (TSMC) makes most of the best ones, and one company (ASML) makes the machines that make them.",
-      "analyst": "NVIDIA's moat is CUDA and full-system integration (networking, racks), not only silicon. The share shift to watch is inference: custom chips (Google TPU, Amazon Trainium, Broadcom-designed ASICs) and inference specialists (Cerebras) compete on cost per token.",
-      "money": "Designers sell chips and systems at very high gross margins. The foundry earns on capacity with huge capex. Equipment makers sell tools with long backlogs. Memory makers (HBM) earn cyclical but currently tight-supply margins.",
-      "chokepoints": ["TSMC advanced nodes and advanced packaging (CoWoS)", "ASML EUV lithography (sole source)", "High-bandwidth memory (HBM) supply", "US export controls on China"],
-      "metrics": ["NVIDIA data center revenue and backlog", "Custom ASIC revenue (Broadcom, Marvell)", "TSMC advanced-node utilization", "HBM pricing and supply"],
-      "players_public": ["NVDA", "AVGO", "AMD", "MRVL", "ARM", "CBRS", "TSM", "INTC", "005930.KS", "MU", "000660.KS", "ASML", "AMAT", "LRCX", "KLAC", "8035.T", "ANET", "COHR", "CIEN", "CRDO", "ALAB"],
-      "players_private": ["Groq", "SambaNova", "Etched", "Tenstorrent"],
-      "us_china": "The US leads in design and tools, but production sits in Taiwan. China is building domestic chips (Huawei Ascend) under export controls, at lower performance but rising volume.",
-      "bull": "Every new data center starts with a chip order. Hyperscaler capex guidance is effectively NVIDIA's order book.",
-      "bear": "Inference economics favor cheaper custom silicon, which compresses NVIDIA's margin. Chips also become obsolete fast, so buyers may slow purchases.",
-      "exit_rules": ["Hyperscaler capex guidance cut by any of the big four", "NVIDIA gross margin falls more than 5 points", "GPU rental prices drop sharply for current-generation chips"]
-    },
-    {
-      "id": "infrastructure", "n": 3, "name": "Infrastructure", "metaphor": "The building",
-      "simple": "Data centers: giant warehouses full of chips, cooling, cables, and power hookups. Companies rent time on these computers.",
-      "analyst": "The clouds (AWS, Azure, Google Cloud) and neoclouds (CoreWeave, Nebius) turn capex into rentable compute. This layer carries the depreciation risk: GPUs may be economically obsolete before they are fully depreciated, which can flatter reported earnings.",
-      "money": "Rent compute by the GPU-hour or under multi-year capacity contracts. Data center owners sign long leases with hyperscalers. Builders and equipment suppliers (cooling, power distribution) earn on construction.",
-      "chokepoints": ["Ready-to-energize sites with power", "Cooling and power equipment", "Skilled electrical labor", "Financing for neoclouds"],
-      "metrics": ["Hyperscaler capex (actual vs guidance)", "Depreciation schedules and useful-life assumptions", "Megawatts under construction", "Neocloud debt and contract backlog"],
-      "players_public": ["AMZN", "MSFT", "GOOGL", "META", "ORCL", "CRWV", "NBIS", "DELL", "SMCI", "HPE", "VRT", "SU.PA", "EME", "FIX", "MTZ"],
-      "players_private": ["Lambda", "Crusoe", "Aligned Data Centers", "QTS (Blackstone)", "Vantage (DigitalBridge)"],
-      "us_china": "US hyperscalers dominate global cloud. China's clouds (Alibaba, Tencent, Huawei) build out with domestic chips and cheaper power.",
-      "bull": "Microsoft says it stays capacity-constrained even at record spend. Backlogs are huge and contracted.",
-      "bear": "Free cash flow is shrinking as capex soars. Neoclouds carry heavy debt. If demand pauses, this layer absorbs the losses.",
-      "exit_rules": ["Any big-four hyperscaler guides capex down", "Cloud revenue growth decelerates for two quarters", "Neocloud refinancing at sharply wider spreads"],
-      "facts": [
-        {"text": "Big four 2026 capex plans total about $725B, up 77% from $410B in 2025 (FT tally).", "source": "ft_tally", "tier": 2, "as_of": "2026-05"},
-        {"text": "About two-thirds of Microsoft's capex in one recent quarter went to short-lived assets, mainly GPUs and CPUs.", "source": "om_capex", "tier": 3, "as_of": "2026-04"},
-        {"text": "CoreWeave's debt totaled $35.1B at the end of Q1 2026; interest was $536M that quarter.", "source": "fool_ipos", "tier": 3, "as_of": "2026-06"}
+      "exit_rules": [
+        "Data center PPA signings fall two quarters in a row",
+        "A major utility cuts its load-growth forecast",
+        "Hyperscalers start cancelling or deferring interconnection requests"
       ]
     },
     {
-      "id": "models", "n": 4, "name": "Models", "metaphor": "The trained mind",
+      "id": "chips",
+      "n": 2,
+      "name": "Chips",
+      "metaphor": "The brain cells",
+      "simple": "Chips do the math. A few companies design them, one company (TSMC) makes most of the best ones, and one company (ASML) makes the machines that make them.",
+      "analyst": "NVIDIA's moat is CUDA and full-system integration (networking, racks), not only silicon. The share shift to watch is inference: custom chips (Google TPU, Amazon Trainium, Broadcom-designed ASICs) and inference specialists (Cerebras) compete on cost per token.",
+      "money": "Designers sell chips and systems at very high gross margins. The foundry earns on capacity with huge capex. Equipment makers sell tools with long backlogs. Memory makers (HBM) earn cyclical but currently tight-supply margins.",
+      "chokepoints": [
+        "TSMC advanced nodes and advanced packaging (CoWoS)",
+        "ASML EUV lithography (sole source)",
+        "High-bandwidth memory (HBM) supply",
+        "US export controls on China"
+      ],
+      "metrics": [
+        "NVIDIA data center revenue and backlog",
+        "Custom ASIC revenue (Broadcom, Marvell)",
+        "TSMC advanced-node utilization",
+        "HBM pricing and supply"
+      ],
+      "players_public": [
+        "NVDA",
+        "AVGO",
+        "AMD",
+        "MRVL",
+        "ARM",
+        "CBRS",
+        "TSM",
+        "INTC",
+        "005930.KS",
+        "MU",
+        "000660.KS",
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC",
+        "8035.T",
+        "ANET",
+        "COHR",
+        "CIEN",
+        "CRDO",
+        "ALAB"
+      ],
+      "players_private": [
+        "Groq",
+        "SambaNova",
+        "Etched",
+        "Tenstorrent"
+      ],
+      "us_china": "The US leads in design and tools, but production sits in Taiwan. China is building domestic chips (Huawei Ascend) under export controls, at lower performance but rising volume.",
+      "bull": "Every new data center starts with a chip order. Hyperscaler capex guidance is effectively NVIDIA's order book.",
+      "bear": "Inference economics favor cheaper custom silicon, which compresses NVIDIA's margin. Chips also become obsolete fast, so buyers may slow purchases.",
+      "exit_rules": [
+        "Hyperscaler capex guidance cut by any of the big four",
+        "NVIDIA gross margin falls more than 5 points",
+        "GPU rental prices drop sharply for current-generation chips"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "n": 3,
+      "name": "Infrastructure",
+      "metaphor": "The building",
+      "simple": "Data centers: giant warehouses full of chips, cooling, cables, and power hookups. Companies rent time on these computers.",
+      "analyst": "The clouds (AWS, Azure, Google Cloud) and neoclouds (CoreWeave, Nebius) turn capex into rentable compute. This layer carries the depreciation risk: GPUs may be economically obsolete before they are fully depreciated, which can flatter reported earnings.",
+      "money": "Rent compute by the GPU-hour or under multi-year capacity contracts. Data center owners sign long leases with hyperscalers. Builders and equipment suppliers (cooling, power distribution) earn on construction.",
+      "chokepoints": [
+        "Ready-to-energize sites with power",
+        "Cooling and power equipment",
+        "Skilled electrical labor",
+        "Financing for neoclouds"
+      ],
+      "metrics": [
+        "Hyperscaler capex (actual vs guidance)",
+        "Depreciation schedules and useful-life assumptions",
+        "Megawatts under construction",
+        "Neocloud debt and contract backlog"
+      ],
+      "players_public": [
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "META",
+        "ORCL",
+        "CRWV",
+        "NBIS",
+        "DELL",
+        "SMCI",
+        "HPE",
+        "VRT",
+        "SU.PA",
+        "EME",
+        "FIX",
+        "MTZ"
+      ],
+      "players_private": [
+        "Lambda",
+        "Crusoe",
+        "Aligned Data Centers",
+        "QTS (Blackstone)",
+        "Vantage (DigitalBridge)"
+      ],
+      "us_china": "US hyperscalers dominate global cloud. China's clouds (Alibaba, Tencent, Huawei) build out with domestic chips and cheaper power.",
+      "bull": "Microsoft says it stays capacity-constrained even at record spend. Backlogs are huge and contracted.",
+      "bear": "Free cash flow is shrinking as capex soars. Neoclouds carry heavy debt. If demand pauses, this layer absorbs the losses.",
+      "exit_rules": [
+        "Any big-four hyperscaler guides capex down",
+        "Cloud revenue growth decelerates for two quarters",
+        "Neocloud refinancing at sharply wider spreads"
+      ],
+      "facts": [
+        {
+          "text": "Big four 2026 capex plans total about $725B, up 77% from $410B in 2025 (FT tally).",
+          "source": "ft_tally",
+          "tier": 2,
+          "as_of": "2026-05"
+        },
+        {
+          "text": "About two-thirds of Microsoft's capex in one recent quarter went to short-lived assets, mainly GPUs and CPUs.",
+          "source": "om_capex",
+          "tier": 3,
+          "as_of": "2026-04"
+        },
+        {
+          "text": "CoreWeave's debt totaled $35.1B at the end of Q1 2026; interest was $536M that quarter.",
+          "source": "fool_ipos",
+          "tier": 3,
+          "as_of": "2026-06"
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "n": 4,
+      "name": "Models",
+      "metaphor": "The trained mind",
       "simple": "The AI itself. Companies spend billions training a model once, then earn money every time someone uses it.",
       "analyst": "Training is a fixed cost; inference is a variable cost that scales with usage. Price per token keeps falling, which is the commoditization risk. Open-weight models (many from China) set a price floor near cost.",
       "money": "Consumer subscriptions, per-token API fees, and enterprise licenses. Most frontier labs are private, so public exposure is indirect through hyperscaler stakes.",
-      "chokepoints": ["Compute access", "Top research talent", "High-quality and licensed data", "Capital to fund training runs"],
-      "metrics": ["Price per million tokens", "Lab revenue run-rates and funding rounds", "Open vs closed model performance gap", "Inference share of compute"],
-      "players_public": ["GOOGL", "META", "MSFT", "AMZN", "9984.T", "BABA", "BIDU"],
-      "players_private": ["OpenAI", "Anthropic", "xAI", "Mistral", "DeepSeek", "Moonshot"],
+      "chokepoints": [
+        "Compute access",
+        "Top research talent",
+        "High-quality and licensed data",
+        "Capital to fund training runs"
+      ],
+      "metrics": [
+        "Price per million tokens",
+        "Lab revenue run-rates and funding rounds",
+        "Open vs closed model performance gap",
+        "Inference share of compute"
+      ],
+      "players_public": [
+        "GOOGL",
+        "META",
+        "MSFT",
+        "AMZN",
+        "9984.T",
+        "BABA",
+        "BIDU"
+      ],
+      "players_private": [
+        "OpenAI",
+        "Anthropic",
+        "xAI",
+        "Mistral",
+        "DeepSeek",
+        "Moonshot"
+      ],
       "us_china": "US labs lead at the frontier. Chinese open-weight models (DeepSeek, Qwen) lead in open-source adoption and pressure prices globally.",
       "bull": "Models crossed a usefulness threshold; usage is compounding and the best labs gain pricing power through enterprise lock-in.",
       "bear": "Models flatten into utilities. Falling token prices transfer value to users and app builders, not to labs.",
-      "exit_rules": ["Token prices fall faster than usage grows for two quarters", "A frontier lab misses a funding round or takes a down round", "Open models match frontier performance on key benchmarks"]
+      "exit_rules": [
+        "Token prices fall faster than usage grows for two quarters",
+        "A frontier lab misses a funding round or takes a down round",
+        "Open models match frontier performance on key benchmarks"
+      ]
     },
     {
-      "id": "applications", "n": 5, "name": "Applications", "metaphor": "The slice someone eats",
+      "id": "applications",
+      "n": 5,
+      "name": "Applications",
+      "metaphor": "The slice someone eats",
       "simple": "The tools people actually use: coding helpers, legal assistants, search, self-driving cars. This is where AI has to earn its keep.",
       "analyst": "Value capture depends on workflow ownership and proprietary data. Incumbents (Microsoft, Salesforce, ServiceNow) bundle AI into existing seats; AI-native apps (Cursor, Harvey) win on speed. Watch whether pricing moves from per-seat to per-outcome.",
       "money": "Per-seat subscriptions, usage-based pricing, or per-outcome fees. Ad-supported consumer apps monetize through better targeting.",
-      "chokepoints": ["Distribution and existing customer relationships", "Proprietary data and workflow integration", "Inference cost relative to price charged"],
-      "metrics": ["AI-attributed revenue growth", "Net revenue retention", "Gross margin after inference costs", "Seats converting from pilot to paid"],
-      "players_public": ["MSFT", "PLTR", "NOW", "CRM", "ADBE", "INTU", "SNOW", "DDOG", "GOOGL", "META"],
-      "players_private": ["Cursor (Anysphere)", "Perplexity", "Harvey", "Glean", "Waymo (inside Alphabet)"],
+      "chokepoints": [
+        "Distribution and existing customer relationships",
+        "Proprietary data and workflow integration",
+        "Inference cost relative to price charged"
+      ],
+      "metrics": [
+        "AI-attributed revenue growth",
+        "Net revenue retention",
+        "Gross margin after inference costs",
+        "Seats converting from pilot to paid"
+      ],
+      "players_public": [
+        "MSFT",
+        "PLTR",
+        "NOW",
+        "CRM",
+        "ADBE",
+        "INTU",
+        "SNOW",
+        "DDOG",
+        "GOOGL",
+        "META"
+      ],
+      "players_private": [
+        "Cursor (Anysphere)",
+        "Perplexity",
+        "Harvey",
+        "Glean",
+        "Waymo (inside Alphabet)"
+      ],
       "us_china": "US leads in enterprise software. China leads in consumer super-app integration and robotics deployment.",
       "bull": "Applications began generating real economic value, and they pull demand through every layer beneath.",
       "bear": "AI can undercut seat-based software pricing. Much of the value goes to customers as lower prices rather than vendor profit.",
-      "exit_rules": ["Net revenue retention falls below 110% at key holdings", "Seat counts shrink at incumbents as AI replaces users", "Inference costs push gross margins down"]
+      "exit_rules": [
+        "Net revenue retention falls below 110% at key holdings",
+        "Seat counts shrink at incumbents as AI replaces users",
+        "Inference costs push gross margins down"
+      ]
     }
   ],
-
   "plate": [
-    {"id": "capital", "name": "Capital", "simple": "The money that pays for everything above: company cash flow, bonds, private equity, private credit.", "analyst": "Funding is shifting from hyperscaler cash flow to off-balance-sheet leases, joint ventures, and private credit. Risk moves to pension funds, insurers, and retail vehicles."},
-    {"id": "data", "name": "Data", "simple": "What AI learns from. The good public data is used up, so companies now license or create their own.", "analyst": "Proprietary and licensed data, synthetic data, and user feedback loops are emerging moats. Copyright litigation is the swing factor."},
-    {"id": "talent", "name": "Talent", "simple": "A few thousand top researchers who know how to build frontier AI. They are paid like star athletes.", "analyst": "Acqui-hires and compensation packages in the hundreds of millions signal scarcity. Talent mobility spreads know-how quickly, which erodes model moats."},
-    {"id": "policy", "name": "Policy", "simple": "The rules: who can sell chips to whom, how fast power plants get approved, who owns training data.", "analyst": "Export controls, permitting reform, energy regulation, copyright rulings, and state AI laws. Policy can reprice a layer overnight."},
-    {"id": "materials", "name": "Materials", "simple": "Raw stuff: copper for wires, gallium and rare earths for chips and magnets, ultra-pure silicon.", "analyst": "China dominates refining for many critical minerals and has used export restrictions as leverage. Copper supply is a long-cycle constraint on grid buildout."}
+    {
+      "id": "capital",
+      "name": "Capital",
+      "simple": "The money that pays for everything above: company cash flow, bonds, private equity, private credit.",
+      "analyst": "Funding is shifting from hyperscaler cash flow to off-balance-sheet leases, joint ventures, and private credit. Risk moves to pension funds, insurers, and retail vehicles."
+    },
+    {
+      "id": "data",
+      "name": "Data",
+      "simple": "What AI learns from. The good public data is used up, so companies now license or create their own.",
+      "analyst": "Proprietary and licensed data, synthetic data, and user feedback loops are emerging moats. Copyright litigation is the swing factor."
+    },
+    {
+      "id": "talent",
+      "name": "Talent",
+      "simple": "A few thousand top researchers who know how to build frontier AI. They are paid like star athletes.",
+      "analyst": "Acqui-hires and compensation packages in the hundreds of millions signal scarcity. Talent mobility spreads know-how quickly, which erodes model moats."
+    },
+    {
+      "id": "policy",
+      "name": "Policy",
+      "simple": "The rules: who can sell chips to whom, how fast power plants get approved, who owns training data.",
+      "analyst": "Export controls, permitting reform, energy regulation, copyright rulings, and state AI laws. Policy can reprice a layer overnight."
+    },
+    {
+      "id": "materials",
+      "name": "Materials",
+      "simple": "Raw stuff: copper for wires, gallium and rare earths for chips and magnets, ultra-pure silicon.",
+      "analyst": "China dominates refining for many critical minerals and has used export restrictions as leverage. Copper supply is a long-cycle constraint on grid buildout."
+    }
   ],
-
   "dollar_flow": {
     "label": "Teaching example. Rough order of magnitude, not measured data.",
     "start": "$20 monthly chatbot subscription",
     "steps": [
-      {"layer": "applications", "amount": 8.0, "text": "The app or model company keeps about $8 for salaries, research, marketing, and margin."},
-      {"layer": "infrastructure", "amount": 6.0, "text": "About $6 pays the cloud for compute time, buildings, cooling, and networking."},
-      {"layer": "chips", "amount": 3.5, "text": "About $3.50 of the cloud's cost is really the chips, paid back through depreciation."},
-      {"layer": "energy", "amount": 1.0, "text": "About $1 ends up as electricity at the power plant."},
-      {"layer": "capital", "amount": 1.5, "text": "The rest services the debt and equity that financed the buildout."}
+      {
+        "layer": "applications",
+        "amount": 8.0,
+        "text": "The app or model company keeps about $8 for salaries, research, marketing, and margin."
+      },
+      {
+        "layer": "infrastructure",
+        "amount": 6.0,
+        "text": "About $6 pays the cloud for compute time, buildings, cooling, and networking."
+      },
+      {
+        "layer": "chips",
+        "amount": 3.5,
+        "text": "About $3.50 of the cloud's cost is really the chips, paid back through depreciation."
+      },
+      {
+        "layer": "energy",
+        "amount": 1.0,
+        "text": "About $1 ends up as electricity at the power plant."
+      },
+      {
+        "layer": "capital",
+        "amount": 1.5,
+        "text": "The rest services the debt and equity that financed the buildout."
+      }
     ]
   },
-
   "capex": {
     "unit": "USD billions",
     "year": 2026,
     "prior_year_total": 410,
     "rows": [
-      {"company": "Amazon", "ticker": "AMZN", "guide_low": 220, "guide_high": 220, "note": "About $220B cash capex in 2026 (Jassy, Q2 call). Q3 reports (Oct 29) say ~$220B held and 2027 will be 'meaningfully more'; Q3 capex $77.3B (10-Q, T1)", "source": "amzn_2q26_call", "tier": 1},
-      {"company": "Microsoft", "ticker": "MSFT", "guide_low": 190, "guide_high": 190, "note": "About $190B calendar 2026 (FT tally, not re-verified). Q1 FY27 reports (Oct 28-29) give ~$170B or ~$175B for calendar 2026 after a lease reclassification: contested, release not retrieved. Q1 cash capex $39.4B (10-Q, T1)", "source": "ft_tally", "tier": 2},
-      {"company": "Alphabet", "ticker": "GOOGL", "guide_low": 195, "guide_high": 205, "note": "$195-205B (CFO, Q2 call); Q3 report (Oct 28) says the range held and 2027 capex will top $300B (single source). Q3 capex $51.4B (10-Q, T1)", "source": "hl_googl_2q26", "tier": 2},
-      {"company": "Meta", "ticker": "META", "guide_low": 135, "guide_high": 145, "note": "Raised low end to $135-145B in the Q3 release (Oct 21), from $130-145B; incl. finance-lease principal. 2027 budget not yet set, 'continue investing aggressively'", "source": "meta_3q26", "tier": 1}
+      {
+        "company": "Amazon",
+        "ticker": "AMZN",
+        "guide_low": 220,
+        "guide_high": 220,
+        "note": "About $220B cash capex in 2026 (Jassy, Q2 call). Q3 reports (Oct 29) say ~$220B held and 2027 will be 'meaningfully more'; Q3 capex $77.3B (10-Q, T1)",
+        "source": "amzn_2q26_call",
+        "tier": 1
+      },
+      {
+        "company": "Microsoft",
+        "ticker": "MSFT",
+        "guide_low": 190,
+        "guide_high": 190,
+        "note": "About $190B calendar 2026 (FT tally, not re-verified). Q1 FY27 reports (Oct 28-29) give ~$170B or ~$175B for calendar 2026 after a lease reclassification: contested, release not retrieved. Q1 cash capex $39.4B (10-Q, T1)",
+        "source": "ft_tally",
+        "tier": 2
+      },
+      {
+        "company": "Alphabet",
+        "ticker": "GOOGL",
+        "guide_low": 195,
+        "guide_high": 205,
+        "note": "$195-205B (CFO, Q2 call); Q3 report (Oct 28) says the range held and 2027 capex will top $300B (single source). Q3 capex $51.4B (10-Q, T1)",
+        "source": "hl_googl_2q26",
+        "tier": 2
+      },
+      {
+        "company": "Meta",
+        "ticker": "META",
+        "guide_low": 135,
+        "guide_high": 145,
+        "note": "Raised low end to $135-145B in the Q3 release (Oct 21), from $130-145B; incl. finance-lease principal. 2027 budget not yet set, 'continue investing aggressively'",
+        "source": "meta_3q26",
+        "tier": 1
+      }
     ],
     "context": [
-      {"text": "Evercore and Bank of America model big-four capex above $1T in 2027.", "source": "ft_tally", "tier": 2},
-      {"text": "Meta had about $12B of free cash flow in Q1 2026 against up to $145B of planned capex.", "source": "om_capex", "tier": 3},
-      {"text": "Meta's Q2 2026 free cash flow was $0.78B against $31.1B of capex including finance leases.", "source": "meta_2q26", "tier": 1},
-      {"text": "Meta's Q3 2026 free cash flow was negative $2.12B: $32.79B of operating cash flow against $34.91B of capex including finance leases.", "source": "meta_3q26", "tier": 1},
-      {"text": "Microsoft's FY26 Q4 capex was $41B including $5.6B of finance leases.", "source": "msft_4q26_call", "tier": 1},
-      {"text": "Q3 2026 cash capex from 10-Qs: Amazon $77.3B (up from $54.2B in Q2), Alphabet $51.4B, Microsoft $39.4B, Meta $33.9B. With Oracle's August quarter ($28.5B), about $230B a quarter.", "source": "edgar_live_3q26", "tier": 1},
-      {"text": "Amazon's trailing-twelve-month free cash flow was negative $42.4B at Q3 2026, versus about +$14.8B a year earlier (two reports of the release agree).", "source": "cr_amzn_3q26", "tier": 3}
+      {
+        "text": "Evercore and Bank of America model big-four capex above $1T in 2027.",
+        "source": "ft_tally",
+        "tier": 2
+      },
+      {
+        "text": "Meta had about $12B of free cash flow in Q1 2026 against up to $145B of planned capex.",
+        "source": "om_capex",
+        "tier": 3
+      },
+      {
+        "text": "Meta's Q2 2026 free cash flow was $0.78B against $31.1B of capex including finance leases.",
+        "source": "meta_2q26",
+        "tier": 1
+      },
+      {
+        "text": "Meta's Q3 2026 free cash flow was negative $2.12B: $32.79B of operating cash flow against $34.91B of capex including finance leases.",
+        "source": "meta_3q26",
+        "tier": 1
+      },
+      {
+        "text": "Microsoft's FY26 Q4 capex was $41B including $5.6B of finance leases.",
+        "source": "msft_4q26_call",
+        "tier": 1
+      },
+      {
+        "text": "Q3 2026 cash capex from 10-Qs: Amazon $77.3B (up from $54.2B in Q2), Alphabet $51.4B, Microsoft $39.4B, Meta $33.9B. With Oracle's August quarter ($28.5B), about $230B a quarter.",
+        "source": "edgar_live_3q26",
+        "tier": 1
+      },
+      {
+        "text": "Amazon's trailing-twelve-month free cash flow was negative $42.4B at Q3 2026, versus about +$14.8B a year earlier (two reports of the release agree).",
+        "source": "cr_amzn_3q26",
+        "tier": 3
+      }
     ],
-    "edgar_tags": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"],
-    "edgar_ciks": {"AMZN": "0001018724", "MSFT": "0000789019", "GOOGL": "0001652044", "META": "0001326801", "ORCL": "0001341439"}
+    "edgar_tags": [
+      "PaymentsToAcquirePropertyPlantAndEquipment",
+      "PaymentsToAcquireProductiveAssets"
+    ],
+    "edgar_ciks": {
+      "AMZN": "0001018724",
+      "MSFT": "0000789019",
+      "GOOGL": "0001652044",
+      "META": "0001326801",
+      "ORCL": "0001341439"
+    }
   },
-
   "capital": {
     "facts": [
-      {"text": "2025 data center M&A: 113 deals, more than $69B total value, a record.", "source": "sp_dc_2025", "tier": 2, "as_of": "2025-12"},
-      {"text": "Debt issuance by data center owners and operators nearly doubled, from about $92B in 2024 to $182B in 2025.", "source": "sp_dc_2025", "tier": 2, "as_of": "2025-12"},
-      {"text": "Since early 2024, 575 data center M&A deals closed worth $151B; 84% of the value came from private equity.", "source": "dck_synergy", "tier": 2, "as_of": "2026-01"},
-      {"text": "Meta and Blue Owl closed $27B for the Hyperion campus in Louisiana; Blue Owl funds own 80%. The largest private credit deal on record.", "source": "gdch_hyperion", "tier": 3, "as_of": "2025-10"},
-      {"text": "Blackstone's data center portfolio passed $150B owned or under construction; data centers are 27% of BREIT fair value.", "source": "luminix", "tier": 3, "as_of": "2026-06"},
-      {"text": "SoftBank completed its acquisition of DigitalBridge on September 30, 2026, for about $3.1B.", "source": "softbank_dbrg", "tier": 1, "as_of": "2026-09-30"},
-      {"text": "CoreWeave's $2.75B of 9.75% unsecured 2031 notes have yielded over 15% since mid-October (Dow Jones; Benzinga reports a record 15.76% on Oct 22); its five-year CDS rose to about 881bp by Oct 12 from about 547bp at end-June. S&P rates it in the B category.", "source": "dj_crwv", "tier": 2, "as_of": "2026-10-22"},
-      {"text": "CCC-rated junk spreads widened to 12.67 points from 9.04 in early May, while the broad high-yield index stayed near 3.2 points: stress is concentrated in the weakest borrowers.", "source": "dj_crwv", "tier": 2, "as_of": "2026-10-13"},
-      {"text": "Meta posted negative free cash flow of $2.12B in Q3 2026 while narrowing 2026 capex guidance up to $135-145B. Revenue rose 26% to $64.6B.", "source": "meta_3q26", "tier": 1, "as_of": "2026-09-30"},
-      {"text": "Amazon: AWS revenue $46.0B, up 39% (accelerating), AWS operating income $17.8B; trailing free cash flow negative $42.4B. Jassy says AWS should grow over 40% in 2027 and 2028.", "source": "cr_amzn_3q26", "tier": 3, "as_of": "2026-09-30"},
-      {"text": "Microsoft fiscal Q1 2027: revenue $92.3B (+19%), Azure +48%, commercial RPO $677B (+73%). Guides Azure +49-50% and capex above $50B for the December quarter.", "source": "aim_msft_1q27", "tier": 3, "as_of": "2026-09-30"},
-      {"text": "Anthropic filed its public S-1 on Oct 26 (proposed ticker ANT, Nasdaq). Reported filing figures: H1 2026 revenue $16.3B, GAAP operating loss $0.7B, net loss $80.7B of which $72.4B is a non-cash fair-value charge, cash $131.7B. EDGAR copy not retrieved this run.", "source": "iposcoop_ant", "tier": 3, "as_of": "2026-10-26"}
+      {
+        "text": "2025 data center M&A: 113 deals, more than $69B total value, a record.",
+        "source": "sp_dc_2025",
+        "tier": 2,
+        "as_of": "2025-12"
+      },
+      {
+        "text": "Debt issuance by data center owners and operators nearly doubled, from about $92B in 2024 to $182B in 2025.",
+        "source": "sp_dc_2025",
+        "tier": 2,
+        "as_of": "2025-12"
+      },
+      {
+        "text": "Since early 2024, 575 data center M&A deals closed worth $151B; 84% of the value came from private equity.",
+        "source": "dck_synergy",
+        "tier": 2,
+        "as_of": "2026-01"
+      },
+      {
+        "text": "Meta and Blue Owl closed $27B for the Hyperion campus in Louisiana; Blue Owl funds own 80%. The largest private credit deal on record.",
+        "source": "gdch_hyperion",
+        "tier": 3,
+        "as_of": "2025-10"
+      },
+      {
+        "text": "Blackstone's data center portfolio passed $150B owned or under construction; data centers are 27% of BREIT fair value.",
+        "source": "luminix",
+        "tier": 3,
+        "as_of": "2026-06"
+      },
+      {
+        "text": "SoftBank completed its acquisition of DigitalBridge on September 30, 2026, for about $3.1B.",
+        "source": "softbank_dbrg",
+        "tier": 1,
+        "as_of": "2026-09-30"
+      },
+      {
+        "text": "CoreWeave's $2.75B of 9.75% unsecured 2031 notes have yielded over 15% since mid-October (Dow Jones; Benzinga reports a record 15.76% on Oct 22); its five-year CDS rose to about 881bp by Oct 12 from about 547bp at end-June. S&P rates it in the B category.",
+        "source": "dj_crwv",
+        "tier": 2,
+        "as_of": "2026-10-22"
+      },
+      {
+        "text": "CCC-rated junk spreads widened to 12.67 points from 9.04 in early May, while the broad high-yield index stayed near 3.2 points: stress is concentrated in the weakest borrowers.",
+        "source": "dj_crwv",
+        "tier": 2,
+        "as_of": "2026-10-13"
+      },
+      {
+        "text": "Meta posted negative free cash flow of $2.12B in Q3 2026 while narrowing 2026 capex guidance up to $135-145B. Revenue rose 26% to $64.6B.",
+        "source": "meta_3q26",
+        "tier": 1,
+        "as_of": "2026-09-30"
+      },
+      {
+        "text": "Amazon: AWS revenue $46.0B, up 39% (accelerating), AWS operating income $17.8B; trailing free cash flow negative $42.4B. Jassy says AWS should grow over 40% in 2027 and 2028.",
+        "source": "cr_amzn_3q26",
+        "tier": 3,
+        "as_of": "2026-09-30"
+      },
+      {
+        "text": "Microsoft fiscal Q1 2027: revenue $92.3B (+19%), Azure +48%, commercial RPO $677B (+73%). Guides Azure +49-50% and capex above $50B for the December quarter.",
+        "source": "aim_msft_1q27",
+        "tier": 3,
+        "as_of": "2026-09-30"
+      },
+      {
+        "text": "Anthropic filed its public S-1 on Oct 26 (proposed ticker ANT, Nasdaq). Reported filing figures: H1 2026 revenue $16.3B, GAAP operating loss $0.7B, net loss $80.7B of which $72.4B is a non-cash fair-value charge, cash $131.7B. EDGAR copy not retrieved this run.",
+        "source": "iposcoop_ant",
+        "tier": 3,
+        "as_of": "2026-10-26"
+      },
+      {
+        "text": "US high-yield spreads rose to 3.48% on Nov 5, 2026 from 3.26% on Oct 29; the 10-year Treasury fell to 4.84% from 4.98% over the same week.",
+        "source": "fred_hy",
+        "tier": 1,
+        "as_of": "2026-11-05"
+      },
+      {
+        "text": "AMD Q3 2026: revenue about $13.4B (+45%), data center $8.5B (+97%, about 64% of revenue). Q4 guide about $17B, plus or minus 3%. Two reports of AMD's release agree; the release itself was not opened.",
+        "source": "cr_amd_3q26",
+        "tier": 3,
+        "as_of": "2026-09-26"
+      },
+      {
+        "text": "Blue Owl Capital Corp (OBDC): NAV $14.32 per share at Q3, shares about 25% below NAV (Nov 5-6); non-accruals 0.8% of the portfolio at fair value.",
+        "source": "fool_obdc_3q26",
+        "tier": 3,
+        "as_of": "2026-09-30"
+      }
     ],
     "deals": [
-      {"name": "Aligned Data Centers", "value_b": 40, "type": "M&A", "buyers": "BlackRock/GIP, MGX, Microsoft, NVIDIA, xAI, Temasek, KIA", "layer": "infrastructure", "buyer_type": "Consortium", "date": "2025-10", "source": "sp_dc_2025", "tier": 2},
-      {"name": "Meta Hyperion JV", "value_b": 27, "type": "Private credit / JV", "buyers": "Blue Owl (80%), Meta (20%); PIMCO led debt", "layer": "infrastructure", "buyer_type": "Private credit", "date": "2025-10", "source": "gdch_hyperion", "tier": 3},
-      {"name": "DigitalBridge", "value_b": 3.1, "type": "M&A", "buyers": "SoftBank", "layer": "capital", "buyer_type": "Strategic", "date": "2026-09-30", "source": "softbank_dbrg", "tier": 1},
-      {"name": "Cerebras IPO", "value_b": 4.8, "type": "IPO", "buyers": "Public markets", "layer": "chips", "buyer_type": "Public equity", "date": "2026-05-14", "source": "aiweekly_cbrs", "tier": 3},
-      {"name": "Google-Constellation nuclear PPA", "value_b": 4.3, "type": "PPA / uprates", "buyers": "Google (20-yr PPA for 890 MW of uprates, plus 15-yr supply of 2,700 MW); Constellation invests ~$4.3B", "layer": "energy", "buyer_type": "Strategic", "date": "2026-10-06", "source": "cdive_ceg", "tier": 3}
+      {
+        "name": "Aligned Data Centers",
+        "value_b": 40,
+        "type": "M&A",
+        "buyers": "BlackRock/GIP, MGX, Microsoft, NVIDIA, xAI, Temasek, KIA",
+        "layer": "infrastructure",
+        "buyer_type": "Consortium",
+        "date": "2025-10",
+        "source": "sp_dc_2025",
+        "tier": 2
+      },
+      {
+        "name": "Meta Hyperion JV",
+        "value_b": 27,
+        "type": "Private credit / JV",
+        "buyers": "Blue Owl (80%), Meta (20%); PIMCO led debt",
+        "layer": "infrastructure",
+        "buyer_type": "Private credit",
+        "date": "2025-10",
+        "source": "gdch_hyperion",
+        "tier": 3
+      },
+      {
+        "name": "DigitalBridge",
+        "value_b": 3.1,
+        "type": "M&A",
+        "buyers": "SoftBank",
+        "layer": "capital",
+        "buyer_type": "Strategic",
+        "date": "2026-09-30",
+        "source": "softbank_dbrg",
+        "tier": 1
+      },
+      {
+        "name": "Cerebras IPO",
+        "value_b": 4.8,
+        "type": "IPO",
+        "buyers": "Public markets",
+        "layer": "chips",
+        "buyer_type": "Public equity",
+        "date": "2026-05-14",
+        "source": "aiweekly_cbrs",
+        "tier": 3
+      },
+      {
+        "name": "Google-Constellation nuclear PPA",
+        "value_b": 4.3,
+        "type": "PPA / uprates",
+        "buyers": "Google (20-yr PPA for 890 MW of uprates, plus 15-yr supply of 2,700 MW); Constellation invests ~$4.3B",
+        "layer": "energy",
+        "buyer_type": "Strategic",
+        "date": "2026-10-06",
+        "source": "cdive_ceg",
+        "tier": 3
+      }
     ],
     "contested": [
-      {"topic": "H1 2026 data center M&A volume", "values": ["$85.2B", "$87B", "$127.3B", "$185B YTD July"], "why": "Four articles from one research site, weeks apart, give incompatible totals and one misdates the Aligned deal. Held out of all charts until S&P 451 or Synergy publishes.", "source": "datacentres_mixed", "tier": 3},
-      {"topic": "AI XPV financing (~$35B)", "values": ["~$35B, Apollo and Blackstone, secured on Broadcom-designed chips leased to Anthropic"], "why": "Single research source. Needs a second independent Tier 2 confirmation.", "source": "luminix", "tier": 3},
-      {"topic": "Cerebras IPO raise", "values": ["$4.8B", "$5.5B", "$7.1B"], "why": "Reports differ, likely base deal vs greenshoe vs rumor. Check the final prospectus (424B4) on EDGAR.", "source": "aiweekly_cbrs", "tier": 3},
-      {"topic": "CoreWeave five-year CDS", "values": ["~881bp (Dow Jones Market Data, Oct 12)", ">1,000bp (Reuters via Roic.ai, Oct 14-15)", "1,115bp (Benzinga, Oct 22; no data provider named)", "~1,067bp (CNBC, Oct 21, via FourWeekMBA)"], "why": "Rising every week and quoted by outlets that do not name a provider. Direction is not in doubt; the exact level is.", "source": "fwm_crwv", "tier": 3},
-      {"topic": "Anthropic IPO", "values": ["~$1.5T market cap at listing (Reuters via IPO Scoop)", "~$75B raise expected (IPO pros, not in filing)", "Marketing as soon as week of Nov 9 (Bloomberg)", "Named compute commitments sum to ~$637B (author's sum; S-1 leaves the aggregate blank) vs 'up to $750B' (WSJ draft review)"], "why": "The public S-1 (Oct 26) settles the H1 figures, now in facts. Price range, share count and valuation are blank in the filing; everything here is reporting.", "source": "gupta_ant_s1", "tier": 3},
-      {"topic": "OpenAI new round", "values": ["$30B at ~$1.4T (Bloomberg, Sep 29)", "Up to $30B at $1.25T pre-money, led by Coatue and UAE investors (CNBC, Oct 22)"], "why": "Talks, not a closed round. A lower ask is not a down round: it is still above the $852B March post-money mark.", "source": "tc_openai_125", "tier": 3},
-      {"topic": "Oracle five-year CDS", "values": ["Record 288bp (Oct 14-15)"], "why": "Single source; no named data provider.", "source": "roic_cds", "tier": 3},
-      {"topic": "AI data center project bonds", "values": ["Trading below par (FT, Oct 19)"], "why": "Known only through a summary of the FT piece; no bond names, prices or yields given. Needs the original or a second outlet.", "source": "kcex_ft_dcbonds", "tier": 3},
-      {"topic": "HBM supply gap 2027", "values": ["Demand +91% to ~61.5B Gb vs ~54.6B Gb supply (UBS, via Techzine)"], "why": "Single broker estimate relayed second-hand. Fits SK hynix and ASML commentary, but not independently confirmed.", "source": "techzine_nvhbm", "tier": 3},
-      {"topic": "Microsoft calendar-2026 capex guide", "values": ["~$190B (FT tally, earlier)", "~$175B after a finance-to-operating lease reclassification (AI Weekly, Oct 28)", "~$170B (Analytics India, Oct 29)"], "why": "Microsoft's own release was not retrieved. The lower numbers may be an accounting change, not a cut, so the capex row keeps $190B until a Tier 1 source settles it.", "source": "aiw_msft_1q27", "tier": 3},
-      {"topic": "Alphabet 2027 capex and Cloud growth", "values": ["2027 capex 'will top $300B'", "Google Cloud $30.7B, up 103%"], "why": "Single aggregator (AI Weekly) summarizing the release; Q3 capex of $51.4B matches the 10-Q, but the 2027 number and the Cloud growth rate need the release or call transcript.", "source": "aiw_googl_3q26", "tier": 3}
+      {
+        "topic": "H1 2026 data center M&A volume",
+        "values": [
+          "$85.2B",
+          "$87B",
+          "$127.3B",
+          "$185B YTD July"
+        ],
+        "why": "Four articles from one research site, weeks apart, give incompatible totals and one misdates the Aligned deal. Held out of all charts until S&P 451 or Synergy publishes.",
+        "source": "datacentres_mixed",
+        "tier": 3
+      },
+      {
+        "topic": "AI XPV financing (~$35B)",
+        "values": [
+          "~$35B, Apollo and Blackstone, secured on Broadcom-designed chips leased to Anthropic"
+        ],
+        "why": "Single research source. Needs a second independent Tier 2 confirmation.",
+        "source": "luminix",
+        "tier": 3
+      },
+      {
+        "topic": "Cerebras IPO raise",
+        "values": [
+          "$4.8B",
+          "$5.5B",
+          "$7.1B"
+        ],
+        "why": "Reports differ, likely base deal vs greenshoe vs rumor. Check the final prospectus (424B4) on EDGAR.",
+        "source": "aiweekly_cbrs",
+        "tier": 3
+      },
+      {
+        "topic": "CoreWeave five-year CDS",
+        "values": [
+          "~881bp (Dow Jones Market Data, Oct 12)",
+          ">1,000bp (Reuters via Roic.ai, Oct 14-15)",
+          "1,115bp (Benzinga, Oct 22; no data provider named)",
+          "~1,067bp (CNBC, Oct 21, via FourWeekMBA)"
+        ],
+        "why": "Rising every week and quoted by outlets that do not name a provider. Direction is not in doubt; the exact level is.",
+        "source": "fwm_crwv",
+        "tier": 3
+      },
+      {
+        "topic": "Anthropic IPO",
+        "values": [
+          "~$1.5T market cap at listing (Reuters via IPO Scoop)",
+          "~$75B raise expected (IPO pros, not in filing)",
+          "Marketing as soon as week of Nov 9 (Bloomberg)",
+          "Named compute commitments sum to ~$637B (author's sum; S-1 leaves the aggregate blank) vs 'up to $750B' (WSJ draft review)",
+          "Reuters (Nov 6): investors doubt a roadshow next week and a November listing; some see $1.5T as the high end",
+          "S-1/A filed Nov 2, price and share count still blank (Reuters via Let's Data Science)",
+          "Target cut to $1.42-1.50T; 9-month revenue $33.2B, Q3 $16.8B (KuCoin blog, no source named; its per-share band is unsupported)"
+        ],
+        "why": "The public S-1 (Oct 26) settles the H1 figures, now in facts. Price range, share count and valuation are blank in the filing; everything here is reporting.",
+        "source": "gupta_ant_s1",
+        "tier": 3
+      },
+      {
+        "topic": "OpenAI new round",
+        "values": [
+          "$30B at ~$1.4T (Bloomberg, Sep 29)",
+          "Up to $30B at $1.25T pre-money, led by Coatue and UAE investors (CNBC, Oct 22)"
+        ],
+        "why": "Talks, not a closed round. A lower ask is not a down round: it is still above the $852B March post-money mark.",
+        "source": "tc_openai_125",
+        "tier": 3
+      },
+      {
+        "topic": "Oracle five-year CDS",
+        "values": [
+          "Record 288bp (Oct 14-15)"
+        ],
+        "why": "Single source; no named data provider.",
+        "source": "roic_cds",
+        "tier": 3
+      },
+      {
+        "topic": "AI data center project bonds",
+        "values": [
+          "Trading below par (FT, Oct 19)"
+        ],
+        "why": "Known only through a summary of the FT piece; no bond names, prices or yields given. Needs the original or a second outlet.",
+        "source": "kcex_ft_dcbonds",
+        "tier": 3
+      },
+      {
+        "topic": "HBM supply gap 2027",
+        "values": [
+          "Demand +91% to ~61.5B Gb vs ~54.6B Gb supply (UBS, via Techzine)"
+        ],
+        "why": "Single broker estimate relayed second-hand. Fits SK hynix and ASML commentary, but not independently confirmed.",
+        "source": "techzine_nvhbm",
+        "tier": 3
+      },
+      {
+        "topic": "Microsoft calendar-2026 capex guide",
+        "values": [
+          "~$190B (FT tally, earlier)",
+          "~$175B after a finance-to-operating lease reclassification (AI Weekly, Oct 28)",
+          "~$170B (Analytics India, Oct 29)",
+          "~$175B already in an Aug 3 Motley Fool table citing company filings and calls"
+        ],
+        "why": "Microsoft's own release was not retrieved. The Aug 3 table predates the October reports, which weakens the 'October lease reclassification' explanation for the gap. The capex row keeps $190B until a Tier 1 source settles it.",
+        "source": "aiw_msft_1q27",
+        "tier": 3
+      },
+      {
+        "topic": "Alphabet 2027 capex and Cloud growth",
+        "values": [
+          "2027 capex 'will top $300B'",
+          "Google Cloud $30.7B, up 103%"
+        ],
+        "why": "Single aggregator (AI Weekly) summarizing the release; Q3 capex of $51.4B matches the 10-Q, but the 2027 number and the Cloud growth rate need the release or call transcript.",
+        "source": "aiw_googl_3q26",
+        "tier": 3
+      },
+      {
+        "topic": "Size of the Nov 5 AI rout",
+        "values": [
+          "S&P 500 -4.4%, Nasdaq Composite -5.5% (AP)",
+          "Nasdaq 100 down more than 6% (Reuters)",
+          "Nvidia -9.3%, AMD -17.3%, CoreWeave -9.8% (AP only)"
+        ],
+        "why": "Each index figure rests on one wire report, and the two reports quote different Nasdaq indexes. AP also blames midterm results raising the chance of data-center construction pauses; that causal claim is unconfirmed.",
+        "source": "ap_rout_nov5",
+        "tier": 3
+      }
     ],
     "groups": [
-      {"id": "re", "name": "Data center real estate", "tickers": ["EQIX", "DLR", "IRM", "AMT"], "private": ["QTS (Blackstone)", "CyrusOne (KKR, GIP)", "Vantage and Switch (DigitalBridge, now SoftBank)", "Aligned (BlackRock/GIP, MGX consortium)", "Stack (Blue Owl)"]},
-      {"id": "pe", "name": "Private equity and infrastructure equity", "tickers": ["BX", "KKR", "BN", "BAM", "APO", "ARES", "CG", "BLK", "9984.T"], "private": ["Stonepeak", "Silver Lake", "MGX (Abu Dhabi)", "Temasek", "Kuwait Investment Authority"]},
-      {"id": "pc", "name": "Private credit", "tickers": ["OWL", "APO", "ARES", "BX", "KKR", "BLK", "ALV.DE"], "private": ["PIMCO (Allianz)", "HPS (BlackRock)"]},
-      {"id": "bdc", "name": "Public windows into private credit (BDCs)", "tickers": ["ARCC", "OBDC", "BXSL"], "private": []}
+      {
+        "id": "re",
+        "name": "Data center real estate",
+        "tickers": [
+          "EQIX",
+          "DLR",
+          "IRM",
+          "AMT"
+        ],
+        "private": [
+          "QTS (Blackstone)",
+          "CyrusOne (KKR, GIP)",
+          "Vantage and Switch (DigitalBridge, now SoftBank)",
+          "Aligned (BlackRock/GIP, MGX consortium)",
+          "Stack (Blue Owl)"
+        ]
+      },
+      {
+        "id": "pe",
+        "name": "Private equity and infrastructure equity",
+        "tickers": [
+          "BX",
+          "KKR",
+          "BN",
+          "BAM",
+          "APO",
+          "ARES",
+          "CG",
+          "BLK",
+          "9984.T"
+        ],
+        "private": [
+          "Stonepeak",
+          "Silver Lake",
+          "MGX (Abu Dhabi)",
+          "Temasek",
+          "Kuwait Investment Authority"
+        ]
+      },
+      {
+        "id": "pc",
+        "name": "Private credit",
+        "tickers": [
+          "OWL",
+          "APO",
+          "ARES",
+          "BX",
+          "KKR",
+          "BLK",
+          "ALV.DE"
+        ],
+        "private": [
+          "PIMCO (Allianz)",
+          "HPS (BlackRock)"
+        ]
+      },
+      {
+        "id": "bdc",
+        "name": "Public windows into private credit (BDCs)",
+        "tickers": [
+          "ARCC",
+          "OBDC",
+          "BXSL"
+        ],
+        "private": []
+      }
     ]
   },
-
   "data_centers": {
     "simple": "A data center is where layers 1, 2, and 3 meet physically: power comes in, chips sit in racks, and the building rents out the computing.",
-    "watch": ["Megawatts under construction by market", "Price per megawatt in transactions", "Vacancy in primary markets", "Power availability: time to energize", "Share of deals with long-term power contracts"],
+    "watch": [
+      "Megawatts under construction by market",
+      "Price per megawatt in transactions",
+      "Vacancy in primary markets",
+      "Power availability: time to energize",
+      "Share of deals with long-term power contracts"
+    ],
     "facts": [
-      {"text": "Data center deal value in the US and Canada totaled about $160B since 2019, versus about $40B in Asia-Pacific and $24B in Europe.", "source": "sp_dc_2025", "tier": 2, "as_of": "2025-12"},
-      {"text": "Private equity firms are holding data center assets longer than the typical five-year exit cycle.", "source": "sp_dc_2025", "tier": 2, "as_of": "2025-12"}
+      {
+        "text": "Data center deal value in the US and Canada totaled about $160B since 2019, versus about $40B in Asia-Pacific and $24B in Europe.",
+        "source": "sp_dc_2025",
+        "tier": 2,
+        "as_of": "2025-12"
+      },
+      {
+        "text": "Private equity firms are holding data center assets longer than the typical five-year exit cycle.",
+        "source": "sp_dc_2025",
+        "tier": 2,
+        "as_of": "2025-12"
+      }
     ]
   },
-
   "cycle": {
-    "stages": ["Build-out", "Digestion", "Overbuild", "Bust"],
+    "stages": [
+      "Build-out",
+      "Digestion",
+      "Overbuild",
+      "Bust"
+    ],
     "current_stage": 0,
     "position": 0.9,
-    "bottleneck": {"layer": "energy", "history": [{"period": "2023 to 2024", "layer": "chips"}, {"period": "2025 to 2026", "layer": "energy"}], "why": "Chips were the shortage in 2023 and 2024. Now buildings with GPUs on order wait on grid connections, turbines, and transformers."},
-    "assessment": "Late build-out, now spending past cash flow. Q3 capex hit about $230B a quarter (10-Qs) and nobody cut: Amazon held ~$220B for 2026 and signalled 'meaningfully more' for 2027. Cloud revenue is accelerating (AWS +39%, Azure +48%), so demand is real. But Amazon's trailing free cash flow is now negative $42B and Meta's Q3 was negative, so the build is increasingly funded with debt and leases. Stress stays concentrated: CoreWeave CDS near 1,000bp+ while the broad high-yield index eased to 3.26%.",
+    "bottleneck": {
+      "layer": "energy",
+      "history": [
+        {
+          "period": "2023 to 2024",
+          "layer": "chips"
+        },
+        {
+          "period": "2025 to 2026",
+          "layer": "energy"
+        }
+      ],
+      "why": "Chips were the shortage in 2023 and 2024. Now buildings with GPUs on order wait on grid connections, turbines, and transformers."
+    },
+    "assessment": "Late build-out, spending past cash flow, and now under market pressure. Q3 capex hit about $230B a quarter (10-Qs) and nobody cut. Cloud and AI chip revenue are still accelerating, so demand is real. New this week: equities and credit both repriced the AI trade in early November. High-yield spreads rose to 3.48% and CoreWeave CDS passed 1,000bp to record highs. That is financing stress, not a demand break: no company has cut capex.",
     "signals": [
-      {"name": "Capex guidance revisions", "status": "build", "value": "Still rising: Q3 capex ~$230B/quarter (10-Qs); Amazon ~$220B for 2026 and 'meaningfully more' in 2027; Alphabet reportedly >$300B in 2027; Meta $135-145B; no cuts", "source": "edgar_live_3q26", "tier": 1},
-      {"name": "AI revenue vs capex", "status": "watch", "value": "Cloud growth accelerating: AWS +39% ($184B run-rate), Azure +48%, Microsoft RPO $677B. Revenue is real but still far below ~$230B of quarterly capex", "source": "cr_amzn_3q26", "tier": 3},
-      {"name": "Hyperscaler free cash flow", "status": "bad", "value": "Amazon trailing FCF -$42.4B at Q3 (from +$14.8B a year ago); Meta Q3 FCF -$2.1B (T1). Two of the big four now spend more than they generate", "source": "cr_amzn_3q26", "tier": 3},
-      {"name": "Data center debt issuance", "status": "warn", "value": "~$182B in 2025, nearly double 2024", "source": "sp_dc_2025", "tier": 2},
-      {"name": "Neocloud leverage", "status": "bad", "value": "CoreWeave unsecured notes ~15% yield; CDS ~1,067bp (CNBC, Oct 21) to 1,115bp (Benzinga, Oct 22); Q3 results due in November", "source": "benzinga_crwv", "tier": 3},
-      {"name": "High-yield credit spreads", "status": "watch", "value": "3.26% on 2026-10-29 (FRED), down from 3.40% a week earlier: broad market calm; AI stress stays concentrated", "source": "fred_hy", "tier": 1},
-      {"name": "10-year Treasury yield", "status": "watch", "value": "4.98% on 2026-10-29 (FRED), little changed from 4.96%", "source": "fred_dgs10", "tier": 1}
+      {
+        "name": "Capex guidance revisions",
+        "status": "build",
+        "value": "Still rising: Q3 capex ~$230B/quarter (10-Qs); Amazon ~$220B for 2026 and 'meaningfully more' in 2027; Alphabet reportedly >$300B in 2027; Meta $135-145B; no cuts",
+        "source": "edgar_live_3q26",
+        "tier": 1
+      },
+      {
+        "name": "AI revenue vs capex",
+        "status": "watch",
+        "value": "Cloud growth accelerating: AWS +39% ($184B run-rate), Azure +48%, Microsoft RPO $677B. Revenue is real but still far below ~$230B of quarterly capex",
+        "source": "cr_amzn_3q26",
+        "tier": 3
+      },
+      {
+        "name": "Hyperscaler free cash flow",
+        "status": "bad",
+        "value": "Amazon trailing FCF -$42.4B at Q3 (from +$14.8B a year ago); Meta Q3 FCF -$2.1B (T1). Two of the big four now spend more than they generate",
+        "source": "cr_amzn_3q26",
+        "tier": 3
+      },
+      {
+        "name": "Data center debt issuance",
+        "status": "warn",
+        "value": "~$182B in 2025, nearly double 2024",
+        "source": "sp_dc_2025",
+        "tier": 2
+      },
+      {
+        "name": "Neocloud leverage",
+        "status": "bad",
+        "value": "CoreWeave five-year CDS past 1,000bp to record highs (Reuters, Nov 6; provider not named). Q3 results Nov 10, 5 pm ET (company)",
+        "source": "reuters_rout_nov6",
+        "tier": 2
+      },
+      {
+        "name": "High-yield credit spreads",
+        "status": "watch",
+        "value": "3.48% on 2026-11-05 (FRED), up from 3.26% on Oct 29, as the AI rout spread to credit. Reuters: highest since the April 2025 tariff shock, with CCC near the widest since 2020",
+        "source": "fred_hy",
+        "tier": 1
+      },
+      {
+        "name": "10-year Treasury yield",
+        "status": "watch",
+        "value": "4.84% on 2026-11-05 (FRED), down from 4.98%: flight to safety, not easier financing for weak borrowers",
+        "source": "fred_dgs10",
+        "tier": 1
+      }
     ],
     "analogs": [
-      {"name": "Railroads, 1840s Britain", "lesson": "Real, transformative network; investors still lost heavily when capacity outran traffic."},
-      {"name": "Telecom fiber, 1999 to 2001", "lesson": "Fiber laid in the boom was used for decades, but most builders went bankrupt. Vendor financing inflated demand."},
-      {"name": "US shale, 2014 to 2016", "lesson": "Cheap credit funded growth past demand; a price drop exposed weak balance sheets fast."}
+      {
+        "name": "Railroads, 1840s Britain",
+        "lesson": "Real, transformative network; investors still lost heavily when capacity outran traffic."
+      },
+      {
+        "name": "Telecom fiber, 1999 to 2001",
+        "lesson": "Fiber laid in the boom was used for decades, but most builders went bankrupt. Vendor financing inflated demand."
+      },
+      {
+        "name": "US shale, 2014 to 2016",
+        "lesson": "Cheap credit funded growth past demand; a price drop exposed weak balance sheets fast."
+      }
     ]
   },
-
   "scenarios": [
-    {"id": "power", "name": "Power shortage", "desc": "Grid connections for new data centers are delayed 2 more years across major US markets.",
-     "impact": {"energy": 1, "chips": -1, "infrastructure": 0, "models": -1, "applications": 0, "capital": 0},
-     "why": "Owners of firm power gain pricing power. Chip orders slip because buildings cannot be energized. Existing powered data centers rise in value, offsetting delayed new builds. Model training timelines slip."},
-    {"id": "export", "name": "Chip export ban tightens", "desc": "The US bans sales of a broader range of AI chips to China and more countries.",
-     "impact": {"energy": 0, "chips": -1, "infrastructure": 0, "models": 0, "applications": 0, "capital": 0},
-     "why": "US chip designers lose revenue; China accelerates domestic chips. Other layers see little near-term change outside China."},
-    {"id": "cheap", "name": "Models get 10x cheaper", "desc": "A breakthrough cuts the compute needed per answer by 90%.",
-     "impact": {"energy": -1, "chips": -1, "infrastructure": -1, "models": -1, "applications": 1, "capital": -1},
-     "why": "Short term, the bottom layers lose because less compute is needed per task and model prices fall. Applications gain margin. If usage explodes (Jevons paradox), the bottom layers can recover, but it is not guaranteed."},
-    {"id": "pause", "name": "Hyperscaler pauses capex", "desc": "One of the big four cuts next-year capex guidance by 25%.",
-     "impact": {"energy": -1, "chips": -1, "infrastructure": -1, "models": 0, "applications": 0, "capital": -1},
-     "why": "Capex guidance is the order book for chips and construction. Private credit and data center lenders reprice quickly because loans were underwritten on guidance continuing."},
-    {"id": "killer", "name": "Enterprise adoption surges", "desc": "AI agents prove reliable; enterprise AI spending doubles in a year.",
-     "impact": {"energy": 1, "chips": 1, "infrastructure": 1, "models": 1, "applications": 1, "capital": 1},
-     "why": "Demand pulls on every layer beneath it, all the way to the power plant. The bottleneck shifts further toward energy."}
+    {
+      "id": "power",
+      "name": "Power shortage",
+      "desc": "Grid connections for new data centers are delayed 2 more years across major US markets.",
+      "impact": {
+        "energy": 1,
+        "chips": -1,
+        "infrastructure": 0,
+        "models": -1,
+        "applications": 0,
+        "capital": 0
+      },
+      "why": "Owners of firm power gain pricing power. Chip orders slip because buildings cannot be energized. Existing powered data centers rise in value, offsetting delayed new builds. Model training timelines slip."
+    },
+    {
+      "id": "export",
+      "name": "Chip export ban tightens",
+      "desc": "The US bans sales of a broader range of AI chips to China and more countries.",
+      "impact": {
+        "energy": 0,
+        "chips": -1,
+        "infrastructure": 0,
+        "models": 0,
+        "applications": 0,
+        "capital": 0
+      },
+      "why": "US chip designers lose revenue; China accelerates domestic chips. Other layers see little near-term change outside China."
+    },
+    {
+      "id": "cheap",
+      "name": "Models get 10x cheaper",
+      "desc": "A breakthrough cuts the compute needed per answer by 90%.",
+      "impact": {
+        "energy": -1,
+        "chips": -1,
+        "infrastructure": -1,
+        "models": -1,
+        "applications": 1,
+        "capital": -1
+      },
+      "why": "Short term, the bottom layers lose because less compute is needed per task and model prices fall. Applications gain margin. If usage explodes (Jevons paradox), the bottom layers can recover, but it is not guaranteed."
+    },
+    {
+      "id": "pause",
+      "name": "Hyperscaler pauses capex",
+      "desc": "One of the big four cuts next-year capex guidance by 25%.",
+      "impact": {
+        "energy": -1,
+        "chips": -1,
+        "infrastructure": -1,
+        "models": 0,
+        "applications": 0,
+        "capital": -1
+      },
+      "why": "Capex guidance is the order book for chips and construction. Private credit and data center lenders reprice quickly because loans were underwritten on guidance continuing."
+    },
+    {
+      "id": "killer",
+      "name": "Enterprise adoption surges",
+      "desc": "AI agents prove reliable; enterprise AI spending doubles in a year.",
+      "impact": {
+        "energy": 1,
+        "chips": 1,
+        "infrastructure": 1,
+        "models": 1,
+        "applications": 1,
+        "capital": 1
+      },
+      "why": "Demand pulls on every layer beneath it, all the way to the power plant. The bottleneck shifts further toward energy."
+    }
   ],
-
   "questions": [
-    {"id": "q1", "layer": "energy", "level": "Recall", "q": "In Huang's framework, which layer is the foundation of the cake?", "options": ["Chips", "Energy", "Infrastructure", "Capital"], "a": 1, "why": "Huang puts energy at the base and calls it the binding constraint on how much intelligence the system can produce."},
-    {"id": "q2", "layer": "energy", "level": "Explain", "q": "Why is energy now the hardest layer to grow quickly?", "options": ["Electricity prices are capped by law", "Grid connections, transformers, and turbines take years to deliver", "Data centers use less power each year", "Utilities refuse to sell to tech companies"], "a": 1, "why": "The constraint is physical lead time: interconnection queues and equipment backlogs run for years, while chips can ship in months."},
-    {"id": "q3", "layer": "energy", "level": "Apply", "q": "A regulated utility signs a big data center load. How does it mainly earn more money?", "options": ["Charging scarcity prices for power", "Earning an allowed return on the new grid assets it builds", "Selling GPUs to the data center", "Taking equity in the tenant"], "a": 1, "why": "Regulated utilities earn on rate base. Scarcity pricing goes to unregulated independent power producers like Vistra or Constellation."},
-    {"id": "q4", "layer": "energy", "level": "Analyze", "q": "Which company is closest to a pure play on unregulated power sold to data centers?", "options": ["Duke Energy", "Constellation Energy", "Equinix", "Broadcom"], "a": 1, "why": "Constellation is an independent power producer with a large nuclear fleet and data center contracts. Duke is regulated; Equinix is real estate; Broadcom is chips."},
-    {"id": "q5", "layer": "energy", "level": "Predict", "q": "If transformer lead times double, which asset gains the most value?", "options": ["Data centers already connected to power", "Land far from any substation", "Next-generation GPUs not yet delivered", "Consumer AI apps"], "a": 0, "why": "Scarcity of time-to-power makes already-energized capacity more valuable. Unpowered land loses value relative to it."},
-    {"id": "q6", "layer": "chips", "level": "Recall", "q": "Which company manufactures most of the world's leading-edge AI chips?", "options": ["NVIDIA", "TSMC", "ASML", "Intel"], "a": 1, "why": "NVIDIA designs; TSMC manufactures. ASML makes the lithography machines TSMC uses."},
-    {"id": "q7", "layer": "chips", "level": "Explain", "q": "What is usually cited as NVIDIA's deepest moat?", "options": ["Owning the factories", "CUDA software and full-system integration", "Low prices", "Government contracts"], "a": 1, "why": "Developers build on CUDA, and NVIDIA sells whole systems with networking. Switching costs live in software and integration, not just the silicon."},
-    {"id": "q8", "layer": "chips", "level": "Apply", "q": "Google runs more AI on its own TPUs instead of buying GPUs. Who benefits most?", "options": ["NVIDIA", "Broadcom, which co-designs custom chips", "Utilities only", "Consumer app makers only"], "a": 1, "why": "Custom ASICs are often co-designed with Broadcom or Marvell. The shift takes share from merchant GPUs."},
-    {"id": "q9", "layer": "chips", "level": "Analyze", "q": "Why does the shift from training to inference matter for chip winners?", "options": ["Inference needs no chips", "Inference rewards cost per token, which opens room for cheaper custom chips", "Training is growing faster forever", "Inference only runs on phones"], "a": 1, "why": "Training rewards peak performance; inference at scale rewards efficiency, where custom silicon and specialists compete."},
-    {"id": "q10", "layer": "chips", "level": "Recall", "q": "Which company is the sole supplier of EUV lithography machines?", "options": ["Applied Materials", "Lam Research", "ASML", "Tokyo Electron"], "a": 2, "why": "ASML is the only EUV supplier, a true chokepoint under the whole chip layer."},
-    {"id": "q11", "layer": "infrastructure", "level": "Recall", "q": "About how much did the big four plan to spend on capex in 2026 (FT tally)?", "options": ["$150B", "$410B", "$725B", "$2T"], "a": 2, "why": "About $725B, up 77% from $410B in 2025. $410B was the 2025 total."},
-    {"id": "q12", "layer": "infrastructure", "level": "Explain", "q": "Why can long GPU depreciation schedules overstate profits?", "options": ["Depreciation raises taxes", "If chips are useful for 2 to 3 years but depreciated over 5 to 6, annual expense is understated", "GPUs gain value over time", "Depreciation is not an expense"], "a": 1, "why": "Spreading cost over more years than the asset is useful lowers reported expense now and pushes the hit later."},
-    {"id": "q13", "layer": "infrastructure", "level": "Apply", "q": "What is a neocloud?", "options": ["A hyperscaler's private network", "A GPU-focused cloud that rents AI compute, like CoreWeave or Nebius", "A data center REIT", "A model lab"], "a": 1, "why": "Neoclouds specialize in renting GPU capacity, often funded heavily with debt."},
-    {"id": "q14", "layer": "infrastructure", "level": "Analyze", "q": "Which statistic best signals strain beneath record capex?", "options": ["Rising cloud revenue", "Shrinking free cash flow while capex climbs", "More data center announcements", "Higher GPU shipments"], "a": 1, "why": "When capex outpaces operating cash flow, funding shifts to debt and outside capital, which is where cycles break."},
-    {"id": "q15", "layer": "infrastructure", "level": "Predict", "q": "Meta raised capex guidance and its stock fell about 9%. What does that reaction suggest?", "options": ["Investors want more spending", "Investors are starting to question returns on the spending", "Meta's revenue fell", "Capex is irrelevant to stock prices"], "a": 1, "why": "Revenue beat expectations, yet the stock fell on higher spending. The market began demanding proof of return."},
-    {"id": "q16", "layer": "models", "level": "Recall", "q": "How do model companies mostly charge developers?", "options": ["Per GPU", "Per token through an API", "Per megawatt", "Per data center"], "a": 1, "why": "API pricing is per token of input and output; consumers usually pay subscriptions."},
-    {"id": "q17", "layer": "models", "level": "Explain", "q": "Why are open-weight models a threat to model-layer profits?", "options": ["They are illegal", "They set a near-cost price floor that closed models must compete against", "They require more chips", "They only work in China"], "a": 1, "why": "Free or cheap capable models cap what anyone can charge for similar quality."},
-    {"id": "q18", "layer": "models", "level": "Apply", "q": "You want public-market exposure to frontier labs. Which is the most direct path?", "options": ["Buying utility stocks", "Owning hyperscalers with lab stakes (MSFT, AMZN, GOOGL) or SoftBank", "Buying BDCs", "Buying copper miners"], "a": 1, "why": "Most frontier labs are private; exposure runs through strategic investors."},
-    {"id": "q19", "layer": "models", "level": "Analyze", "q": "Training cost is fixed per model; inference cost scales with use. What does that imply as usage grows?", "options": ["Margins can widen if price per token falls slower than cost per token", "Costs stay flat", "Inference becomes free", "Training dominates forever"], "a": 0, "why": "The economics hinge on the gap between token price and token cost at scale."},
-    {"id": "q20", "layer": "applications", "level": "Recall", "q": "Where in the cake does Huang say economic benefit finally shows up?", "options": ["Energy", "Chips", "Models", "Applications"], "a": 3, "why": "Applications convert compute into economic value, and they pull on every layer beneath."},
-    {"id": "q21", "layer": "applications", "level": "Explain", "q": "Why could AI hurt some software incumbents even as it helps them?", "options": ["AI is banned in software", "If AI replaces users, per-seat revenue shrinks", "Software has no customers", "AI raises their costs to zero"], "a": 1, "why": "Seat-based pricing assumes a human per license. Agents that do the work can shrink seat counts."},
-    {"id": "q22", "layer": "applications", "level": "Analyze", "q": "Which moat is strongest at the application layer?", "options": ["Using the newest model", "Owning the workflow and proprietary data", "Having the lowest price", "Running your own power plant"], "a": 1, "why": "Models are interchangeable; workflow position and data are hard to copy."},
-    {"id": "q23", "layer": "capital", "level": "Recall", "q": "In the Meta Hyperion deal, who owns 80% of the campus?", "options": ["Meta", "Blue Owl funds", "NVIDIA", "Duke Energy"], "a": 1, "why": "Blue Owl funds own 80%; Meta keeps 20% and stays the tenant, keeping debt off its balance sheet."},
-    {"id": "q24", "layer": "capital", "level": "Explain", "q": "Why do hyperscalers use JVs and private credit instead of borrowing directly?", "options": ["It is cheaper in all cases", "It keeps large obligations off their balance sheets and protects credit ratings", "Banks refuse to lend to them", "It avoids taxes"], "a": 1, "why": "Off-balance-sheet structures let them build without visibly levering up, while risk shifts to lenders."},
-    {"id": "q25", "layer": "capital", "level": "Apply", "q": "Which public tickers give the closest daily read on private credit stress?", "options": ["NVDA, AMD", "ARCC, OBDC, BXSL (BDCs)", "NEE, DUK", "CRM, NOW"], "a": 1, "why": "BDCs hold private loans and trade publicly; discounts to net asset value signal stress."},
-    {"id": "q26", "layer": "capital", "level": "Analyze", "q": "Since early 2024, what share of data center M&A value came from private equity (Synergy)?", "options": ["About 20%", "About 50%", "About 84%", "100%"], "a": 2, "why": "84% of $151B across 575 deals, showing how dependent the buildout is on outside capital."},
-    {"id": "q27", "layer": "capital", "level": "Predict", "q": "If a hyperscaler cuts capex guidance, which reprices fastest?", "options": ["Consumer app subscriptions", "Private credit and data center debt underwritten on guidance", "Copper mines", "Regulated utility rates"], "a": 1, "why": "Much recent debt was priced as if guidance were certain. A cut forces an abrupt reprice."},
-    {"id": "q28", "layer": "capital", "level": "Recall", "q": "Who acquired DigitalBridge, completing the deal on September 30, 2026?", "options": ["Blackstone", "SoftBank", "KKR", "Brookfield"], "a": 1, "why": "SoftBank completed the roughly $3.1B acquisition; DBRG is no longer a public ticker."},
-    {"id": "q29", "layer": "plate", "level": "Explain", "q": "Which of these is part of the plate, not a cake layer?", "options": ["Chips", "Materials like copper and gallium", "Models", "Applications"], "a": 1, "why": "The plate holds the cake up: capital, data, talent, policy, and materials."},
-    {"id": "q30", "layer": "plate", "level": "Analyze", "q": "Why is circular financing a risk to read in AI revenue?", "options": ["It is illegal", "Some revenue at one layer is funded by investment from another, overstating independent demand", "It lowers chip prices", "It only affects energy"], "a": 1, "why": "When a chipmaker invests in a customer who buys its chips, part of demand is self-financed."},
-    {"id": "q31", "layer": "plate", "level": "Analyze", "q": "In mid-October 2026 CoreWeave's unsecured bonds yielded over 15% while the broad high-yield index spread stayed near 3.2 points. What does that gap most likely signal?", "options": ["A broad credit crisis has begun", "Lenders are repricing the weakest, most leveraged AI borrowers rather than all credit", "The Fed is cutting rates", "CoreWeave has defaulted"], "a": 1, "why": "Stress concentrated in single names and CCC credits while the index stays tight is how late-cycle cracks usually start: the marginal borrower pays first."},
-    {"id": "q32", "layer": "chips", "level": "Explain", "q": "ASML said in October 2026 that its planned supply for 2027 and 2028 will not fully meet customer demand. Why does that matter for the AI cake?", "options": ["It means chip demand is falling", "Lithography tools could become a second bottleneck alongside power, capping how fast new chip capacity arrives", "It lowers TSMC's prices", "It only affects memory"], "a": 1, "why": "Every leading-edge wafer needs EUV tools. If ASML cannot ship enough, fab capacity, and so GPU supply, grows more slowly than demand."},
-    {"id": "q33", "layer": "infrastructure", "level": "Apply", "q": "Meta guided 2026 capex to $130-145B and reported Q2 free cash flow of about $0.8B. If capex keeps rising, what is the most likely funding source?", "options": ["Cutting the dividend to zero alone", "More debt, leases, and off-balance-sheet partners like the Blue Owl Hyperion JV", "Selling Instagram", "Government grants"], "a": 1, "why": "When operating cash no longer covers capex, the gap is filled with borrowing and partner capital. That shifts risk from shareholders to lenders."},
-    {"id": "q34", "layer": "energy", "level": "Recall", "q": "Google's October 2026 deal with Constellation adds new nuclear power mainly by which method?", "options": ["Building new large reactors", "Uprating existing reactors to produce more power", "Restarting a closed plant", "Small modular reactors"], "a": 1, "why": "Uprates at 11 existing units (890 MW under a 20-year PPA) are faster and cheaper than new builds, which is why they come first."},
-    {"id": "q35", "layer": "plate", "level": "Predict", "q": "If CoreWeave needs to refinance unsecured debt while its bonds yield over 15%, which outcome is most consistent with the cycle model?", "options": ["Cheaper borrowing", "Growth funded by secured, contract-backed or customer-prepaid debt instead, with slower expansion if that is not enough", "No effect at all", "Hyperscalers stop buying GPUs immediately"], "a": 1, "why": "High unsecured costs push neoclouds toward asset-backed and prepaid financing. If those channels tighten too, capacity growth slows, an early overbuild-to-digestion signal."},
-    {"id": "q36", "layer": "infrastructure", "level": "Recall", "q": "In Q3 2026, Meta's free cash flow was about:", "options": ["+$20B", "+$0.8B", "-$2.1B", "-$20B"], "a": 2, "why": "Operating cash flow was $32.8B and capex including finance leases was $34.9B (Meta's Q3 release, Tier 1). Spending now exceeds what the core business generates, so the gap is funded by cash, debt, leases and partners."},
-    {"id": "q37", "layer": "plate", "level": "Explain", "q": "Meta raised the low end of its 2026 capex guide in the same quarter its free cash flow turned negative. What does that combination tell you about the cycle?", "options": ["Demand has collapsed", "Spending conviction is still rising even as internal funding runs out, so external financing matters more each quarter", "Meta is cutting capex", "Nothing; cash flow and capex are unrelated"], "a": 1, "why": "Late build-out shows rising capex alongside thinning cash cover. The cycle then depends on how cheaply the gap can be financed, which is why credit markets are the signal to watch."},
-    {"id": "q38", "layer": "models", "level": "Analyze", "q": "OpenAI reportedly cut its funding ask from $1.4T to $1.25T, still above its $852B March mark. How should you classify this?", "options": ["A down round, so an exit rule trips", "A lower ask in talks, not a down round; worth watching but no exit rule trips", "Proof the AI boom is over", "Irrelevant to the cake"], "a": 1, "why": "A down round prices below the last closed round. A trimmed asking price, still well above the last mark, signals investor price discipline, especially with Anthropic's IPO about to set a public comparison."},
-    {"id": "q39", "layer": "models", "level": "Explain", "q": "Reports on Anthropic's draft prospectus show an $80.7B first-half net loss, about $72B of it non-cash. Why does the non-cash split matter?", "options": ["It doesn't; a loss is a loss", "Most of the loss came from revaluing convertible instruments, not from running the business, so cash burn and compute commitments are the better gauges", "Non-cash losses mean the company is profitable", "It means the IPO is cancelled"], "a": 1, "why": "Fair-value charges on convertibles swing with the company's own valuation. The figures to watch are revenue growth, cash burn and the up to $750B of compute commitments, which are real future cash. These are still single-source (WSJ) until the public S-1."},
-    {"id": "q40", "layer": "chips", "level": "Apply", "q": "Nvidia reportedly wants all three HBM suppliers to build their NVHBM base die on TSMC 3nm. Which bottleneck does that tighten?", "options": ["Grid power", "TSMC's leading-edge logic capacity, since memory now competes with GPUs for the same nodes", "Data center real estate", "Model pricing"], "a": 1, "why": "Moving the HBM base die onto TSMC 3nm adds memory demand to TSMC's most advanced lines. TSMC is adding 3nm lines for 2027 and 2028, so this is a chip-layer squeeze to watch next to ASML's supply warning. Reported, not confirmed by the companies."},
-    {"id": "q41", "layer": "infrastructure", "level": "Analyze", "q": "AWS revenue grew 39% in Q3 2026, yet Amazon's trailing free cash flow fell to about negative $42B. How can both be true?", "options": ["Revenue growth always produces free cash flow", "Capex (about $77B in Q3 alone) grew far faster than the cash the business generates, so FCF turned negative even as sales accelerated", "AWS lost money", "Amazon cut prices to zero"], "a": 1, "why": "Free cash flow is operating cash flow minus capex. Amazon's Q3 capex jumped from $54B to $77B in one quarter (10-Q). Fast revenue growth is the bull case; negative FCF means the build is being funded from the balance sheet and debt, which is the late-cycle tell to watch."},
-    {"id": "q42", "layer": "infrastructure", "level": "Apply", "q": "Which infrastructure exit rule did Q3 2026 cloud results test, and what was the verdict?", "options": ["'Any hyperscaler guides capex down': tripped", "'Cloud revenue growth decelerates for two quarters': not tripped, since AWS and Azure growth accelerated", "'Neocloud refinancing at wider spreads': tripped", "None; cloud results are irrelevant"], "a": 1, "why": "AWS grew 39% and Azure 48%, both faster than the prior quarter. The deceleration rule needs two straight slower quarters. The capex-cut rule also held: nobody cut."},
-    {"id": "q43", "layer": "models", "level": "Explain", "q": "Anthropic's public S-1 shows a $0.7B GAAP operating loss but an $80.7B net loss for H1 2026. What explains the gap?", "options": ["Huge interest payments", "About $72B of non-cash fair-value charges on convertible notes and SAFEs, which sit below operating income", "A one-time lawsuit", "Revenue was restated"], "a": 1, "why": "Operating loss reflects the business: revenue minus compute, people and other costs. The convertible charge rises when Anthropic's own valuation rises, so it says little about operations. Compute commitments and cash on hand ($131.7B) matter more."},
-    {"id": "q44", "layer": "capital", "level": "Analyze", "q": "Microsoft's calendar-2026 capex guide is reported as $170-175B, below the $190B tally used before. Why should you not record this as a capex cut yet?", "options": ["Lower is always a cut", "Reports tie it to a finance-to-operating lease reclassification, and Microsoft's own release wasn't checked; the trust stack says stale beats wrong until a Tier 1 source confirms", "Microsoft never reports capex", "Because the stock went up"], "a": 1, "why": "Moving leases from finance to operating changes what counts as capex without changing the buildings bought. Microsoft also guided December-quarter capex above $50B, which is not cut behaviour. A big-four cut would trip exit rules, so it needs the filing."}
+    {
+      "id": "q1",
+      "layer": "energy",
+      "level": "Recall",
+      "q": "In Huang's framework, which layer is the foundation of the cake?",
+      "options": [
+        "Chips",
+        "Energy",
+        "Infrastructure",
+        "Capital"
+      ],
+      "a": 1,
+      "why": "Huang puts energy at the base and calls it the binding constraint on how much intelligence the system can produce."
+    },
+    {
+      "id": "q2",
+      "layer": "energy",
+      "level": "Explain",
+      "q": "Why is energy now the hardest layer to grow quickly?",
+      "options": [
+        "Electricity prices are capped by law",
+        "Grid connections, transformers, and turbines take years to deliver",
+        "Data centers use less power each year",
+        "Utilities refuse to sell to tech companies"
+      ],
+      "a": 1,
+      "why": "The constraint is physical lead time: interconnection queues and equipment backlogs run for years, while chips can ship in months."
+    },
+    {
+      "id": "q3",
+      "layer": "energy",
+      "level": "Apply",
+      "q": "A regulated utility signs a big data center load. How does it mainly earn more money?",
+      "options": [
+        "Charging scarcity prices for power",
+        "Earning an allowed return on the new grid assets it builds",
+        "Selling GPUs to the data center",
+        "Taking equity in the tenant"
+      ],
+      "a": 1,
+      "why": "Regulated utilities earn on rate base. Scarcity pricing goes to unregulated independent power producers like Vistra or Constellation."
+    },
+    {
+      "id": "q4",
+      "layer": "energy",
+      "level": "Analyze",
+      "q": "Which company is closest to a pure play on unregulated power sold to data centers?",
+      "options": [
+        "Duke Energy",
+        "Constellation Energy",
+        "Equinix",
+        "Broadcom"
+      ],
+      "a": 1,
+      "why": "Constellation is an independent power producer with a large nuclear fleet and data center contracts. Duke is regulated; Equinix is real estate; Broadcom is chips."
+    },
+    {
+      "id": "q5",
+      "layer": "energy",
+      "level": "Predict",
+      "q": "If transformer lead times double, which asset gains the most value?",
+      "options": [
+        "Data centers already connected to power",
+        "Land far from any substation",
+        "Next-generation GPUs not yet delivered",
+        "Consumer AI apps"
+      ],
+      "a": 0,
+      "why": "Scarcity of time-to-power makes already-energized capacity more valuable. Unpowered land loses value relative to it."
+    },
+    {
+      "id": "q6",
+      "layer": "chips",
+      "level": "Recall",
+      "q": "Which company manufactures most of the world's leading-edge AI chips?",
+      "options": [
+        "NVIDIA",
+        "TSMC",
+        "ASML",
+        "Intel"
+      ],
+      "a": 1,
+      "why": "NVIDIA designs; TSMC manufactures. ASML makes the lithography machines TSMC uses."
+    },
+    {
+      "id": "q7",
+      "layer": "chips",
+      "level": "Explain",
+      "q": "What is usually cited as NVIDIA's deepest moat?",
+      "options": [
+        "Owning the factories",
+        "CUDA software and full-system integration",
+        "Low prices",
+        "Government contracts"
+      ],
+      "a": 1,
+      "why": "Developers build on CUDA, and NVIDIA sells whole systems with networking. Switching costs live in software and integration, not just the silicon."
+    },
+    {
+      "id": "q8",
+      "layer": "chips",
+      "level": "Apply",
+      "q": "Google runs more AI on its own TPUs instead of buying GPUs. Who benefits most?",
+      "options": [
+        "NVIDIA",
+        "Broadcom, which co-designs custom chips",
+        "Utilities only",
+        "Consumer app makers only"
+      ],
+      "a": 1,
+      "why": "Custom ASICs are often co-designed with Broadcom or Marvell. The shift takes share from merchant GPUs."
+    },
+    {
+      "id": "q9",
+      "layer": "chips",
+      "level": "Analyze",
+      "q": "Why does the shift from training to inference matter for chip winners?",
+      "options": [
+        "Inference needs no chips",
+        "Inference rewards cost per token, which opens room for cheaper custom chips",
+        "Training is growing faster forever",
+        "Inference only runs on phones"
+      ],
+      "a": 1,
+      "why": "Training rewards peak performance; inference at scale rewards efficiency, where custom silicon and specialists compete."
+    },
+    {
+      "id": "q10",
+      "layer": "chips",
+      "level": "Recall",
+      "q": "Which company is the sole supplier of EUV lithography machines?",
+      "options": [
+        "Applied Materials",
+        "Lam Research",
+        "ASML",
+        "Tokyo Electron"
+      ],
+      "a": 2,
+      "why": "ASML is the only EUV supplier, a true chokepoint under the whole chip layer."
+    },
+    {
+      "id": "q11",
+      "layer": "infrastructure",
+      "level": "Recall",
+      "q": "About how much did the big four plan to spend on capex in 2026 (FT tally)?",
+      "options": [
+        "$150B",
+        "$410B",
+        "$725B",
+        "$2T"
+      ],
+      "a": 2,
+      "why": "About $725B, up 77% from $410B in 2025. $410B was the 2025 total."
+    },
+    {
+      "id": "q12",
+      "layer": "infrastructure",
+      "level": "Explain",
+      "q": "Why can long GPU depreciation schedules overstate profits?",
+      "options": [
+        "Depreciation raises taxes",
+        "If chips are useful for 2 to 3 years but depreciated over 5 to 6, annual expense is understated",
+        "GPUs gain value over time",
+        "Depreciation is not an expense"
+      ],
+      "a": 1,
+      "why": "Spreading cost over more years than the asset is useful lowers reported expense now and pushes the hit later."
+    },
+    {
+      "id": "q13",
+      "layer": "infrastructure",
+      "level": "Apply",
+      "q": "What is a neocloud?",
+      "options": [
+        "A hyperscaler's private network",
+        "A GPU-focused cloud that rents AI compute, like CoreWeave or Nebius",
+        "A data center REIT",
+        "A model lab"
+      ],
+      "a": 1,
+      "why": "Neoclouds specialize in renting GPU capacity, often funded heavily with debt."
+    },
+    {
+      "id": "q14",
+      "layer": "infrastructure",
+      "level": "Analyze",
+      "q": "Which statistic best signals strain beneath record capex?",
+      "options": [
+        "Rising cloud revenue",
+        "Shrinking free cash flow while capex climbs",
+        "More data center announcements",
+        "Higher GPU shipments"
+      ],
+      "a": 1,
+      "why": "When capex outpaces operating cash flow, funding shifts to debt and outside capital, which is where cycles break."
+    },
+    {
+      "id": "q15",
+      "layer": "infrastructure",
+      "level": "Predict",
+      "q": "Meta raised capex guidance and its stock fell about 9%. What does that reaction suggest?",
+      "options": [
+        "Investors want more spending",
+        "Investors are starting to question returns on the spending",
+        "Meta's revenue fell",
+        "Capex is irrelevant to stock prices"
+      ],
+      "a": 1,
+      "why": "Revenue beat expectations, yet the stock fell on higher spending. The market began demanding proof of return."
+    },
+    {
+      "id": "q16",
+      "layer": "models",
+      "level": "Recall",
+      "q": "How do model companies mostly charge developers?",
+      "options": [
+        "Per GPU",
+        "Per token through an API",
+        "Per megawatt",
+        "Per data center"
+      ],
+      "a": 1,
+      "why": "API pricing is per token of input and output; consumers usually pay subscriptions."
+    },
+    {
+      "id": "q17",
+      "layer": "models",
+      "level": "Explain",
+      "q": "Why are open-weight models a threat to model-layer profits?",
+      "options": [
+        "They are illegal",
+        "They set a near-cost price floor that closed models must compete against",
+        "They require more chips",
+        "They only work in China"
+      ],
+      "a": 1,
+      "why": "Free or cheap capable models cap what anyone can charge for similar quality."
+    },
+    {
+      "id": "q18",
+      "layer": "models",
+      "level": "Apply",
+      "q": "You want public-market exposure to frontier labs. Which is the most direct path?",
+      "options": [
+        "Buying utility stocks",
+        "Owning hyperscalers with lab stakes (MSFT, AMZN, GOOGL) or SoftBank",
+        "Buying BDCs",
+        "Buying copper miners"
+      ],
+      "a": 1,
+      "why": "Most frontier labs are private; exposure runs through strategic investors."
+    },
+    {
+      "id": "q19",
+      "layer": "models",
+      "level": "Analyze",
+      "q": "Training cost is fixed per model; inference cost scales with use. What does that imply as usage grows?",
+      "options": [
+        "Margins can widen if price per token falls slower than cost per token",
+        "Costs stay flat",
+        "Inference becomes free",
+        "Training dominates forever"
+      ],
+      "a": 0,
+      "why": "The economics hinge on the gap between token price and token cost at scale."
+    },
+    {
+      "id": "q20",
+      "layer": "applications",
+      "level": "Recall",
+      "q": "Where in the cake does Huang say economic benefit finally shows up?",
+      "options": [
+        "Energy",
+        "Chips",
+        "Models",
+        "Applications"
+      ],
+      "a": 3,
+      "why": "Applications convert compute into economic value, and they pull on every layer beneath."
+    },
+    {
+      "id": "q21",
+      "layer": "applications",
+      "level": "Explain",
+      "q": "Why could AI hurt some software incumbents even as it helps them?",
+      "options": [
+        "AI is banned in software",
+        "If AI replaces users, per-seat revenue shrinks",
+        "Software has no customers",
+        "AI raises their costs to zero"
+      ],
+      "a": 1,
+      "why": "Seat-based pricing assumes a human per license. Agents that do the work can shrink seat counts."
+    },
+    {
+      "id": "q22",
+      "layer": "applications",
+      "level": "Analyze",
+      "q": "Which moat is strongest at the application layer?",
+      "options": [
+        "Using the newest model",
+        "Owning the workflow and proprietary data",
+        "Having the lowest price",
+        "Running your own power plant"
+      ],
+      "a": 1,
+      "why": "Models are interchangeable; workflow position and data are hard to copy."
+    },
+    {
+      "id": "q23",
+      "layer": "capital",
+      "level": "Recall",
+      "q": "In the Meta Hyperion deal, who owns 80% of the campus?",
+      "options": [
+        "Meta",
+        "Blue Owl funds",
+        "NVIDIA",
+        "Duke Energy"
+      ],
+      "a": 1,
+      "why": "Blue Owl funds own 80%; Meta keeps 20% and stays the tenant, keeping debt off its balance sheet."
+    },
+    {
+      "id": "q24",
+      "layer": "capital",
+      "level": "Explain",
+      "q": "Why do hyperscalers use JVs and private credit instead of borrowing directly?",
+      "options": [
+        "It is cheaper in all cases",
+        "It keeps large obligations off their balance sheets and protects credit ratings",
+        "Banks refuse to lend to them",
+        "It avoids taxes"
+      ],
+      "a": 1,
+      "why": "Off-balance-sheet structures let them build without visibly levering up, while risk shifts to lenders."
+    },
+    {
+      "id": "q25",
+      "layer": "capital",
+      "level": "Apply",
+      "q": "Which public tickers give the closest daily read on private credit stress?",
+      "options": [
+        "NVDA, AMD",
+        "ARCC, OBDC, BXSL (BDCs)",
+        "NEE, DUK",
+        "CRM, NOW"
+      ],
+      "a": 1,
+      "why": "BDCs hold private loans and trade publicly; discounts to net asset value signal stress."
+    },
+    {
+      "id": "q26",
+      "layer": "capital",
+      "level": "Analyze",
+      "q": "Since early 2024, what share of data center M&A value came from private equity (Synergy)?",
+      "options": [
+        "About 20%",
+        "About 50%",
+        "About 84%",
+        "100%"
+      ],
+      "a": 2,
+      "why": "84% of $151B across 575 deals, showing how dependent the buildout is on outside capital."
+    },
+    {
+      "id": "q27",
+      "layer": "capital",
+      "level": "Predict",
+      "q": "If a hyperscaler cuts capex guidance, which reprices fastest?",
+      "options": [
+        "Consumer app subscriptions",
+        "Private credit and data center debt underwritten on guidance",
+        "Copper mines",
+        "Regulated utility rates"
+      ],
+      "a": 1,
+      "why": "Much recent debt was priced as if guidance were certain. A cut forces an abrupt reprice."
+    },
+    {
+      "id": "q28",
+      "layer": "capital",
+      "level": "Recall",
+      "q": "Who acquired DigitalBridge, completing the deal on September 30, 2026?",
+      "options": [
+        "Blackstone",
+        "SoftBank",
+        "KKR",
+        "Brookfield"
+      ],
+      "a": 1,
+      "why": "SoftBank completed the roughly $3.1B acquisition; DBRG is no longer a public ticker."
+    },
+    {
+      "id": "q29",
+      "layer": "plate",
+      "level": "Explain",
+      "q": "Which of these is part of the plate, not a cake layer?",
+      "options": [
+        "Chips",
+        "Materials like copper and gallium",
+        "Models",
+        "Applications"
+      ],
+      "a": 1,
+      "why": "The plate holds the cake up: capital, data, talent, policy, and materials."
+    },
+    {
+      "id": "q30",
+      "layer": "plate",
+      "level": "Analyze",
+      "q": "Why is circular financing a risk to read in AI revenue?",
+      "options": [
+        "It is illegal",
+        "Some revenue at one layer is funded by investment from another, overstating independent demand",
+        "It lowers chip prices",
+        "It only affects energy"
+      ],
+      "a": 1,
+      "why": "When a chipmaker invests in a customer who buys its chips, part of demand is self-financed."
+    },
+    {
+      "id": "q31",
+      "layer": "plate",
+      "level": "Analyze",
+      "q": "In mid-October 2026 CoreWeave's unsecured bonds yielded over 15% while the broad high-yield index spread stayed near 3.2 points. What does that gap most likely signal?",
+      "options": [
+        "A broad credit crisis has begun",
+        "Lenders are repricing the weakest, most leveraged AI borrowers rather than all credit",
+        "The Fed is cutting rates",
+        "CoreWeave has defaulted"
+      ],
+      "a": 1,
+      "why": "Stress concentrated in single names and CCC credits while the index stays tight is how late-cycle cracks usually start: the marginal borrower pays first."
+    },
+    {
+      "id": "q32",
+      "layer": "chips",
+      "level": "Explain",
+      "q": "ASML said in October 2026 that its planned supply for 2027 and 2028 will not fully meet customer demand. Why does that matter for the AI cake?",
+      "options": [
+        "It means chip demand is falling",
+        "Lithography tools could become a second bottleneck alongside power, capping how fast new chip capacity arrives",
+        "It lowers TSMC's prices",
+        "It only affects memory"
+      ],
+      "a": 1,
+      "why": "Every leading-edge wafer needs EUV tools. If ASML cannot ship enough, fab capacity, and so GPU supply, grows more slowly than demand."
+    },
+    {
+      "id": "q33",
+      "layer": "infrastructure",
+      "level": "Apply",
+      "q": "Meta guided 2026 capex to $130-145B and reported Q2 free cash flow of about $0.8B. If capex keeps rising, what is the most likely funding source?",
+      "options": [
+        "Cutting the dividend to zero alone",
+        "More debt, leases, and off-balance-sheet partners like the Blue Owl Hyperion JV",
+        "Selling Instagram",
+        "Government grants"
+      ],
+      "a": 1,
+      "why": "When operating cash no longer covers capex, the gap is filled with borrowing and partner capital. That shifts risk from shareholders to lenders."
+    },
+    {
+      "id": "q34",
+      "layer": "energy",
+      "level": "Recall",
+      "q": "Google's October 2026 deal with Constellation adds new nuclear power mainly by which method?",
+      "options": [
+        "Building new large reactors",
+        "Uprating existing reactors to produce more power",
+        "Restarting a closed plant",
+        "Small modular reactors"
+      ],
+      "a": 1,
+      "why": "Uprates at 11 existing units (890 MW under a 20-year PPA) are faster and cheaper than new builds, which is why they come first."
+    },
+    {
+      "id": "q35",
+      "layer": "plate",
+      "level": "Predict",
+      "q": "If CoreWeave needs to refinance unsecured debt while its bonds yield over 15%, which outcome is most consistent with the cycle model?",
+      "options": [
+        "Cheaper borrowing",
+        "Growth funded by secured, contract-backed or customer-prepaid debt instead, with slower expansion if that is not enough",
+        "No effect at all",
+        "Hyperscalers stop buying GPUs immediately"
+      ],
+      "a": 1,
+      "why": "High unsecured costs push neoclouds toward asset-backed and prepaid financing. If those channels tighten too, capacity growth slows, an early overbuild-to-digestion signal."
+    },
+    {
+      "id": "q36",
+      "layer": "infrastructure",
+      "level": "Recall",
+      "q": "In Q3 2026, Meta's free cash flow was about:",
+      "options": [
+        "+$20B",
+        "+$0.8B",
+        "-$2.1B",
+        "-$20B"
+      ],
+      "a": 2,
+      "why": "Operating cash flow was $32.8B and capex including finance leases was $34.9B (Meta's Q3 release, Tier 1). Spending now exceeds what the core business generates, so the gap is funded by cash, debt, leases and partners."
+    },
+    {
+      "id": "q37",
+      "layer": "plate",
+      "level": "Explain",
+      "q": "Meta raised the low end of its 2026 capex guide in the same quarter its free cash flow turned negative. What does that combination tell you about the cycle?",
+      "options": [
+        "Demand has collapsed",
+        "Spending conviction is still rising even as internal funding runs out, so external financing matters more each quarter",
+        "Meta is cutting capex",
+        "Nothing; cash flow and capex are unrelated"
+      ],
+      "a": 1,
+      "why": "Late build-out shows rising capex alongside thinning cash cover. The cycle then depends on how cheaply the gap can be financed, which is why credit markets are the signal to watch."
+    },
+    {
+      "id": "q38",
+      "layer": "models",
+      "level": "Analyze",
+      "q": "OpenAI reportedly cut its funding ask from $1.4T to $1.25T, still above its $852B March mark. How should you classify this?",
+      "options": [
+        "A down round, so an exit rule trips",
+        "A lower ask in talks, not a down round; worth watching but no exit rule trips",
+        "Proof the AI boom is over",
+        "Irrelevant to the cake"
+      ],
+      "a": 1,
+      "why": "A down round prices below the last closed round. A trimmed asking price, still well above the last mark, signals investor price discipline, especially with Anthropic's IPO about to set a public comparison."
+    },
+    {
+      "id": "q39",
+      "layer": "models",
+      "level": "Explain",
+      "q": "Reports on Anthropic's draft prospectus show an $80.7B first-half net loss, about $72B of it non-cash. Why does the non-cash split matter?",
+      "options": [
+        "It doesn't; a loss is a loss",
+        "Most of the loss came from revaluing convertible instruments, not from running the business, so cash burn and compute commitments are the better gauges",
+        "Non-cash losses mean the company is profitable",
+        "It means the IPO is cancelled"
+      ],
+      "a": 1,
+      "why": "Fair-value charges on convertibles swing with the company's own valuation. The figures to watch are revenue growth, cash burn and the up to $750B of compute commitments, which are real future cash. These are still single-source (WSJ) until the public S-1."
+    },
+    {
+      "id": "q40",
+      "layer": "chips",
+      "level": "Apply",
+      "q": "Nvidia reportedly wants all three HBM suppliers to build their NVHBM base die on TSMC 3nm. Which bottleneck does that tighten?",
+      "options": [
+        "Grid power",
+        "TSMC's leading-edge logic capacity, since memory now competes with GPUs for the same nodes",
+        "Data center real estate",
+        "Model pricing"
+      ],
+      "a": 1,
+      "why": "Moving the HBM base die onto TSMC 3nm adds memory demand to TSMC's most advanced lines. TSMC is adding 3nm lines for 2027 and 2028, so this is a chip-layer squeeze to watch next to ASML's supply warning. Reported, not confirmed by the companies."
+    },
+    {
+      "id": "q41",
+      "layer": "infrastructure",
+      "level": "Analyze",
+      "q": "AWS revenue grew 39% in Q3 2026, yet Amazon's trailing free cash flow fell to about negative $42B. How can both be true?",
+      "options": [
+        "Revenue growth always produces free cash flow",
+        "Capex (about $77B in Q3 alone) grew far faster than the cash the business generates, so FCF turned negative even as sales accelerated",
+        "AWS lost money",
+        "Amazon cut prices to zero"
+      ],
+      "a": 1,
+      "why": "Free cash flow is operating cash flow minus capex. Amazon's Q3 capex jumped from $54B to $77B in one quarter (10-Q). Fast revenue growth is the bull case; negative FCF means the build is being funded from the balance sheet and debt, which is the late-cycle tell to watch."
+    },
+    {
+      "id": "q42",
+      "layer": "infrastructure",
+      "level": "Apply",
+      "q": "Which infrastructure exit rule did Q3 2026 cloud results test, and what was the verdict?",
+      "options": [
+        "'Any hyperscaler guides capex down': tripped",
+        "'Cloud revenue growth decelerates for two quarters': not tripped, since AWS and Azure growth accelerated",
+        "'Neocloud refinancing at wider spreads': tripped",
+        "None; cloud results are irrelevant"
+      ],
+      "a": 1,
+      "why": "AWS grew 39% and Azure 48%, both faster than the prior quarter. The deceleration rule needs two straight slower quarters. The capex-cut rule also held: nobody cut."
+    },
+    {
+      "id": "q43",
+      "layer": "models",
+      "level": "Explain",
+      "q": "Anthropic's public S-1 shows a $0.7B GAAP operating loss but an $80.7B net loss for H1 2026. What explains the gap?",
+      "options": [
+        "Huge interest payments",
+        "About $72B of non-cash fair-value charges on convertible notes and SAFEs, which sit below operating income",
+        "A one-time lawsuit",
+        "Revenue was restated"
+      ],
+      "a": 1,
+      "why": "Operating loss reflects the business: revenue minus compute, people and other costs. The convertible charge rises when Anthropic's own valuation rises, so it says little about operations. Compute commitments and cash on hand ($131.7B) matter more."
+    },
+    {
+      "id": "q44",
+      "layer": "capital",
+      "level": "Analyze",
+      "q": "Microsoft's calendar-2026 capex guide is reported as $170-175B, below the $190B tally used before. Why should you not record this as a capex cut yet?",
+      "options": [
+        "Lower is always a cut",
+        "Reports tie it to a finance-to-operating lease reclassification, and Microsoft's own release wasn't checked; the trust stack says stale beats wrong until a Tier 1 source confirms",
+        "Microsoft never reports capex",
+        "Because the stock went up"
+      ],
+      "a": 1,
+      "why": "Moving leases from finance to operating changes what counts as capex without changing the buildings bought. Microsoft also guided December-quarter capex above $50B, which is not cut behaviour. A big-four cut would trip exit rules, so it needs the filing."
+    },
+    {
+      "id": "q45",
+      "layer": "plate",
+      "level": "Analyze",
+      "q": "In the week of Nov 5, 2026, high-yield spreads rose to 3.48% while the 10-year Treasury yield fell to 4.84%. What does that combination most likely signal?",
+      "options": [
+        "Investors expect faster growth",
+        "Investors are moving to safety and demanding more pay for credit risk",
+        "The Fed raised rates",
+        "Corporate defaults have already peaked"
+      ],
+      "a": 1,
+      "why": "Falling Treasury yields with wider credit spreads is the classic risk-off pattern: safe assets are bid while weak borrowers pay more. Lower Treasury yields do not help a borrower whose spread is widening faster."
+    },
+    {
+      "id": "q46",
+      "layer": "chips",
+      "level": "Apply",
+      "q": "AMD reported Q3 2026 data center revenue up 97% to $8.5B, about 64% of total revenue. What is the main implication for an investor?",
+      "options": [
+        "AMD no longer depends on the AI cycle",
+        "AMD is now far more exposed to hyperscaler capex decisions",
+        "AMD has passed NVIDIA in AI chips",
+        "Gaming is the main growth driver"
+      ],
+      "a": 1,
+      "why": "A segment at about two-thirds of revenue means the company rises and falls with data center spending. Strong growth and high concentration come together."
+    },
+    {
+      "id": "q47",
+      "layer": "plate",
+      "level": "Explain",
+      "q": "Blue Owl Capital Corp (OBDC) reported NAV of $14.32 a share, and its shares traded about 25% below that. What is the discount telling you?",
+      "options": [
+        "The company has already lost 25% of its loans",
+        "The market doubts the stated loan values or the future income more than the reported marks do",
+        "NAV is calculated by the stock exchange",
+        "The dividend was cancelled"
+      ],
+      "a": 1,
+      "why": "A discount to NAV is the market saying it does not fully trust the marks or the earnings path. Reported non-accruals were low at 0.8% at fair value, so the discount is a forward judgment, not a reported loss."
+    },
+    {
+      "id": "q48",
+      "layer": "models",
+      "level": "Analyze",
+      "q": "Anthropic's IPO talk moved toward $1.5T after some investors said that was the high end, down from earlier $1.8-2T talk. Does that trip the exit rule 'a frontier lab takes a down round'?",
+      "options": [
+        "Yes, any lower number is a down round",
+        "No, a down round means pricing below the last actual round, and talk is not a priced deal",
+        "Yes, because the filing leaves the price blank",
+        "It cannot be judged until 2028"
+      ],
+      "a": 1,
+      "why": "Compare a priced deal with the previous priced deal. Narrower hopes are worth tracking, but neither a lower ask nor a blank price is a down round."
+    }
   ]
 }
