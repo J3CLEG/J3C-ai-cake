@@ -2,7 +2,7 @@
   "meta": {
     "title": "J3C AI Cake",
     "seeded": "2026-10-15",
-    "last_verified": "2026-11-08",
+    "last_verified": "2026-11-15",
     "framework_origin": "Jensen Huang (NVIDIA): CSIS Dec 2025, Davos Jan 2026, NVIDIA blog 'AI Is a 5-Layer Cake' Mar 10, 2026",
     "disclaimer": "Personal learning tool. Education only, not investment advice. Figures carry a source tier; check the source before acting on any number.",
     "tiers": {
@@ -320,6 +320,91 @@
     "fool_capex_aug": {
       "title": "Motley Fool via Webull: AI spending week table (Aug 3)",
       "url": "https://www.webull.com/news/15339040379773952",
+      "tier": 3
+    },
+    "nvda_8k_huang": {
+      "title": "NVIDIA Form 8-K: CEO Jensen Huang resigns; Colette Kress interim CEO (filed Nov 12, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "tier": 1
+    },
+    "crwv_3q26": {
+      "title": "CoreWeave Q3 2026 results press release, Form 8-K Ex. 99.1 (Nov 10, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+      "tier": 1
+    },
+    "ant_s1a2": {
+      "title": "Anthropic, PBC S-1/A No. 2 with price range (Nov 10, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+      "tier": 1
+    },
+    "nbis_3q26": {
+      "title": "Nebius Q3 2026 results, Form 6-K Ex. 99.1 (Nov 12, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm",
+      "tier": 1
+    },
+    "cbs_huang": {
+      "title": "CBS News/AFP: China warns against new US export controls after Huang scandal (Nov 13)",
+      "url": "https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/",
+      "tier": 3
+    },
+    "trendforce_huang": {
+      "title": "TrendForce: NVIDIA without Huang, citing Reuters and Taiwan/Korea press (Nov 13)",
+      "url": "https://www.trendforce.com/news/2026/11/13/news-nvidia-without-huang-new-tests-ahead-as-amd-eyes-gains-tsmc-finds-a-cushion-and-memory-giants-weigh-risks",
+      "tier": 3
+    },
+    "investing_info_export": {
+      "title": "Investing.com citing The Information: possible new NVIDIA export controls (Nov 9)",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-faces-increased-chip-export-controls-amid-huang-scandal-the-information-93CH-5013845",
+      "tier": 3
+    },
+    "neo_weekly_1115": {
+      "title": "Neo Reports: Weekly AI Investment Review (Nov 15)",
+      "url": "https://neoreports.substack.com/p/weekly-ai-investment-review-261115",
+      "tier": 3
+    },
+    "k404_1115": {
+      "title": "456X Evening Brief (Nov 15): TSMC equity stakes in model labs",
+      "url": "https://404kresearch.substack.com/p/456x-evening-brief-november-15-2026",
+      "tier": 3
+    },
+    "strongcompute_ep8": {
+      "title": "Strong Compute: The Cost of Intelligence, Ep. 8 (Nov 11)",
+      "url": "https://words.strongcompute.com/p/the-cost-of-intelligence-episode-8",
+      "tier": 3
+    },
+    "clouded_1113": {
+      "title": "Clouded Judgement 11.13.26: The Frontier Blinks",
+      "url": "https://cloudedjudgement.substack.com/p/clouded-judgement-111326-the-frontier",
+      "tier": 3
+    },
+    "fortune_ant_range": {
+      "title": "Fortune: Anthropic sets IPO range valuing it at up to $1.4T (Nov 10)",
+      "url": "https://fortune.com/2026/11/10/anthropic-ipo-price-range-ai-stock-sell-off/",
+      "tier": 3
+    },
+    "decrypt_ant_range": {
+      "title": "Decrypt via Yahoo Finance: Anthropic sets IPO range $70-78 (Nov 10)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html",
+      "tier": 3
+    },
+    "w247_crwv_3q26": {
+      "title": "24/7 Wall St.: CoreWeave jumps 16% on beat-and-raise (Nov 11)",
+      "url": "https://247wallst.com/investing/2026/11/11/coreweave-jumps-16-as-beat-and-raise-quarter-eases-financing-fears-nebius-surges-13-oracle-rises-5/",
+      "tier": 3
+    },
+    "w247_nbis_3q26": {
+      "title": "24/7 Wall St.: CoreWeave's demand is there, $41.6B of debt remains (Nov 13)",
+      "url": "https://247wallst.com/investing/2026/11/13/coreweaves-demand-is-there-41-6b-of-corporate-debt-remains-what-this-means-for-nebius-and-coreweave/",
+      "tier": 3
+    },
+    "tdworld_duke": {
+      "title": "T&D World: Duke Energy reaches NC data center customer-protection settlement (Nov 10)",
+      "url": "https://www.tdworld.com/utility-business/news/55417957/duke-energy-reaches-agreement-on-data-center-customer-protections-in-north-carolina",
+      "tier": 3
+    },
+    "latitude_cfgap": {
+      "title": "Latitude Media: data centers face a carbon-free power gap (Nov 10)",
+      "url": "https://www.latitudemedia.com/news/data-centers-face-a-carbon-free-power-gap-that-utilities-havent-filled/",
       "tier": 3
     }
   },
@@ -902,6 +987,42 @@
         "source": "fool_obdc_3q26",
         "tier": 3,
         "as_of": "2026-09-30"
+      },
+      {
+        "text": "NVIDIA's board accepted Jensen Huang's resignation as President, CEO and director on Nov 11, 2026, effective immediately. CFO Colette Kress is interim CEO while a search runs; Harvey C. Jones is the new board chair (8-K, Nov 12). Press reports tie the exit to an admitted affair with a former Megaspeed executive.",
+        "source": "nvda_8k_huang",
+        "tier": 1,
+        "as_of": "2026-11-11"
+      },
+      {
+        "text": "CoreWeave Q3 2026: revenue $3.66B (+168%), net loss $709M, net interest expense $846M, backlog about $132.5B. 2026 revenue guide raised to $13.0-13.3B; 2026 capex now $37-39B (low end raised from $35-39B). Expects about $9B of customer prepayments and deposits in the next three months; raised about $4.2B of convertible notes in the quarter.",
+        "source": "crwv_3q26",
+        "tier": 1,
+        "as_of": "2026-09-30"
+      },
+      {
+        "text": "Anthropic S-1/A No. 2 (Nov 10): 825M Class A shares at $70-78 on Nasdaq as ANT, plus a $26.0B Class N private placement at the IPO price to AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC. About 13.09B shares outstanding after the offering, so roughly $0.92-1.02T on a basic count. Revenue $33.2B in the first nine months of 2026 vs $2.5B a year earlier; run-rate revenue about $81B at Oct 31, up $10B in a month.",
+        "source": "ant_s1a2",
+        "tier": 1,
+        "as_of": "2026-11-10"
+      },
+      {
+        "text": "Nebius Q3 2026: revenue $980.8M (+571%), adjusted EBITDA $465.8M, net loss from continuing operations $37.5M (6-K, Nov 12).",
+        "source": "nbis_3q26",
+        "tier": 1,
+        "as_of": "2026-09-30"
+      },
+      {
+        "text": "Anthropic cut top-tier API prices about 20% with Claude Fable 5.2 (Nov 9): $8 input / $40 output per million tokens, from $10 / $50 for Fable 5.1. Two newsletters agree; one cites Anthropic's pricing page.",
+        "source": "strongcompute_ep8",
+        "tier": 3,
+        "as_of": "2026-11-09"
+      },
+      {
+        "text": "US high-yield spreads eased to 3.20% on Nov 12 from 3.48% on Nov 5, while the 10-year Treasury yield jumped to 5.10% from 4.84% (FRED).",
+        "source": "fred_hy",
+        "tier": 1,
+        "as_of": "2026-11-12"
       }
     ],
     "deals": [
@@ -959,6 +1080,17 @@
         "date": "2026-10-06",
         "source": "cdive_ceg",
         "tier": 3
+      },
+      {
+        "name": "Anthropic Class N strategic placement",
+        "value_b": 26,
+        "type": "Equity (private placement alongside IPO)",
+        "buyers": "Google, NVIDIA, AMD, Broadcom, Micron, Microsoft, TSMC",
+        "layer": "models",
+        "buyer_type": "Strategic",
+        "date": "2026-11",
+        "source": "ant_s1a2",
+        "tier": 1
       }
     ],
     "contested": [
@@ -1000,26 +1132,25 @@
           "~881bp (Dow Jones Market Data, Oct 12)",
           ">1,000bp (Reuters via Roic.ai, Oct 14-15)",
           "1,115bp (Benzinga, Oct 22; no data provider named)",
-          "~1,067bp (CNBC, Oct 21, via FourWeekMBA)"
+          "~1,067bp (CNBC, Oct 21, via FourWeekMBA)",
+          "Past 11% (1,100bp) in early November (CNBC via 24/7 Wall St.); CEO says it will not use the unsecured market 'at current yields' (Nov 10 call)"
         ],
-        "why": "Rising every week and quoted by outlets that do not name a provider. Direction is not in doubt; the exact level is.",
+        "why": "Quoted by outlets that do not name a provider. After the Nov 10 beat-and-raise the stock rose ~16% then gave back gains; no post-results CDS level was verified.",
         "source": "fwm_crwv",
         "tier": 3
       },
       {
         "topic": "Anthropic IPO",
         "values": [
-          "~$1.5T market cap at listing (Reuters via IPO Scoop)",
-          "~$75B raise expected (IPO pros, not in filing)",
-          "Marketing as soon as week of Nov 9 (Bloomberg)",
-          "Named compute commitments sum to ~$637B (author's sum; S-1 leaves the aggregate blank) vs 'up to $750B' (WSJ draft review)",
-          "Reuters (Nov 6): investors doubt a roadshow next week and a November listing; some see $1.5T as the high end",
-          "S-1/A filed Nov 2, price and share count still blank (Reuters via Let's Data Science)",
-          "Target cut to $1.42-1.50T; 9-month revenue $33.2B, Q3 $16.8B (KuCoin blog, no source named; its per-share band is unsupported)"
+          "Fully diluted value up to ~$1.40T at the top of the range (CNBC via Decrypt; Fortune); $1.26-1.41T (NYT via Gizmodo)",
+          "Basic value ~$0.92-1.02T (13.09B shares in the S-1/A times $70-78)",
+          "Raise up to ~$64.4B incl. selling holders (Fortune, Decrypt) vs ~$90.4B (456X, no source; likely adds part of the $26B placement)",
+          "Pricing Nov 18, trading Nov 19 (CNBC via Decrypt) vs Nov 19 or 20 (WSJ via Gizmodo)",
+          "May 2026 private round at $965B (Decrypt); earlier talk of ~$2T"
         ],
-        "why": "The public S-1 (Oct 26) settles the H1 figures, now in facts. Price range, share count and valuation are blank in the filing; everything here is reporting.",
-        "source": "gupta_ant_s1",
-        "tier": 3
+        "why": "The S-1/A No. 2 (Nov 10) now settles the range, share count and nine-month revenue (in facts). Valuation headlines differ mainly by basic vs fully diluted share count; the raise figure differs by what is counted.",
+        "source": "ant_s1a2",
+        "tier": 1
       },
       {
         "topic": "OpenAI new round",
@@ -1081,14 +1212,44 @@
         "tier": 3
       },
       {
-        "topic": "Size of the Nov 5 AI rout",
+        "topic": "TSMC equity stakes in OpenAI and Anthropic",
         "values": [
-          "S&P 500 -4.4%, Nasdaq Composite -5.5% (AP)",
-          "Nasdaq 100 down more than 6% (Reuters)",
-          "Nvidia -9.3%, AMD -17.3%, CoreWeave -9.8% (AP only)"
+          "TSMC board approved minority stakes in both labs, size to be negotiated (456X, Nov 15)",
+          "TSMC Partners buys ~$0.5B of Anthropic Class N at the IPO price (S-1/A; amount per Decrypt)"
         ],
-        "why": "Each index figure rests on one wire report, and the two reports quote different Nasdaq indexes. AP also blames midterm results raising the chance of data-center construction pauses; that causal claim is unconfirmed.",
-        "source": "ap_rout_nov5",
+        "why": "Only one newsletter reports a broader TSMC board resolution and names no filing. The Anthropic placement is confirmed by the S-1/A; an OpenAI stake is not.",
+        "source": "k404_1115",
+        "tier": 3
+      },
+      {
+        "topic": "Wider NVIDIA export controls",
+        "values": [
+          "White House may not block NDAA chip-control measures, incl. remote-access limits (The Information via Investing.com, Nov 9)",
+          "Curbs may widen to seven countries incl. Singapore; >1.5GW of NVIDIA chips believed in China (Neo Reports, no source named)",
+          "Speaker Johnson: growing consensus in Congress to tighten controls (CBS, Nov 13)"
+        ],
+        "why": "No rule has been issued. Direction is toward tighter controls after the Megaspeed revelations; scope and timing are unconfirmed.",
+        "source": "investing_info_export",
+        "tier": 3
+      },
+      {
+        "topic": "Neocloud 2027 capex",
+        "values": [
+          "Nebius 2027 capex $40-45B vs $30.4B consensus (Neo Reports)",
+          "Nebius 2026 revenue at the low end of $3.0-3.4B; $5.75B new convertibles (24/7 Wall St.)"
+        ],
+        "why": "Nebius's release does not carry guidance; the shareholder letter was not read. Each figure rests on one secondary source.",
+        "source": "neo_weekly_1115",
+        "tier": 3
+      },
+      {
+        "topic": "US data center power additions slipping",
+        "values": [
+          "~20% of US additions shifted from 2028 to 2029, incl. 4.9GW in Texas and Ohio (Morgan Stanley via Neo Reports)",
+          "Utilities plan carbon-free supply for under one-third of contracted data center load (Latitude Media)"
+        ],
+        "why": "A slip in timing is the first sign energy exit rules would watch, but the Morgan Stanley note was not seen directly.",
+        "source": "neo_weekly_1115",
         "tier": 3
       }
     ],
@@ -1208,21 +1369,21 @@
       ],
       "why": "Chips were the shortage in 2023 and 2024. Now buildings with GPUs on order wait on grid connections, turbines, and transformers."
     },
-    "assessment": "Late build-out, spending past cash flow, and now under market pressure. Q3 capex hit about $230B a quarter (10-Qs) and nobody cut. Cloud and AI chip revenue are still accelerating, so demand is real. New this week: equities and credit both repriced the AI trade in early November. High-yield spreads rose to 3.48% and CoreWeave CDS passed 1,000bp to record highs. That is financing stress, not a demand break: no company has cut capex.",
+    "assessment": "Late build-out, spending past cash flow, and now a key-person shock. Q3 capex ran about $230B a quarter and nobody cut. Demand evidence got stronger this week: CoreWeave beat and raised, and Anthropic's filing shows $33B of nine-month revenue. New risks: NVIDIA's CEO resigned on Nov 11, export controls look set to tighten, and the 10-year yield jumped to 5.10%. High-yield spreads eased to 3.20%.",
     "signals": [
       {
         "name": "Capex guidance revisions",
         "status": "build",
-        "value": "Still rising: Q3 capex ~$230B/quarter (10-Qs); Amazon ~$220B for 2026 and 'meaningfully more' in 2027; Alphabet reportedly >$300B in 2027; Meta $135-145B; no cuts",
+        "value": "Still rising: Q3 capex ~$230B/quarter (10-Qs); no big-four change this week; CoreWeave raised its 2026 capex floor to $37B; no cuts",
         "source": "edgar_live_3q26",
         "tier": 1
       },
       {
         "name": "AI revenue vs capex",
         "status": "watch",
-        "value": "Cloud growth accelerating: AWS +39% ($184B run-rate), Azure +48%, Microsoft RPO $677B. Revenue is real but still far below ~$230B of quarterly capex",
-        "source": "cr_amzn_3q26",
-        "tier": 3
+        "value": "Revenue keeps accelerating: Anthropic nine-month revenue $33.2B and ~$81B run-rate (S-1/A), AWS +39%, Azure +48%. Still well below ~$230B of quarterly capex",
+        "source": "ant_s1a2",
+        "tier": 1
       },
       {
         "name": "Hyperscaler free cash flow",
@@ -1241,21 +1402,21 @@
       {
         "name": "Neocloud leverage",
         "status": "bad",
-        "value": "CoreWeave five-year CDS past 1,000bp to record highs (Reuters, Nov 6; provider not named). Q3 results Nov 10, 5 pm ET (company)",
-        "source": "reuters_rout_nov6",
-        "tier": 2
+        "value": "CoreWeave beat and raised (Q3 revenue $3.66B, capex $37-39B) but net interest expense was $846M against $207M operating income, and the CEO said it will not tap unsecured debt at current yields. Funding leans on ~$9B of customer prepayments",
+        "source": "crwv_3q26",
+        "tier": 1
       },
       {
         "name": "High-yield credit spreads",
         "status": "watch",
-        "value": "3.48% on 2026-11-05 (FRED), up from 3.26% on Oct 29, as the AI rout spread to credit. Reuters: highest since the April 2025 tariff shock, with CCC near the widest since 2020",
+        "value": "3.20% on 2026-11-12 (FRED), down from 3.48% on Nov 5 as CoreWeave's beat eased financing fears; still above the 3.26% of late October",
         "source": "fred_hy",
         "tier": 1
       },
       {
         "name": "10-year Treasury yield",
-        "status": "watch",
-        "value": "4.84% on 2026-11-05 (FRED), down from 4.98%: flight to safety, not easier financing for weak borrowers",
+        "status": "warn",
+        "value": "5.10% on 2026-11-12 (FRED), up 26bp in a week from 4.84%. Higher risk-free rates raise the hurdle for every leveraged data center project",
         "source": "fred_dgs10",
         "tier": 1
       }
@@ -2019,6 +2180,76 @@
       ],
       "a": 1,
       "why": "Compare a priced deal with the previous priced deal. Narrower hopes are worth tracking, but neither a lower ask nor a blank price is a down round."
+    },
+    {
+      "id": "q49",
+      "layer": "chips",
+      "level": "Analyze",
+      "q": "NVIDIA's CEO resigned on Nov 11, 2026 and the CFO became interim CEO. Which exit rule does that trip on its own?",
+      "options": [
+        "Hyperscaler capex guidance cut",
+        "NVIDIA gross margin falls more than 5 points",
+        "None: a leadership change is a risk to watch, not a demand or margin break",
+        "GPU rental prices drop sharply"
+      ],
+      "a": 2,
+      "why": "Exit rules track what the business does: orders, margins, prices. A CEO exit raises execution and policy risk, so watch the Nov 17 results and guidance for whether it shows up in the numbers."
+    },
+    {
+      "id": "q50",
+      "layer": "infrastructure",
+      "level": "Explain",
+      "q": "CoreWeave earned $207M of operating income in Q3 2026 but paid $846M of net interest. Why can it keep growing anyway?",
+      "options": [
+        "It has no debt",
+        "Customer prepayments, contract-backed loans and new equity fund the build while interest runs ahead of profit",
+        "Interest expense is not a real cost",
+        "The government guarantees its loans"
+      ],
+      "a": 1,
+      "why": "Neoclouds fund GPUs with debt secured on customer contracts and with prepayments. That works while customers pay and lenders stay open; it is why the CEO's refusal to borrow unsecured 'at current yields' matters."
+    },
+    {
+      "id": "q51",
+      "layer": "models",
+      "level": "Apply",
+      "q": "Anthropic's S-1/A shows about 13.09B shares after the IPO and a $70-78 range, yet headlines say 'up to $1.4 trillion'. What explains the gap?",
+      "options": [
+        "A typo in the filing",
+        "Headlines use a fully diluted count that adds options, RSUs and convertibles; the basic count gives about $0.92-1.02T",
+        "The $26B placement doubles the value",
+        "Nasdaq adds a listing premium"
+      ],
+      "a": 1,
+      "why": "Always ask which share count a valuation uses. Fully diluted counts include securities that may become shares later, so they give a bigger number."
+    },
+    {
+      "id": "q52",
+      "layer": "models",
+      "level": "Analyze",
+      "q": "Anthropic cut its top model's price about 20% in the same month its run-rate revenue rose $10B. Does that trip 'token prices fall faster than usage grows'?",
+      "options": [
+        "Yes, any price cut trips it",
+        "No, usage and revenue grew far faster than the price fell",
+        "Yes, because the cut was on the top tier",
+        "It cannot be judged without GPU prices"
+      ],
+      "a": 1,
+      "why": "The rule compares two rates. A 20% price cut with revenue growing more than 10% in one month means volume is outrunning price, the healthy case."
+    },
+    {
+      "id": "q53",
+      "layer": "capital",
+      "level": "Explain",
+      "q": "In one week the 10-year Treasury yield rose to 5.10% while high-yield spreads fell to 3.20%. What does that combination mean for a data center borrower?",
+      "options": [
+        "Borrowing got cheaper on every measure",
+        "Risk appetite improved, but the base rate rose, so total borrowing cost may not have fallen",
+        "Spreads and yields always move together",
+        "Only equity investors are affected"
+      ],
+      "a": 1,
+      "why": "A junk borrower pays roughly the Treasury yield plus the spread. A 26bp rise in the base offsets a 28bp fall in the spread, so the all-in cost barely moved."
     }
   ]
 }

@@ -81,7 +81,7 @@
   },
   "VST": {
    "cik": "0001692819",
-   "entity": "Vistra Operations Company LLC",
+   "entity": "Vistra Corp.",
    "stale": false,
    "filings": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001692819&type=10-K&dateb=&owner=include&count=40",
    "revenue": {
@@ -94,8 +94,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 19212000000
+     "end": "2026-09-30",
+     "value": 20588000000
     }
    },
    "operating_income": {
@@ -108,8 +108,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 3563000000
+     "end": "2026-09-30",
+     "value": 4232000000
     }
    },
    "net_income": {
@@ -122,8 +122,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 2219000000
+     "end": "2026-09-30",
+     "value": 2707000000
     }
    },
    "operating_cash_flow": {
@@ -136,8 +136,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 5121000000
+     "end": "2026-09-30",
+     "value": 5762000000
     }
    },
    "capex": {
@@ -150,15 +150,15 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 2866000000
+     "end": "2026-09-30",
+     "value": 3155000000
     }
    },
    "fcf_fy": 1318000000
   },
   "NRG": {
    "cik": "0001013871",
-   "entity": "NRG Energy, Inc",
+   "entity": "NRG ENERGY, INC.",
    "stale": false,
    "filings": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001013871&type=10-K&dateb=&owner=include&count=40",
    "revenue": {
@@ -171,8 +171,8 @@
      "filed": "2026-02-24"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 33125000000
+     "end": "2026-09-30",
+     "value": 34956000000
     }
    },
    "operating_income": {
@@ -185,8 +185,8 @@
      "filed": "2026-02-24"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 2015000000
+     "end": "2026-09-30",
+     "value": 2685000000
     }
    },
    "net_income": {
@@ -199,8 +199,8 @@
      "filed": "2026-02-24"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 849000000
+     "end": "2026-09-30",
+     "value": 1258000000
     }
    },
    "operating_cash_flow": {
@@ -213,8 +213,8 @@
      "filed": "2026-02-24"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 1555000000
+     "end": "2026-09-30",
+     "value": 2168000000
     }
    },
    "capex": {
@@ -227,8 +227,8 @@
      "filed": "2026-02-24"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 1207000000
+     "end": "2026-09-30",
+     "value": 1479000000
     }
    },
    "rnd": {
@@ -3571,8 +3571,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 7589580000
+     "end": "2026-09-30",
+     "value": 9886000000
     }
    },
    "operating_income": {
@@ -3585,8 +3585,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": -230739000
+     "end": "2026-09-30",
+     "value": -76000000
     }
    },
    "net_income": {
@@ -3599,8 +3599,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": -1927850000
+     "end": "2026-09-30",
+     "value": -2527000000
     }
    },
    "operating_cash_flow": {
@@ -3613,8 +3613,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 6911000000
+     "end": "2026-09-30",
+     "value": 7197000000
     }
    },
    "capex": {
@@ -3627,8 +3627,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 20566000000
+     "end": "2026-09-30",
+     "value": 27618000000
     }
    },
    "rnd": {
@@ -3641,8 +3641,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 423000000
+     "end": "2026-09-30",
+     "value": 484000000
     }
    },
    "fcf_fy": -7251000000
@@ -5255,7 +5255,7 @@
   },
   "AMT": {
    "cik": "0001053507",
-   "entity": "AMERICAN TOWER CORPORATION",
+   "entity": "AMERICAN TOWER CORP /MA/",
    "stale": false,
    "filings": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001053507&type=10-K&dateb=&owner=include&count=40",
    "revenue": {
@@ -5408,8 +5408,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 21309155000
+     "end": "2026-09-30",
+     "value": 20346859000
     }
    },
    "net_income": {
@@ -5422,8 +5422,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 3151975000
+     "end": "2026-09-30",
+     "value": 3413224000
     }
    },
    "operating_cash_flow": {
@@ -5436,8 +5436,8 @@
      "filed": "2026-02-27"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 2488480000
+     "end": "2026-09-30",
+     "value": 2242879000
     }
    },
    "capex": {
@@ -5518,8 +5518,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 5737000000
+     "end": "2026-09-30",
+     "value": 6634000000
     }
    },
    "net_income": {
@@ -5532,8 +5532,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 3065000000
+     "end": "2026-09-30",
+     "value": 5372000000
     }
    },
    "operating_cash_flow": {
@@ -5546,8 +5546,8 @@
      "filed": "2026-03-02"
     },
     "ttm": {
-     "end": "2026-06-30",
-     "value": 2334000000
+     "end": "2026-09-30",
+     "value": 2143000000
     }
    }
   },
@@ -6015,5 +6015,5 @@
   "9984.T",
   "ALV.DE"
  ],
- "generated": "2026-11-08T23:55:20+00:00"
+ "generated": "2026-11-15T23:55:22+00:00"
 }
