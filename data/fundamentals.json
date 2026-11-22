@@ -4796,7 +4796,10 @@
      "form": "10-K",
      "filed": "2026-09-09"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-10-31",
+     "value": 21917000000
+    }
    },
    "operating_income": {
     "tag": "us-gaap:OperatingIncomeLoss",
@@ -4807,7 +4810,10 @@
      "form": "10-K",
      "filed": "2026-09-09"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-10-31",
+     "value": 6218000000
+    }
    },
    "net_income": {
     "tag": "us-gaap:NetIncomeLoss",
@@ -4818,7 +4824,10 @@
      "form": "10-K",
      "filed": "2026-09-09"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-10-31",
+     "value": 4815000000
+    }
    },
    "operating_cash_flow": {
     "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
@@ -4829,7 +4838,10 @@
      "form": "10-K",
      "filed": "2026-09-09"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-10-31",
+     "value": 9263000000
+    }
    },
    "capex": {
     "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
@@ -4840,7 +4852,10 @@
      "form": "10-K",
      "filed": "2026-09-09"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-10-31",
+     "value": 212000000
+    }
    },
    "rnd": {
     "tag": "us-gaap:ResearchAndDevelopmentExpense",
@@ -4851,7 +4866,10 @@
      "form": "10-K",
      "filed": "2026-09-09"
     },
-    "ttm": null
+    "ttm": {
+     "end": "2026-10-31",
+     "value": 3321000000
+    }
    },
    "fcf_fy": 8663000000
   },
@@ -6015,5 +6033,5 @@
   "9984.T",
   "ALV.DE"
  ],
- "generated": "2026-11-15T23:55:22+00:00"
+ "generated": "2026-11-22T23:56:01+00:00"
 }

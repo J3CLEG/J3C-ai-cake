@@ -2,7 +2,7 @@
   "meta": {
     "title": "J3C AI Cake",
     "seeded": "2026-10-15",
-    "last_verified": "2026-11-15",
+    "last_verified": "2026-11-22",
     "framework_origin": "Jensen Huang (NVIDIA): CSIS Dec 2025, Davos Jan 2026, NVIDIA blog 'AI Is a 5-Layer Cake' Mar 10, 2026",
     "disclaimer": "Personal learning tool. Education only, not investment advice. Figures carry a source tier; check the source before acting on any number.",
     "tiers": {
@@ -405,6 +405,71 @@
     "latitude_cfgap": {
       "title": "Latitude Media: data centers face a carbon-free power gap (Nov 10)",
       "url": "https://www.latitudemedia.com/news/data-centers-face-a-carbon-free-power-gap-that-utilities-havent-filled/",
+      "tier": 3
+    },
+    "nvda_3q27": {
+      "title": "NVIDIA Q3 FY2027 results press release (8-K exhibit, Nov 17, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+      "tier": 1
+    },
+    "forbes_ant_ipo": {
+      "title": "Forbes: Anthropic IPO live (Nov 19, 2026)",
+      "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-nasdaq-futures-jump-2-ahead-of-record-stock-debut/",
+      "tier": 3
+    },
+    "stocktitan_ant": {
+      "title": "StockTitan: Anthropic ANT first trading day (Nov 19, 2026)",
+      "url": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026",
+      "tier": 3
+    },
+    "admirals_ant": {
+      "title": "Admirals: Anthropic stock first day of trading (Nov 20, 2026)",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/anthropic-stock-ant-first-day-trading",
+      "tier": 3
+    },
+    "bxdc_aws": {
+      "title": "Blackstone Digital Infrastructure Trust 8-K: AWS joint ventures (Nov 16, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002100161/000119312526461954/d115778dex991.htm",
+      "tier": 1
+    },
+    "latitude_ferc": {
+      "title": "Latitude Media: utilities want FERC to lock data centers into paying for grid upgrades (Nov 18, 2026)",
+      "url": "https://www.latitudemedia.com/news/utilities-want-ferc-to-lock-data-centers-into-paying-for-grid-upgrades/",
+      "tier": 3
+    },
+    "mgrid_ferc": {
+      "title": "MGRID: utilities seek FERC approval for long-term data center contracts (Nov 19, 2026)",
+      "url": "https://mgrid.org/2026/11/19/utilities-seek-ferc-approval-for-long-term-data-center-grid-upgrade-contracts/",
+      "tier": 3
+    },
+    "techtimes_latitude22": {
+      "title": "TechTimes: Latitude finds signed contracts cover 22% of reported load (Nov 16, 2026)",
+      "url": "https://www.techtimes.com/articles/330794/20261116/latitude-finds-data-center-power-contracts-cover-22-reported-load-utilities-seek-power-plants.htm",
+      "tier": 3
+    },
+    "trendforce_tsmc_china": {
+      "title": "TrendForce citing FT and Reuters: TSMC, Samsung pause some China shipments under new US rules (Nov 20, 2026)",
+      "url": "https://www.trendforce.com/news/2026/11/20/news-tsmc-samsung-reportedly-pause-china-consumer-chip-shipments-under-new-u-s-rules-16nm-orders-affected",
+      "tier": 3
+    },
+    "ap_bessent": {
+      "title": "AP via ABC News: Treasury secretary says no further Nvidia export restrictions needed (Nov 20, 2026)",
+      "url": "https://abcnews.com/Technology/wireStory/treasury-secretary-restrictions-needed-nvidia-chip-exports-china-138332241",
+      "tier": 3
+    },
+    "w247_crwv_venturo": {
+      "title": "24/7 Wall St.: CoreWeave co-founder buys $30M of bonds (Nov 20, 2026)",
+      "url": "https://247wallst.com/investing/2026/11/20/coreweaves-founders-sold-3-3-billion-of-stock-one-is-now-buying-the-bonds/",
+      "tier": 3
+    },
+    "realpython_1120": {
+      "title": "Real Python AI news weekly (Nov 20, 2026)",
+      "url": "https://realpython.com/ai-news-weekly-2026-11-20/",
+      "tier": 3
+    },
+    "cellcog_openai": {
+      "title": "CellCog: OpenAI funding target cut, first close (updated Nov 12, 2026)",
+      "url": "https://cellcog.ai/blog/openai-funding-target-cut/",
       "tier": 3
     }
   },
@@ -1023,6 +1088,36 @@
         "source": "fred_hy",
         "tier": 1,
         "as_of": "2026-11-12"
+      },
+      {
+        "text": "NVIDIA Q3 FY27 (quarter to Oct 25): revenue $115.8B (+103% y/y), Data Center $107.6B, non-GAAP gross margin 74.9% vs 75.0% prior quarter. Q4 guide $130B ±3% at 71–72% gross margin, with no China data center compute revenue assumed.",
+        "source": "nvda_3q27",
+        "tier": 1,
+        "as_of": "2026-11-17"
+      },
+      {
+        "text": "Anthropic priced its IPO at $83 (above the $70–78 range): 980M Class A shares, about $81.3B gross, the largest IPO on record. ANT first traded Nov 19 at $111.50 and closed at $97.17 (+17%); about $1.1T basic value at $83 (two secondary sources agree).",
+        "source": "stocktitan_ant",
+        "tier": 3,
+        "as_of": "2026-11-19"
+      },
+      {
+        "text": "Blackstone Digital Infrastructure Trust agreed to buy 75% of two AWS joint ventures (13 powered shells on two campuses) for about $5B at a 7.0% cap rate; AWS leases back 100% triple-net for 12 years, extendable to 32.",
+        "source": "bxdc_aws",
+        "tier": 1,
+        "as_of": "2026-11-16"
+      },
+      {
+        "text": "Transmission owners asked FERC (docket EL26-67 responses, ~Nov 16) to approve 10–20 year data center contracts: in PJM, loads of 50 MW+ would commit to at least 80% of requested service for 10+ years, with collateral (two outlets agree).",
+        "source": "latitude_ferc",
+        "tier": 3,
+        "as_of": "2026-11-18"
+      },
+      {
+        "text": "High-yield spreads widened to 3.52% on Nov 19 from 3.20% on Nov 12 while the 10-year Treasury eased to 5.04% from 5.10% (FRED). Stocks fell for six straight sessions into the Anthropic debut.",
+        "source": "fred_hy",
+        "tier": 1,
+        "as_of": "2026-11-19"
       }
     ],
     "deals": [
@@ -1091,6 +1186,28 @@
         "date": "2026-11",
         "source": "ant_s1a2",
         "tier": 1
+      },
+      {
+        "name": "Blackstone BXDC–AWS powered-shell JVs (75%)",
+        "value_b": 5,
+        "type": "JV stake / sale-leaseback",
+        "buyers": "Blackstone Digital Infrastructure Trust",
+        "layer": "infrastructure",
+        "buyer_type": "Private equity",
+        "date": "2026-11-16",
+        "source": "bxdc_aws",
+        "tier": 1
+      },
+      {
+        "name": "Anthropic IPO",
+        "value_b": 81.3,
+        "type": "IPO",
+        "buyers": "Public investors (Nasdaq: ANT)",
+        "layer": "models",
+        "buyer_type": "Public market",
+        "date": "2026-11-18",
+        "source": "stocktitan_ant",
+        "tier": 3
       }
     ],
     "contested": [
@@ -1142,13 +1259,12 @@
       {
         "topic": "Anthropic IPO",
         "values": [
-          "Fully diluted value up to ~$1.40T at the top of the range (CNBC via Decrypt; Fortune); $1.26-1.41T (NYT via Gizmodo)",
-          "Basic value ~$0.92-1.02T (13.09B shares in the S-1/A times $70-78)",
-          "Raise up to ~$64.4B incl. selling holders (Fortune, Decrypt) vs ~$90.4B (456X, no source; likely adds part of the $26B placement)",
-          "Pricing Nov 18, trading Nov 19 (CNBC via Decrypt) vs Nov 19 or 20 (WSJ via Gizmodo)",
-          "May 2026 private round at $965B (Decrypt); earlier talk of ~$2T"
+          "Priced $83 x 980M shares = ~$81.3B gross (StockTitan, Admirals, Forbes agree); greenshoe up to 147M more",
+          "Value at $83: ~$1.10T basic (~13.2B shares incl. Class N) vs ~$1.5T fully diluted (Reuters via Admirals)",
+          "Value at the $97.17 first-day close: ~$1.28T basic vs ~$1.76T (CNN) or ~$1.8T (CNBC) fully diluted",
+          "Day high $114.99 (StockTitan) vs $115.10 (CNN via Admirals)"
         ],
-        "why": "The S-1/A No. 2 (Nov 10) now settles the range, share count and nine-month revenue (in facts). Valuation headlines differ mainly by basic vs fully diluted share count; the raise figure differs by what is counted.",
+        "why": "Deal size now agrees across sources; the final 424B4 prospectus was not opened. Valuation headlines still differ by basic vs fully diluted share count.",
         "source": "ant_s1a2",
         "tier": 1
       },
@@ -1156,9 +1272,10 @@
         "topic": "OpenAI new round",
         "values": [
           "$30B at ~$1.4T (Bloomberg, Sep 29)",
-          "Up to $30B at $1.25T pre-money, led by Coatue and UAE investors (CNBC, Oct 22)"
+          "Up to $30B at $1.25T pre-money, led by Coatue and UAE investors (CNBC, Oct 22)",
+          "Target cut to $20B at $1.25T (FT, Oct 30); ~$11B first close Nov 6 with SoftBank and MGX (Bloomberg, Reuters via CellCog); CFO: 'the round is ongoing'"
         ],
-        "why": "Talks, not a closed round. A lower ask is not a down round: it is still above the $852B March post-money mark.",
+        "why": "Still talks plus a partial close, reported second-hand; no OpenAI statement. A smaller round at $1.25T is above the $852B March mark, so not a down round.",
         "source": "tc_openai_125",
         "tier": 3
       },
@@ -1250,6 +1367,38 @@
         ],
         "why": "A slip in timing is the first sign energy exit rules would watch, but the Morgan Stanley note was not seen directly.",
         "source": "neo_weekly_1115",
+        "tier": 3
+      },
+      {
+        "topic": "New US chip rules and China (Nov 16–20)",
+        "values": [
+          "Commerce reportedly proposed licences for advanced AI chip exports to Malaysia, Thailand, Indonesia, Singapore and Brazil (WSJ via Yahoo, Nov 16)",
+          "TSMC told China customers to halt 16nm-and-below orders without licences (Reuters via TrendForce, Nov 19); TSMC and Samsung paused some consumer-chip deliveries (FT)",
+          "Remote access by China blocked; NVIDIA stopped H200 shipments; Treasury's Bessent: 'the proper chip restrictions are in place' (AP, Nov 20)"
+        ],
+        "why": "No Federal Register text or BIS release was read, so the scope and dates rest on wire reports. NVIDIA's own guide assumes no China data center compute revenue.",
+        "source": "trendforce_tsmc_china",
+        "tier": 3
+      },
+      {
+        "topic": "OpenAI model price cut",
+        "values": [
+          "GPT-5.6 Sol API 20–33% promo cut from Aug 21 for three months (OpenAI forum post, poster role unverified)",
+          "'GPT-6.2 Astra' 20% cheaper at $8/$40 per million tokens (Real Python, Nov 20)"
+        ],
+        "why": "The two sources describe different models and dates; OpenAI's pricing page was not read.",
+        "source": "realpython_1120",
+        "tier": 3
+      },
+      {
+        "topic": "CoreWeave unsecured bond yields",
+        "values": [
+          "'Over 17%' earlier in November (24/7 Wall St.)",
+          "Above 16% (Nov 7 headline)",
+          "Co-founder Brian Venturo bought $30M of the 2031 notes (LinkedIn, Nov 18; no SEC filing yet)"
+        ],
+        "why": "No dated price or yield from a named data provider; insider purchase is self-reported.",
+        "source": "w247_crwv_venturo",
         "tier": 3
       }
     ],
@@ -1354,7 +1503,7 @@
       "Bust"
     ],
     "current_stage": 0,
-    "position": 0.9,
+    "position": 0.91,
     "bottleneck": {
       "layer": "energy",
       "history": [
@@ -1374,14 +1523,14 @@
       {
         "name": "Capex guidance revisions",
         "status": "build",
-        "value": "Still rising: Q3 capex ~$230B/quarter (10-Qs); no big-four change this week; CoreWeave raised its 2026 capex floor to $37B; no cuts",
-        "source": "edgar_live_3q26",
+        "value": "Still rising: Q3 capex ~$230B/quarter (10-Qs); no big-four change this week; NVIDIA guided Q4 revenue to $130B (+12% q/q); no cuts",
+        "source": "nvda_3q27",
         "tier": 1
       },
       {
         "name": "AI revenue vs capex",
         "status": "watch",
-        "value": "Revenue keeps accelerating: Anthropic nine-month revenue $33.2B and ~$81B run-rate (S-1/A), AWS +39%, Azure +48%. Still well below ~$230B of quarterly capex",
+        "value": "Anthropic (~$81B run-rate per S-1/A) is now public at ~$1.1T basic; NVIDIA Data Center revenue $107.6B in one quarter. Downstream revenue still well below ~$230B of quarterly hyperscaler capex",
         "source": "ant_s1a2",
         "tier": 1
       },
@@ -1408,15 +1557,15 @@
       },
       {
         "name": "High-yield credit spreads",
-        "status": "watch",
-        "value": "3.20% on 2026-11-12 (FRED), down from 3.48% on Nov 5 as CoreWeave's beat eased financing fears; still above the 3.26% of late October",
+        "status": "warn",
+        "value": "3.52% on 2026-11-19 (FRED), up 32bp in a week from 3.20% and back above 3.50%, as stocks fell six sessions in a row",
         "source": "fred_hy",
         "tier": 1
       },
       {
         "name": "10-year Treasury yield",
         "status": "warn",
-        "value": "5.10% on 2026-11-12 (FRED), up 26bp in a week from 4.84%. Higher risk-free rates raise the hurdle for every leveraged data center project",
+        "value": "5.04% on 2026-11-19 (FRED), down from 5.10% but still above 5%; the hurdle rate for leveraged projects stays high",
         "source": "fred_dgs10",
         "tier": 1
       }
@@ -2250,6 +2399,62 @@
       ],
       "a": 1,
       "why": "A junk borrower pays roughly the Treasury yield plus the spread. A 26bp rise in the base offsets a 28bp fall in the spread, so the all-in cost barely moved."
+    },
+    {
+      "id": "q54",
+      "layer": "chips",
+      "level": "Analyze",
+      "q": "NVIDIA's Q3 FY27 gross margin was 74.9%, but it guided Q4 to 71–72%. Against the chips-layer exit rule 'gross margin falls more than 5 points', how should you read this?",
+      "options": [
+        "The exit rule has tripped",
+        "Not tripped (about a 3-point drop at the midpoint), but it is the first guided step down and worth tracking",
+        "Margins are irrelevant to the cycle",
+        "A lower margin always means demand has collapsed"
+      ],
+      "a": 1,
+      "why": "74.9% to a 71.5% midpoint is about 3.4 points, short of the 5-point rule. A falling margin while revenue still grows 12% can mean cost or mix pressure rather than lost pricing power, so watch whether the next guide falls further."
+    },
+    {
+      "id": "q55",
+      "layer": "models",
+      "level": "Apply",
+      "q": "Anthropic sold 980M shares at $83. Headlines quoted values from about $1.1T to $1.5T at that price. What explains most of the gap?",
+      "options": [
+        "Some outlets used the first-day close",
+        "Basic shares outstanding versus a fully diluted count that adds options, RSUs and convertibles",
+        "Currency conversion",
+        "The greenshoe option alone"
+      ],
+      "a": 1,
+      "why": "Same price, different share counts. Basic (~13.2B shares) gives ~$1.1T; fully diluted adds unvested equity and convertible claims. Always check which count a valuation uses before comparing it with a private round."
+    },
+    {
+      "id": "q56",
+      "layer": "infrastructure",
+      "level": "Explain",
+      "q": "Blackstone's REIT bought 75% of AWS powered shells at a 7.0% cap rate with a 12-year triple-net leaseback. What is AWS doing financially?",
+      "options": [
+        "Exiting data centers",
+        "Recycling capital: turning finished buildings into cash while keeping use of them through a long lease",
+        "Taking on more debt directly",
+        "Selling GPUs"
+      ],
+      "a": 1,
+      "why": "A sale-leaseback swaps owned real estate for cash now and rent later. It frees capex dollars for chips and new sites, and it shifts the long-dated building risk to the landlord's investors."
+    },
+    {
+      "id": "q57",
+      "layer": "energy",
+      "level": "Analyze",
+      "q": "Utilities asked FERC to require large data center loads to commit to 10–20 year contracts with collateral. Which risk are they trying to move, and to whom?",
+      "options": [
+        "Fuel price risk, to gas producers",
+        "Stranded-grid-upgrade risk, from household ratepayers to the data center developer",
+        "Chip supply risk, to NVIDIA",
+        "Interest-rate risk, to the Treasury"
+      ],
+      "a": 1,
+      "why": "If a data center cancels after the utility builds lines and substations, someone pays for idle assets. Minimum-take contracts and collateral make the developer carry that cost, which also filters out speculative requests."
     }
   ]
 }
